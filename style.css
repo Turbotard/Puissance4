@@ -125,12 +125,20 @@ button:hover{
     color: orange;
 }
 
+#chiffre {
+    float: left;
+    color: #3724a0;
+    margin-top: 100px;
+    margin-left: 230px;
+    align-self: auto;
+    font-size: 30px;
+}
 
 #Lorem {
     display: block;
     display: flex;
     float: left;
-    padding: 180px;
+    padding: 100px;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none ;
