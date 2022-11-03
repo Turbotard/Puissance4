@@ -88,6 +88,27 @@ p {
     text-decoration: none;        
     
 }
+.boite {
+    width: 290px;
+    height: 100px;
+    margin: 0;
+    padding: 4px 6px;
+    font: 28px "verdana";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .boite block {
+    float: left;
+    background-color: rgb(141, 137, 155);
+    color: hsl(0deg, 100%, 100%);
+    border-radius: 5px;
+    border-color: #fff;
+    margin-left: 20px;
+    margin-top: 17px;
+    block-size: 130px;
+  }
 form input{
     display: flex;
     flex-direction: column;
@@ -121,6 +142,7 @@ form input{
     padding-left: 15px;
     padding-right: 220px;
 }
+
 
 form{
     margin-top: -220px;
