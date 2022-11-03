@@ -139,6 +139,7 @@ button:hover{
     display: flex;
     float: left;
     padding: 100px;
+    padding: 150px;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none ;
@@ -197,7 +198,7 @@ button:hover{
     color: hsl(0deg, 100%, 100%);
     border-radius: 5px;
     margin-left: 20px;
-    margin-top: 34px;
+    margin-top: 24px;
     block-size: 130px;
   }
   .boiteGauche2 {
@@ -216,7 +217,7 @@ button:hover{
     color: hsl(0deg, 100%, 100%);
     border-radius: 5px;
     margin-left: 20px;
-    margin-top: 34px;
+    margin-top: 24px;
     block-size: 130px;
   }
 .flex{
@@ -229,6 +230,7 @@ button:hover{
     margin-top: 50px;
     margin-left: 200px;
 }
+
 
 
 
