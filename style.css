@@ -125,11 +125,20 @@ button:hover{
     color: orange;
 }
 
+#chiffre {
+    float: left;
+    color: #3724a0;
+    margin-top: 100px;
+    margin-left: 230px;
+    align-self: auto;
+    font-size: 30px;
+}
 
 #Lorem {
     display: block;
     display: flex;
     float: left;
+    padding: 100px;
     padding: 150px;
     flex-direction: row;
     justify-content: space-between;
@@ -189,7 +198,7 @@ button:hover{
     color: hsl(0deg, 100%, 100%);
     border-radius: 5px;
     margin-left: 20px;
-    margin-top: 34px;
+    margin-top: 24px;
     block-size: 130px;
   }
   .boiteGauche2 {
@@ -208,7 +217,7 @@ button:hover{
     color: hsl(0deg, 100%, 100%);
     border-radius: 5px;
     margin-left: 20px;
-    margin-top: 34px;
+    margin-top: 24px;
     block-size: 130px;
   }
 .flex{
