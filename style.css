@@ -146,16 +146,12 @@ button:hover{
     font-weight: bold;
 }
 
+
 #Texte { 
- display: flex;
- flex-direction: row;
- padding: 0;
- list-style-type: none ;
- display: block;
+ float: left;
  font-size: 16px;
  color: white;
- min-width: 80px;
- white-space: wrap 100px;
+ 
 }
 #tkt {
     color: #100e2e;
