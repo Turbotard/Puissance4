@@ -148,7 +148,62 @@ button:hover{
  min-width: 80px;
  white-space: wrap 100px;
 }
+.div {
+    background-color: rgb(255, 255, 255);
+    width: 120px;
+    height: 120px;
+  }
+  .conteneur {
+    width: 620px;
+    height: 110px;
+    margin: 0;
+    padding: 10px;
+    border: 6px solid white;
+  }
+  .boite {
+    width: 290px;
+    height: 100px;
+    margin: 0;
+    padding: 4px 6px;
+    font: 28px "Marker Felt";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .boiteGauche {
+    float: left;
+    background-color: rgb(60, 17, 186);
+    color: hsl(0deg, 100%, 100%);
+    border-radius: 5px;
+  }
+  .boiteDroite {
+    float: right;
+    background-color: rgb(12, 144, 56);
+    color: hsl(0deg, 100%, 100%);
+    border-radius: 5px;
+  }
+  .boiteGauche2 {
+    float: left;
+    background-color: rgb(197, 10, 138);
+    color: hsl(0deg, 100%, 100%);
+    border-radius: 5px;
 
+  }
+  .boiteDroite2 {
+    float: right;
+    background-color: rgb(226, 137, 13);
+    color: hsl(0deg, 100%, 100%);
+    border-radius: 5px;
+  }
+.flex{
+    display: flex;
+    flex-direction:column;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
 
 
 
