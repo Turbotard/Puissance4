@@ -128,9 +128,6 @@ button:hover{
 #chiffre {
     float: left;
     color: #3724a0;
-    margin-top: 100px;
-    margin-left: 150px;
-    align-self: auto;
     font-size: 30px;
 }
 
