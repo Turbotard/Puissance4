@@ -129,7 +129,7 @@ button:hover{
     float: left;
     color: #3724a0;
     margin-top: 100px;
-    margin-left: 230px;
+    margin-left: 150px;
     align-self: auto;
     font-size: 30px;
 }
@@ -159,6 +159,9 @@ button:hover{
  color: white;
  min-width: 80px;
  white-space: wrap 100px;
+}
+#tkt {
+    color: #11102f;
 }
 .div {
     background-color: rgb(255, 255, 255);
@@ -297,5 +300,5 @@ li a {
 }
 .logo a img {
     width: 25px;
-    height: 25px;
+    height: auto;
 }
