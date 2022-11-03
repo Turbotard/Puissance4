@@ -261,12 +261,18 @@ footer{
 
 }
 
+.box1 h3{
+    color: white;
+    font-size: 130%;
+}
+
 #footg h3{
     color: white;
     font-size: 133%;
     
 }
 #footg p{
+    margin-left: 5px;
     margin-top: 22px;
     color: whitesmoke;
 }
@@ -276,7 +282,8 @@ h5{
     font-size: 14px;
     
 }
-h3 {
+.box2 h3 {
+    margin-left: 20px;
     color: white;
     font-size: 130%;
 }
