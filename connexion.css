@@ -124,8 +124,8 @@ button:hover{
     background-color: white;
     color: orange;
 }
-inscription{
-    margin-left: 20%;
+.inscription{
+    margin-left: 40%;
 }
 
 footer{
