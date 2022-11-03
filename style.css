@@ -238,12 +238,16 @@ footer{
     flex-direction: column;
     
 }
+.box2{
+    padding-top: 10px;
+}
 #footg{
     display: flex;
     flex-direction: row;
     padding-top: 10px;
 
 }
+
 #footg h3{
     color: white;
     font-size: 133%;
@@ -282,6 +286,6 @@ li a {
     
 }
 .logo a img {
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
