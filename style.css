@@ -293,8 +293,12 @@ h5{
 #foot{
     padding-right: auto;
 }
-#foot li{
+#foot li::marker{
     color : orange;
+}
+.foot{
+    
+    list-style-type: square;
 }
 li {
     margin-top: 25px;
