@@ -121,10 +121,42 @@ button{
     background-color: orange;
     border-style: none;
     margin-top: 25px;
+    
 }
+
 button:hover{
     background-color: white;
     color: orange;
+}
+.LoremIpsum {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.picture1 {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 700px;
+    height: 320px;
+}
+.picture2 {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 327px;
+    height: 100px;
+}
+.picture3 {
+    display: flex;
+    color: white;
+    flex-direction: column;
+    width: 327px;
+    height: 100px;
+}
+#grostexte {
+    float: left;
+    color: #8495c2;
 }
 
 #chiffre {
@@ -148,16 +180,12 @@ button:hover{
     font-weight: bold;
 }
 
+
 #Texte { 
- display: flex;
- flex-direction: row;
- padding: 0;
- list-style-type: none ;
- display: block;
+ float: left;
  font-size: 16px;
  color: white;
- min-width: 80px;
- white-space: wrap 100px;
+ 
 }
 #tkt {
     color: #100e2e;
@@ -338,8 +366,12 @@ h5{
 #foot{
     padding-right: auto;
 }
-#foot li{
+#foot li::marker{
     color : orange;
+}
+.foot{
+    
+    list-style-type: square;
 }
 li {
     margin-top: 25px;
