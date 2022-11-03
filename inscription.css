@@ -104,10 +104,10 @@ form input{
 
 form{
     margin-top: -220px;
-    margin-bottom: 55px;
+    margin-bottom: 80px;
 }
 button{
-    margin-left: 598px;
+    margin-left: 40%;
     border-radius: 3px;
     padding-left: 25px;
     padding-right: 25px;
@@ -116,6 +116,7 @@ button{
     color: white;
     background-color: orange;
     border-style: none;
+    margin-bottom: 2%;
     
 }
 button:hover{
