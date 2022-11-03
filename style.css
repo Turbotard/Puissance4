@@ -130,7 +130,7 @@ button:hover{
     display: block;
     display: flex;
     float: left;
-    padding: 180px;
+    padding: 150px;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none ;
@@ -221,6 +221,7 @@ button:hover{
     margin-top: 50px;
     margin-left: 200px;
 }
+
 
 
 
