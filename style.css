@@ -144,6 +144,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 13%;
 }
 .picture1 {
     display: flex;
@@ -151,7 +152,6 @@ button:hover{
     flex-direction: column;
     width: 49.1%;
     height: auto;
-    margin-top: 8%;
 }
 .picture2 {
     display: flex;
@@ -159,7 +159,6 @@ button:hover{
     flex-direction: column;
     width: 23%;
     height: auto;
-    margin-top: 8%;
 }
 .picture3 {
     display: flex;
@@ -167,7 +166,6 @@ button:hover{
     flex-direction: column;
     width: 23%;
     height: auto;
-    margin-top: 8%;
 }
 #grostexte {
     float: left;
