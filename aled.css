@@ -93,29 +93,28 @@ p {
     color: orange;
 }
 
-.membre {
+.contact {
     display: flex;
     background-color: #0c0b26;
-    padding-left: 10%;
-    padding-bottom: 9%;
-    padding-right: 4%;
+    padding: auto;
     margin-right: 67%;
     margin-left: 10%;
     margin-bottom: 15%;
-    padding-bottom: 3%;
     margin-top: -10%;
+    flex-direction: column;
+    justify-content: center;
 }
 .tel {
     display: flex;
-    width: 300%;
-    height: 300%;
-    justify-content: center;
-
-
-
+    z-index:1;
+    width: 50%;
+    height: 50%;
+    
 }
 .num{
+    
     margin-top: 100%;
+    z-index: 2;
     
 }
 form input{
