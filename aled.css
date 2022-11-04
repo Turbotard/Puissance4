@@ -96,12 +96,11 @@ p {
   .membre {
     display: flex;
     background-color: #0c0b26;
-    padding-bottom: 12%;
     padding-left: 5%;
-    padding-right: 1%;
+    padding-right: 3%;
     margin-right: 8%;
     margin-bottom: 15%;
-    flex-direction: column;
+    padding-top: 10%;
 }
 form input{
     display: flex;
