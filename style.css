@@ -287,8 +287,7 @@ button:hover{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 35%;
-    
+    margin-top: 10%;
     margin-bottom: 10%;
     
 }
@@ -296,6 +295,7 @@ button:hover{
 .name {
     margin-left: 40%;
     color: white;
+    margin-bottom: 5%;
 }
 
 #crew {
