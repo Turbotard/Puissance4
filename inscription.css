@@ -88,6 +88,10 @@ p {
     text-decoration: none;        
     
 }
+#boxe2 a:hover{
+    opacity: 0.76;
+    color: orange;
+}
 form input{
     display: flex;
     flex-direction: column;
