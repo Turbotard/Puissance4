@@ -199,6 +199,8 @@ button:hover{
     height: 120px;
   }
   .conteneur {
+    display: flex;
+    justify-content: space-around;
     width: 620px;
     height: 110px;
     margin: 0;
@@ -206,6 +208,8 @@ button:hover{
     border: 6px solid white;
   }
   .boite {
+    display: flex;
+    justify-content: space-around;
     width: 290px;
     height: 100px;
     margin: 0;
@@ -217,6 +221,8 @@ button:hover{
     text-align: center;
   }
   .boiteGauche {
+    display: flex;
+    justify-content: space-around;
     float: left;
     background-color: rgb(60, 17, 186);
     color: hsl(0deg, 100%, 100%);
@@ -226,6 +232,8 @@ button:hover{
     block-size: 130px;
   }
   .boiteDroite {
+    display: flex;
+    justify-content: space-around;
     float: right;
     background-color: rgb(197, 10, 138);
     color: hsl(0deg, 100%, 100%);
@@ -235,6 +243,8 @@ button:hover{
     block-size: 130px;
   }
   .boiteGauche2 {
+    display: flex;
+    justify-content: space-around;
     float: left;
     background-color: rgb(12, 144, 56);
     color: hsl(0deg, 100%, 100%);
@@ -245,6 +255,8 @@ button:hover{
   }
 
   .boiteDroite2 {
+    display: flex;
+    justify-content: space-around;
     float: right;
     background-color: rgb(226, 137, 13);
     color: hsl(0deg, 100%, 100%);
