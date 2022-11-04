@@ -111,8 +111,8 @@ p {
     height: 300%;
     justify-content: center;
 
-    
-    
+
+
 }
 .num{
     margin-top: 100%;
@@ -250,6 +250,7 @@ li {
 li a {
     color: white;
 }
+
 .logo{
     flex-direction: row;
     order : -1;
@@ -260,7 +261,7 @@ li a {
     
 }
 .logo a img {
-    width: 100%;
+    width: 30px;
     height: auto;
 
 }
