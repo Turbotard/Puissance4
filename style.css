@@ -285,7 +285,7 @@ button:hover{
 
 #equipe {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-left: 5%;
 }
 
@@ -300,16 +300,16 @@ button:hover{
     margin-right: 8%;
     justify-content: center;
     margin-bottom: 15%;
-    flex-direction: column;
+    
 }
 
 .imagee {
     display: flex;
     clip-path: ellipse(50% 40%);
     justify-content: center;
-    
-    height: 150%;
-    width: 150%;
+    height: 155%;
+    width: 155%;
+
     
 }
 
