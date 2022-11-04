@@ -93,6 +93,7 @@ p {
     color: orange;
 }
 form input{
+    color: white;
     display: flex;
     flex-direction: column;
     background-color: rgba(64, 77, 98, 0.587);
@@ -129,6 +130,7 @@ button:hover{
     color: orange;
 }
 .inscription{
+    color: white;
     margin-left: 40%;
 }
 
