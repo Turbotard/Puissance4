@@ -109,8 +109,9 @@ p {
 
 .slogan1 {
     font-size: 60px;
-    margin-right: 400px;
-    margin-left: 400px;
+    margin-right: 20%;
+    margin-left: 20%;
+    justify-content: space-around;
     
 }
 .slogan2 {
