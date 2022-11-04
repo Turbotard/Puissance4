@@ -292,7 +292,7 @@ button:hover{
     
 }
 
-.name {
+.crewname {
     margin-left: 40%;
     color: white;
     margin-bottom: 5%;
@@ -310,46 +310,49 @@ button:hover{
     color: rgb(255, 255, 255);
 }
 
-#equipe {
-    display: flex;
-    justify-content: space-around;
-    margin-left: 5%;
+.end1{
+    clip-path: ellipse(50% 50%);
+    height: 150px;
+    width: 150px;
+    margin-bottom: 10%;
 }
 
-.membre {
+.text{
+    color:aliceblue;
+    font-size: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.name{
     display: flex;
-    background-color: #0c0b26;
-    padding-bottom: 10%;
-    padding-left: 5%;
-    padding-right: 5%;
-    height: 80%;
-    width: 80%;
-    margin-right: 8%;
+    flex-direction: column;
     justify-content: center;
-    margin-bottom: 15%;
+    align-items: center;
+    color:aliceblue;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-right: 5%;
+    width: 50%;
+    height: 50%;
+    padding: 6%;
+    background: #0c0b26;
+
+}
+
+.sobox{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+}
+
+.ses4{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     
 }
-
-.imagee {
-    display: flex;
-    clip-path: ellipse(50% 40%);
-    justify-content: center;
-    height: 155%;
-    width: 155%;
-
-    
-}
-
-.prenom {
-    display: flex;
-    margin-top: 250%;
-    color: white;
-    justify-content: center;
-
-}
-
-
-
 
 
 footer{
