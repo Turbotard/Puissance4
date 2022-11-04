@@ -3,10 +3,14 @@ body{
     height: auto;
     width: auto;
 }
+header {
+    justify-content: space-around;
+}
 
 #header {
     width: 1425px;
     height: 600px;
+    justify-content: space-around;
     
 }
 
