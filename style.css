@@ -315,7 +315,8 @@ button:hover{
     clip-path: ellipse(50% 50%);
     height: 150px;
     width: 150px;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
+    margin-top: 20%;
 }
 
 .text{
