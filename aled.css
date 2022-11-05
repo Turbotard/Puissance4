@@ -1,8 +1,9 @@
-body{
+body {
     background-color:#11102f;
     height: auto;
     width: auto;
 }
+
 header {
     justify-content: space-around;
 }
@@ -14,6 +15,7 @@ header {
     margin-bottom: 10%;
     
 }
+
 #back {
     position: absolute;
     width: 100%;
@@ -24,10 +26,12 @@ header {
     margin-top: 5%;
 
 }
+
 #opaque {
     position: relative;
     opacity: 1;
 }
+
 #entree {
     display: flex;
     flex-direction: column;
@@ -37,17 +41,14 @@ header {
     text-align: center;
 }
 
-
-
 h1 {
     display: flex;
     margin-left: 45%;
     margin-top: 3%;
     color: rgb(251, 251, 251);
-    font-size: 40px;
-    
-    
+    font-size: 40px;  
 }
+
 p {
     display: flex;
     color : white;
@@ -55,6 +56,7 @@ p {
 
 
 }
+
 #boxe {
     display: flex;
     justify-content: space-between;
@@ -91,10 +93,10 @@ p {
     text-align: center;         
     font-size: small;
     color: #fff;                
-    text-decoration: none;        
-    
+    text-decoration: none;  
 }
-#boxe2 a:hover{
+
+#boxe2 a:hover {
     opacity: 0.76;
     color: orange;
 }
@@ -111,6 +113,7 @@ p {
     justify-content: center;
     height: 90%;
 }
+
 .aya {
     display: flex;
     flex-direction: column;
@@ -141,23 +144,28 @@ p {
     text-align: center;
 }
 
-form input{
+.formulaire {
+    margin-left: 5%;
+}
+
+form input {
     color: white;
     display: flex;
     flex-direction: column;
     background-color: rgba(64, 77, 98, 0.587);
     border-radius: 3px;
     border:none;
-    margin-left: 10%;
-    
+    margin-left: 10%; 
 }
-.nom{
+
+.nom {
     padding-bottom: 0.75%;
     padding-top: 0.75%;
     padding-left: 1%;
     padding-right: 2%;
 }
-.mail{
+
+.mail {
     display: flex;
     margin-left: 24.75%;
     margin-top: -2.58%;
@@ -167,7 +175,8 @@ form input{
     padding-left: 1%;
     padding-right: 2%;
 }
-.sujet{
+
+.sujet {
     display: flex;
     margin-bottom:1%;
     padding-bottom: 0.75%;
@@ -175,7 +184,8 @@ form input{
     padding-left: 1%;
     padding-right: 16.70%;
 }
-.msg{
+
+.msg {
     display: flex;
     margin-bottom: 1%;
     padding-bottom: 7%;
@@ -184,13 +194,13 @@ form input{
     padding-right: 16.70%;
 }
 
-
-form{
+form {
     margin-top: -8%;
     margin-bottom: 80px;
     margin-right: 92px;
 }
-button{
+
+button {
     margin-left: 10%;
     border-radius: 3px;
     padding-left: 15px;
@@ -203,15 +213,17 @@ button{
     margin-bottom: 2%;
     
 }
-button:hover{
+
+button:hover {
     background-color: white;
     color: orange;
 }
-.inscription{
+
+.inscription {
     margin-left: 40%;
 }
 
-footer{
+footer {
     display: flex;
     background-color: #0c0b26;
     border-style: inset;
@@ -221,83 +233,88 @@ footer{
     height: 50%;
     width: 100%;
 }
-.box1{
+
+.box1 {
     padding-right: 35%;
     display: flex;
     flex-direction: column;
     
 }
-.box2{
+
+.box2 {
     padding-top: 10px;
 }
-#footg{
+
+#footg {
     display: flex;
     flex-direction: row;
     padding-top: 10px;
 
 }
 
-.box1 h3{
+.box1 h3 {
     color: white;
     font-size: 130%;
 }
 
-#footg h3{
+#footg h3 {
     color: white;
     font-size: 133%;
     
 }
-#footg p{
+
+#footg p {
     margin-left: 5px;
     margin-top: 22px;
     color: whitesmoke;
 }
-h5{
+
+h5 {
     color :orange;
     padding-bottom: 2px;
     font-size: 14px;
     
 }
+
 .box2 h3 {
     margin-left: 20px;
     color: white;
     font-size: 130%;
 }
-#foot{
+
+#foot {
     padding-right: auto;
 }
-#foot li::marker{
+
+#foot li::marker {
     color : orange;
 }
-.foot{
-    
+
+.foot {
     list-style-type: square;
 }
+
 li {
-    margin-top: 25px;
-    
+    margin-top: 25px; 
 }
 
 li a {
     color: white;
 }
 
-.logo{
+.logo {
     flex-direction: row;
     order : -1;
     padding-left: 5px;
-    max-width: fit-content;
-
-    
-    
+    max-width: fit-content;  
 }
+
 .logo a img {
     width: 30px;
     height: auto;
-
 }
 
-.test{
+.test {
     display: flex;
     flex-direction: row;
 }
