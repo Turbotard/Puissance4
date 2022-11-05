@@ -99,12 +99,12 @@ form input{
     background-color: rgba(64, 77, 98, 0.587);
     border-radius: 3px;
     border:none;
-    margin-left: 40%;
+    margin-left: 37%;
     margin-bottom: 1%;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    padding-left: 15px;
-    padding-right: 220px;
+    padding-bottom: 0.75%;
+    padding-top: 0.75%;
+    padding-left: 1%;
+    padding-right: 18%;
 }
 
 form{
@@ -113,12 +113,12 @@ form{
     margin-right: 92px;
 }
 button{
-    margin-left: 40%;
-    border-radius: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 37%;
+    border-radius: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
     color: white;
     background-color: orange;
     border-style: none;
@@ -130,8 +130,14 @@ button:hover{
     color: orange;
 }
 .inscription{
+    display: flex;
+    margin-top: -1%;
     color: white;
-    margin-left: 40%;
+    margin-left: 37%;
+}
+.inscription a:hover{
+    opacity: 0.76;
+    color: white;
 }
 
 footer{
