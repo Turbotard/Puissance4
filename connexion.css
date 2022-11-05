@@ -138,6 +138,9 @@ button:hover{
 }
 .inscription a:hover{
     opacity: 0.76;
+    color: orange;
+}
+.inscription2{
     color: white;
 }
 
