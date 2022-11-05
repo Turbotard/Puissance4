@@ -4,10 +4,15 @@ body{
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+    justify-content: space-around;
+}
+
 #header {
-    width: 1425px;
-    height: 600px;
-    
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-bottom: 10%; 
 }
 #back {
     position: absolute;
@@ -109,9 +114,9 @@ form input{
 }
 
 form{
-    margin-top: -220px;
-    margin-bottom: 80px;
-    margin-right: 92px;
+    margin-top: 1%;
+    margin-bottom: 4%;
+    margin-right: 1%;
 }
 button{
     margin-left: 37%;
