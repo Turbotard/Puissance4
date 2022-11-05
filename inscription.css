@@ -99,26 +99,26 @@ form input{
     background-color: rgba(64, 77, 98, 0.587);
     border-radius: 3px;
     border:none;
-    margin-left: 40%;
-    margin-bottom: 1%;
-    padding-bottom: 12px;
-    padding-top: 12px;
-    padding-left: 15px;
-    padding-right: 220px;
+    margin-left: 36%;
+    margin-bottom: 1.25%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 1.25%;
+    padding-right: 20%;
 }
 
 form{
-    margin-top: -220px;
-    margin-bottom: 80px;
-    margin-right: 92px;
+    margin-top: -12%;
+    margin-bottom: 4%;
+    margin-right: 5%;
 }
 button{
-    margin-left: 40%;
-    border-radius: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-left: 36%;
+    border-radius: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
     color: white;
     background-color: orange;
     border-style: none;
