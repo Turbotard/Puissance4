@@ -99,30 +99,48 @@ p {
     color: orange;
 }
 
+.telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+}
+
 .contact {
     display: flex;
-    background-color: #0c0b26;
-    padding: auto;
-    margin-right: 67%;
-    margin-left: 10%;
-    margin-bottom: 15%;
-    margin-top: -10%;
+    justify-content: center;
+    height: 90%;
+}
+.aya {
+    display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    font-size: 150%;
+    margin-right: 5%;
+    width: 20%;
+    height: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    background: #0c0b26;
 }
-.tel {
-    display: flex;
-    z-index:1;
-    width: 50%;
-    height: 50%;
-    
+
+.logo {
+    clip-path: ellipse(50% 50%);
+    height: 40%;
+    width: 40%;
+    margin-bottom: 15%;
+    margin-top: 20%;
 }
-.num{
-    
-    margin-top: 100%;
-    z-index: 2;
-    
+
+.text {
+    color:white;
+    font-size: 60%;
+    text-align: center;
 }
+
 form input{
     color: white;
     display: flex;
