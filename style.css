@@ -451,7 +451,6 @@ li a {
     display: flex;
     flex-direction: row;
 }
-
 @media screen and (max-width: 900px) {
     article {
       padding: 1rem 3rem;
