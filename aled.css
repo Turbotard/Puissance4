@@ -145,9 +145,9 @@ p {
     text-align: center;
 }
 
-.formulaire {
+/*.formulaire {
     margin-left: 5%;
-}
+}*/
 
 form input {
     color: white;
@@ -199,6 +199,7 @@ form {
     margin-top: -8%;
     margin-bottom: 80px;
     margin-right: 92px;
+    margin-left: 5%;
 }
 
 button {
