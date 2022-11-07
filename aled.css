@@ -149,7 +149,7 @@ form input {
     color: white;
     display: flex;
     flex-direction: column;
-    background-color: rgba(64, 77, 98, 0.587);
+    background-color: rgba(40, 38, 67, 0.587);
     border-radius: 3px;
     border:none;
     margin-left: 10%; 
@@ -196,6 +196,7 @@ form {
     margin-bottom: 80px;
     margin-right: 92px;
     margin-left: 4%;
+    
 }
 
 button {
