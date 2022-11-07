@@ -141,6 +141,9 @@ button:hover{
     color: white;
     margin-left: 37%;
 }
+.inscription a {
+    text-decoration: none;
+}
 .inscription a:hover{
     opacity: 0.76;
     color: orange;
