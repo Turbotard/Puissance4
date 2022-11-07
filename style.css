@@ -139,7 +139,16 @@ button:hover {
     flex-direction: row;
     justify-content: space-around;
 }
-
+.grosgrostexte {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    color: white;
+}
+.textetexte {
+    display: flex;
+    flex-direction: column;
+}
 .picture1 {
     display: flex;
     color: white;
@@ -176,6 +185,7 @@ button:hover {
     float: left;
     color: #3724a0;
     font-size: 30px;
+    margin-right: 5%;
 }
 
 #Lorem {
