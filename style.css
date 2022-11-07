@@ -106,7 +106,32 @@ p {
     margin-right: 20%;
     margin-left: 20%;
     justify-content: space-around;  
+
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #cddc47 0%,
+    #ac80db 29%,
+    #13ff66 67%,
+    #ff00fb 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 
 .slogan2 {
     font-size: smaller;
@@ -325,10 +350,23 @@ button:hover {
 
 .end1 {
     clip-path: ellipse(50% 50%);
+    object-fit: cover;
     height: 150px;
     width: 150px;
     margin-bottom: 15%;
     margin-top: 20%;
+}
+
+.sobox img{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.sobox :hover img{
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .text {
@@ -353,6 +391,8 @@ button:hover {
     padding: 6%;
     background: #0c0b26;
 
+    box-shadow: 0 5px 15px 0px rgba(255, 115, 0, 0.6);
+    animation: float 6s ease-in-out infinite;
 }
 
 .sobox {
