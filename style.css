@@ -391,7 +391,7 @@ button:hover {
     padding: 6%;
     background: #0c0b26;
 
-    box-shadow: 0 5px 15px 0px rgba(255, 115, 0, 0.6);
+    box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -506,4 +506,12 @@ li a {
     article {
       padding: 1rem 3rem;
     }
+}
+
+.fa-brands{
+    color: #e99122;
+    font-size: 25px;
+    margin-right: 4px;
+    margin-top: 25px;
+
 }
