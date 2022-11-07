@@ -218,6 +218,7 @@ li {
 
 li a {
     color: white;
+    text-decoration: none;
 }
 .logo{
     flex-direction: row;
