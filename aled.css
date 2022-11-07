@@ -314,9 +314,11 @@ li a {
 }
 
 .test {
+    margin-top: -20%;
     display: flex;
     flex-direction: row;
 }
+
 .bouton2{
     height: 7%;
     width: 4%;
@@ -327,7 +329,7 @@ li a {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 180%; 
+    top: 170%; 
     cursor: pointer; 
 }
 .fleche{
