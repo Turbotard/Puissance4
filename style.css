@@ -151,12 +151,20 @@ button {
     color: white;
     background-color: orange;
     border-style: none;
-    margin-top: 25px;  
+    margin-top: 25px;
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
 
 button:hover {
     background-color: white;
     color: orange;
+
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
 }
 
 .LoremIpsum {
@@ -391,7 +399,7 @@ button:hover {
     padding: 6%;
     background: #0c0b26;
 
-    box-shadow: 0 5px 15px 0px rgba(255, 115, 0, 0.6);
+    box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
     animation: float 6s ease-in-out infinite;
 }
 
@@ -506,4 +514,12 @@ li a {
     article {
       padding: 1rem 3rem;
     }
+}
+
+.fa-brands{
+    color: #e99122;
+    font-size: 25px;
+    margin-right: 4px;
+    margin-top: 25px;
+
 }
