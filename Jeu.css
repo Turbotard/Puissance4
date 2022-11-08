@@ -510,6 +510,13 @@ li a {
     display: flex;
     flex-direction: row;
 }
+table tr td{
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    border:1px solid black;
+    width: 100%;
+}
 @media screen and (max-width: 900px) {
     article {
       padding: 1rem 3rem;
