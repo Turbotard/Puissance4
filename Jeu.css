@@ -510,12 +510,20 @@ li a {
     display: flex;
     flex-direction: row;
 }
+table{
+    margin-left: 29%;
+}
+table td{
+    padding: 50px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+}
 table tr td{
-    display: flex;
-    align-items: center;
-    margin-left: 1260%;
+    
+    
     border:1px solid black;
-    width: 100%;
+    
 }
 @media screen and (max-width: 900px) {
     article {
