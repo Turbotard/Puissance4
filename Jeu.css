@@ -513,7 +513,7 @@ li a {
 table tr td{
     display: flex;
     align-items: center;
-    margin-left: 5%;
+    margin-left: 1260%;
     border:1px solid black;
     width: 100%;
 }
