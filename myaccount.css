@@ -1,0 +1,9 @@
+body {
+    background-color:#11102f;
+    height: auto;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#logs {
+    background-color: #0f0e2e;
+}
