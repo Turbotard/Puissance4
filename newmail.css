@@ -7,7 +7,6 @@ body {
 header {
     justify-content: space-around;
 }
-
 #header {
     width: 100%;
     height: auto;
@@ -22,7 +21,6 @@ header {
     background-position: 35% 60%;
     background-size: cover;
     margin-top: 5%;
-
 }
 #opaque {
     position: relative;
@@ -36,36 +34,27 @@ header {
     color: white;
     text-align: center;
 }
-
-
-
 h1 {
     display: flex;
     margin-left: 26%;
     margin-top: 3%;
     color: rgb(251, 251, 251);
-    font-size: 40px;
-    
-    
+    font-size: 40px;   
 }
 p {
     display: flex;
     color : white;
     margin-left: 0%;
-
-
 }
 #boxe {
     display: flex;
     justify-content: space-between;
 }
-
 #boxe1 {
     margin-left: 70px;
     opacity: 1;
     margin-top: 10px;
 }
-
 #boxe2 {
     display: flex;
     float: right;
@@ -74,27 +63,21 @@ p {
     margin-right: 20px;
     justify-content: space-between;
     margin-top: 5px;
-
 }
-
 #boxe2 li {
     list-style-type: none;
-
 }
-
 #boxe2 a {
     display:block;                
-    min-width: 90px;          
-    
+    min-width: 90px;             
     margin: 2px;             
     padding: 0.4rem 0;            
     text-align: center;         
     font-size: small;
     color: #fff;                
-    text-decoration: none;        
-    
+    text-decoration: none;           
 }
-#boxe2 a:hover{
+#boxe2 a:hover {
     opacity: 0.76;
     color: orange;
 }
@@ -111,7 +94,7 @@ p {
     flex-direction:column;
     margin-top: -5%;
 }
-.mail{
+.mail {
     display: flex;
     flex-direction:column;
 }
@@ -123,11 +106,11 @@ p {
     align-items: center;
     flex-direction:column;
 }
-.password{
+.password {
     display: flex;
     flex-direction:column;
 }
-.mailInput{
+.mailInput {
     background-color: #282645;
     border: none;
     color: #6a6c80;
@@ -137,7 +120,7 @@ p {
     margin-top: 10px;
     padding-left: 22px;
 }
-.newpassword{
+.newpassword {
     background-color: #0f0e2e;
     width: 100%;
     height: 460px;
@@ -147,12 +130,11 @@ p {
     flex-direction:column;
     margin-top: -5%;
 }
-.password{
+.password {
     display: flex;
     flex-direction:column;
 }
-
-.btnConnect{
+.btnConnect {
     cursor: pointer;
     background-color: #e99122;
     color: white;
@@ -164,8 +146,7 @@ p {
     margin-top: 15px;
     margin-left: -0.1%;
 }
-
-button{
+button {
     margin-left: 36%;
     border-radius: 3%;
     padding-left: 1%;
@@ -179,16 +160,15 @@ button{
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    
+	transition: .3s ease-in-out;  
 }
-button:hover{
+button:hover {
     background-color: white;
     color: orange;
     -webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-.footer{
+.footer {
     background-color: #0e0b26;
     width: 100%;
     height: 450px;
@@ -196,62 +176,54 @@ button:hover{
     justify-content: space-evenly;
     
 }
-.box11{
+.box11 {
     display: flex;
     flex-direction: column;
     width: 40%;
     margin-left: 150px;
     margin-top: 100px;
 }
-.fa-brands{
+.fa-brands {
     color: #e99122;
     font-size: 25px;
     margin-right: 4px;
     margin-top: 25px;
-
 }
-.box22{
+.box22 {
     width: 40%;
     margin-left: 90px;
     margin-top: 100px;
-
 }
-.white{
+.white {
     color: white;
     font-family: 'muli-semibold', sans-serif;
 }
-
-.orange{
+.orange {
     color: #e99122;
 }
-.gris{
+.gris {
     color: #6a6c80;
     font-size: 0.8em;
     margin-top: 20px;
-
 }
-
 .bullet a:link {
     color: #6a6c80;
     background-color: transparent;
     text-decoration: none;
     font-size: 0.8em;
-
-  }
-
-#bullet li::marker{
-
+}
+#bullet li::marker {
     color: #e99122;
 }
-.bullet{
+.bullet {
     margin-top: 20px;
     list-style-type: square;
 }
-.copy{
+.copy {
     color: #6a6c80;
     font-size: 0.75em;
 }
-.bouton2{
+.bouton2 {
     height: 7%;
     width: 4%;
     background: rgba(255, 166, 0, 0.425);
@@ -264,15 +236,13 @@ button:hover{
     top: 132%; 
     cursor: pointer; 
 }
-.fleche{
+.fleche {
     color: rgba(255, 255, 255, 0.463);
     width: -1%;
 }
-
-.fa-brands{
+.fa-brands {
     color: #e99122;
     font-size: 25px;
     margin-right: 4px;
     margin-top: 25px;
-
 }
