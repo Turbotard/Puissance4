@@ -523,3 +523,37 @@ li a {
     margin-top: 25px;
 
 }
+
+.chatbox {
+    height: 60%;
+    width: 30%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 30%;
+}
+
+.tete {
+    background-color: #13ff66;
+    top: 0;
+    height: 15%;
+    width: auto;
+}
+
+.tete img {
+    clip-path: ellipse(50% 50%);
+    height: 10%;
+    width: 10%;
+}
+
+.corps {
+    background-color: red;
+    height: 75%;
+    width: auto;
+}
+
+.pied {
+    background-color: green;
+    height: 10%;
+    width: auto;
+}
