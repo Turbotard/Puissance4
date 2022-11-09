@@ -194,7 +194,7 @@ button:hover{
     height: 450px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20%;
+    
 }
 .box11{
     display: flex;
@@ -261,7 +261,7 @@ button:hover{
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 160%; 
+    top: 132%; 
     cursor: pointer; 
 }
 .fleche{
