@@ -98,6 +98,9 @@ p {
     opacity: 0.76;
     color: orange;
 }
+.slogan2 {
+    color: white;
+}
 .newmail {
     background-color: #0f0e2e;
     width: 100%;
@@ -173,11 +176,17 @@ button{
     background-color: orange;
     border-style: none;
     margin-bottom: 2%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
     
 }
 button:hover{
     background-color: white;
     color: orange;
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
 footer{
     display: flex;
@@ -279,7 +288,7 @@ li a {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 130%; 
+    top: 200%; 
     cursor: pointer; 
 }
 .fleche{
