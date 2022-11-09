@@ -4,7 +4,6 @@ body {
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 header {
     justify-content: space-around;
 }
@@ -13,10 +12,8 @@ header {
     width: 100%;
     height: auto;
     justify-content: space-around;
-    margin-bottom: 10%;
-    
+    margin-bottom: 10%; 
 }
-
 #back {
     position: absolute;
     width: 100%;
@@ -27,12 +24,10 @@ header {
     margin-top: 5%;
 
 }
-
 #opaque {
     position: relative;
     opacity: 1;
 }
-
 #entree {
     display: flex;
     flex-direction: column;
@@ -42,14 +37,17 @@ header {
     text-align: center;
 }
 
+
+
 h1 {
     display: flex;
-    margin-left: 45%;
+    margin-left: 26%;
     margin-top: 3%;
     color: rgb(251, 251, 251);
-    font-size: 40px;  
+    font-size: 40px;
+    
+    
 }
-
 p {
     display: flex;
     color : white;
@@ -57,7 +55,6 @@ p {
 
 
 }
-
 #boxe {
     display: flex;
     justify-content: space-between;
@@ -94,118 +91,87 @@ p {
     text-align: center;         
     font-size: small;
     color: #fff;                
-    text-decoration: none;  
+    text-decoration: none;        
+    
 }
-
-#boxe2 a:hover {
+#boxe2 a:hover{
     opacity: 0.76;
     color: orange;
 }
-
-.telephone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 10%;
+.slogan2 {
+    color: white;
 }
-
-.contact {
+.newmail {
+    background-color: #0f0e2e;
+    width: 100%;
+    height: 460px;
     display: flex;
-    justify-content: center;
-    height: 90%;
-    width: 75%;
-}
-
-.aya {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:aliceblue;
-    font-size: 150%;
-    margin-right: 5%;
-    width: 20%;
-    height: 30%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    background: #0c0b26;
+    flex-direction:column;
+    margin-top: -5%;
 }
-
-.logo {
-    height: 40%;
-    width: 40%;
-    margin-bottom: 15%;
-    margin-top: 20%;
-}
-
-.text {
-    color:white;
-    font-size: 55%;
-    text-align: center;
-}
-
-form input {
-    color: white;
+.mail{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+}
+.newpassword {
+    background-color: #0f0e2e;width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.password{
+    display: flex;
+    flex-direction:column;
+}
+.mailInput{
     background-color: #282645;
-    border-radius: 3px;
-    border:none;
-    margin-left: 10%; 
+    border: none;
+    color: #6a6c80;
+    border-radius: 5px;
+    width: 375px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 22px;
 }
-
-.nom {
-    padding-bottom: 0.75%;
-    padding-top: 0.75%;
-    padding-left: 1%;
-    padding-right: 2%;
-}
-
-.mail {
+.newpassword{
+    background-color: #0f0e2e;
+    width: 100%;
+    height: 460px;
     display: flex;
-    margin-left: 24.75%;
-    margin-top: -2.63%;
-    margin-bottom: 1%;
-    padding-bottom: 0.75%;
-    padding-top: 0.75%;
-    padding-left: 1%;
-    padding-right: 2%;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: -5%;
 }
-
-.sujet {
+.password{
     display: flex;
-    margin-bottom:1%;
-    padding-bottom: 0.75%;
+    flex-direction:column;
+}
+
+.btnConnect{
+    cursor: pointer;
+    background-color: #e99122;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    align-content: flex-start;
+    margin-top: 15px;
+    margin-left: -0.1%;
+}
+
+button{
+    margin-left: 36%;
+    border-radius: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     padding-top: 0.75%;
-    padding-left: 1%;
-    padding-right: 16.70%;
-}
-
-.msg {
-    display: flex;
-    margin-bottom: 1%;
-    padding-bottom: 7%;
-    padding-top: 1.25%;
-    padding-left: 1%;
-    padding-right: 16.70%;
-}
-
-form {
-    margin-top: -8%;
-    margin-bottom: 80px;
-    margin-right: 92px;
-    margin-left: 4%;
-    
-}
-
-button {
-    margin-left: 10%;
-    border-radius: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 0.75%;
     color: white;
     background-color: orange;
     border-style: none;
@@ -214,80 +180,103 @@ button {
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
+    
 }
-
-button:hover {
+button:hover{
     background-color: white;
     color: orange;
     -webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-
-.inscription {
-    margin-left: 40%;
-}
-
-.footer{
-    background-color: #0e0b26;
-    width: 100%;
-    height: 450px;
+footer{
     display: flex;
-    justify-content: space-evenly;
+    background-color: #0c0b26;
+    border-style: inset;
+    border-width: 5px;
+    border-radius: 4px;
+    border-color: #020209;
+    height: 50%;
+    width: 100%;
 }
-.box11{
+.box1{
+    padding-right: 35%;
     display: flex;
     flex-direction: column;
-    width: 40%;
-    margin-left: 150px;
-    margin-top: 100px;
+    
 }
-.fa-brands{
-    color: #e99122;
-    font-size: 25px;
-    margin-right: 4px;
-    margin-top: 25px;
+.box2{
+    padding-top: 10px;
+}
+#footg{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
 
 }
-.box22{
-    width: 40%;
-    margin-left: 90px;
-    margin-top: 100px;
 
-}
-.white{
+.box1 h3{
     color: white;
-    font-family: 'muli-semibold', sans-serif;
+    font-size: 130%;
 }
 
-.orange{
-    color: #e99122;
+#footg h3{
+    color: white;
+    font-size: 133%;
+    
 }
-.gris{
-    color: #6a6c80;
-    font-size: 0.8em;
-    margin-top: 20px;
-
+#footg p{
+    margin-left: 5px;
+    margin-top: 22px;
+    color: whitesmoke;
 }
-
-.bullet a:link {
-    color: #6a6c80;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: 0.8em;
-
-  }
-
-#bullet li::marker{
-
-    color: #e99122;
+h5{
+    color :orange;
+    padding-bottom: 2px;
+    font-size: 14px;
+    
 }
-.bullet{
-    margin-top: 20px;
+.box2 h3 {
+    margin-left: 20px;
+    color: white;
+    font-size: 130%;
+}
+#foot{
+    padding-right: auto;
+}
+#foot li::marker{
+    color : orange;
+}
+.foot{
+    
     list-style-type: square;
 }
-.copy{
-    color: #6a6c80;
-    font-size: 0.75em
+li {
+    margin-top: 25px;
+    
+}
+
+li a {
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    flex-direction: row;
+    order : -1;
+    padding-left: 5px;
+    max-width: fit-content;
+
+    
+    
+}
+.logo a img {
+    width: 30px;
+    height: auto;
+
+}
+
+.test{
+    display: flex;
+    flex-direction: row;
 }
 .bouton2{
     height: 7%;
@@ -299,7 +288,7 @@ button:hover {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 170%; 
+    top: 160%; 
     cursor: pointer; 
 }
 .fleche{
