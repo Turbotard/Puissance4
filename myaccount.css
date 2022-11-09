@@ -36,9 +36,6 @@ header {
     color: white;
     text-align: center;
 }
-
-
-
 h1 {
     display: flex;
     margin-left: 42%;
@@ -97,6 +94,77 @@ p {
 #boxe2 a:hover{
     opacity: 0.76;
     color: orange;
+}
+.deroule{
+    float: left;
+    width: 25%;
+    margin: 0 auto;
+    top: 0%;
+}
+.deroule ul{
+    list-style-type: none;
+}
+.deroule ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.deroule ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.deroule .menu{
+    display: block;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+.menu:hover{ 
+    cursor: pointer;
+    color: #e99122;
+    border-bottom: 2px solid gold;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    background-color: #11102f;
+}
+.deroule > ul li:hover .sous{
+    display: flex;
+    flex-direction: column;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+.sous .menu{
+    padding: 10px;
+    border-bottom: none;
+}
+.sous .menu:hover{
+    border-bottom: none;
+    background-color: RGBa(200,200,200,0.1);
+}
+.deroulant > .menu::after{
+    content: ▼;
+    font-size: 12px;
+}
+.sous{
+    display: none;
+    box-shadow: 0px 1px 2px #11102f;
+    position: absolute;
+    background-color: #11102f;
+    width: 100%;
+    z-index: 1000%;
+}
+.deroule ul li{
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: relative;
 }
 .slogan2 {
     color: white;
@@ -197,6 +265,7 @@ footer{
     border-color: #020209;
     height: 50%;
     width: 100%;
+    margin-top: 50%;
 }
 .box1{
     padding-right: 35%;
