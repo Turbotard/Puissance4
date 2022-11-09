@@ -37,15 +37,21 @@ header {
     color: white;
     text-align: center;
 }
+
 h1 {
     display: flex;
     margin-left: 42%;
     margin-top: 3%;
-    color: rgb(251, 251, 251);
+    color: orange;
     font-size: 40px;
     
     
 }
+.slogan1{
+    color:white
+}
+
+
 p {
     display: flex;
     color : white;
@@ -117,13 +123,15 @@ a {
     height: auto;
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.156);
-    box-shadow: orange 0px 5px 15px;
+    box-shadow: rgb(255, 255, 255) 0px 5px 15px;
     position: absolute;
     top: 60%;
     left: 48%;
     transform: translate(-50%, -50%);
     z-index: 1;
     overflow: hidden;
+    margin-top: 2%;
+    
   }
   
   .leaderboard {
