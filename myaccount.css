@@ -125,7 +125,7 @@ p {
 .sous li {
     float: none;
     width: 100%;
-    text-align: left;
+    text-align: center;
 }
 .sous .menu {
     padding: 10px;
@@ -150,7 +150,7 @@ p {
 .deroule ul li {
     float: left;
     width: 100%;
-    text-align: center;
+    text-align: left;
     position: relative;
 }
 .footer {
