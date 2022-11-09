@@ -491,3 +491,20 @@ button:hover {
     margin-top: 25px;
 
 }
+.bouton2{
+    height: 7%;
+    width: 4%;
+    background: rgba(255, 166, 0, 0.425);
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 3%;
+    top: 362%; 
+    cursor: pointer;
+}
+.fleche{
+    color: rgba(255, 255, 255, 0.463);
+    width: -1%;
+}
