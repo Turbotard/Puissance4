@@ -212,11 +212,44 @@ a {
     border-radius: 10px;
     margin-top: 2%;
   }
-
-
-
-
-
+  
+  .tableau{
+    display: flex;
+    text-align: left;
+    margin-bottom: -40%;
+    margin-left: 31%;
+    margin-top: 2%;
+  }
+  .niveau{
+    margin-top: 0%;
+  }
+  .niveau2{
+    margin-top: 60%;
+  }
+  .niveau3{
+    margin-top: 60%;
+  }
+  .niveau4{
+    margin-top: 60%;
+  }
+  .niveau5{
+    margin-top: 60%;
+  }
+  .date{
+    margin-left: 110%;
+  }
+  .date2{
+    margin-left: 110%;
+  }
+  .date3{
+    margin-left: 110%;
+  }
+  .date4{
+    margin-left: 110%;
+  }
+  .date5{
+    margin-left: 110%;
+  }
 
 
 
