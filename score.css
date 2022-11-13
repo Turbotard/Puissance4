@@ -213,45 +213,33 @@ a {
     margin-top: 2%;
   }
   
-  .tableau{
-    display: flex;
-    text-align: left;
-    margin-bottom: -40%;
-    margin-left: 31%;
-    margin-top: 2%;
-  }
   .niveau{
-    margin-top: 0%;
-  }
-  .niveau2{
-    margin-top: 60%;
-  }
-  .niveau3{
-    margin-top: 60%;
-  }
-  .niveau4{
-    margin-top: 60%;
-  }
-  .niveau5{
-    margin-top: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 150px;
+    
   }
   .date{
-    margin-left: 110%;
+    display: flex;
+    text-align:center;
+    margin-right: 180px;
   }
   .date2{
-    margin-left: 110%;
+    display: flex;
+    text-align:center;
+    margin-right: 169px;
   }
   .date3{
-    margin-left: 110%;
+    display: flex;
+    text-align:center;
+    margin-right: 160px;
   }
-  .date4{
-    margin-left: 110%;
+  .niveau2{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 160px;
+    
   }
-  .date5{
-    margin-left: 110%;
-  }
-
-
 
   .footer{
     background-color: #0e0b26;
