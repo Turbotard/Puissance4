@@ -216,28 +216,28 @@ a {
   .niveau{
     display: flex;
     justify-content: space-between;
-    margin-right: 150px;
+    margin-right: 140px;
     
   }
   .date{
     display: flex;
     text-align:center;
-    margin-right: 180px;
+    margin-right: 160px;
   }
   .date2{
     display: flex;
     text-align:center;
-    margin-right: 169px;
+    margin-right: 150px;
   }
   .date3{
     display: flex;
     text-align:center;
-    margin-right: 160px;
+    margin-right: 140px;
   }
   .niveau2{
     display: flex;
     justify-content: space-between;
-    margin-right: 160px;
+    margin-right: 150px;
     
   }
 
