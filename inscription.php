@@ -51,12 +51,13 @@ $sth->execute();
     </header>
     <section class="login">
         <div class="logs">
+            <form method="post">
             <input class="mailInput" type="email" name="mail" placeholder="Email">
             <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo">
             <input class="mailInput" type="password" name="mdp" placeholder="Mot de passe">
             <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
-            <button class="btnConnect">S'inscrire</button>
-
+            <input class="btnConnect" type="submit" name="inscription" value="S'inscrire">
+            </form>
         </div>
 
     </section>
