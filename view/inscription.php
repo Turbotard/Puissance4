@@ -1,3 +1,15 @@
+<?php
+require ('./includes/database.inc.php'); 
+if( isset($_POST['connexion'])){    
+$name -> $_POST['name'];
+$email -> $_POST['mail'];
+$password -> $_POST['mdp'];  
+
+$sth = $dbh->prepare('INSERT INTO inscription (email, mdp, pseudo,date_heure_inscr,date_heure_last) VALUES (:email, :password, :name,2022-10-13 12:22:59,2022-10-13 12:22:59 )');
+$sth->execute();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,12 +51,13 @@
     </header>
     <section class="login">
         <div class="logs">
-            <input class="mailInput" type="email" placeholder="Email">
-            <input class="mailInput" type="username" placeholder="Pseudo">
-            <input class="mailInput" type="password" placeholder="Mot de passe">
+            <form method="post">
+            <input class="mailInput" type="email" name="mail" placeholder="Email">
+            <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo">
+            <input class="mailInput" type="password" name="mdp" placeholder="Mot de passe">
             <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
-            <button class="btnConnect">S'inscrire</button>
-
+            <input class="btnConnect" type="submit" name="inscription" value="S'inscrire">
+            </form>
         </div>
 
     </section>
