@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mer. 09 nov. 2022 à 08:51
+-- Généré le : mar. 15 nov. 2022 à 15:44
 -- Version du serveur : 5.7.34
--- Version de PHP : 7.4.21
+-- Version de PHP : 8.0.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,20 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `puissance4`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `inscription`
+--
+
+CREATE TABLE `inscription` (
+  `ID` int(11) NOT NULL,
+  `mail` varchar(255) NOT NULL,
+  `mdp` varchar(255) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
+  `date_heure_inscr` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -77,8 +91,21 @@ CREATE TABLE `utilisateur` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Déchargement des données de la table `utilisateur`
+--
+
+INSERT INTO `utilisateur` (`ID`, `email`, `mdp`, `pseudo`, `date_heure_inscr`, `date_heure_last`) VALUES
+(1, 'aya.lakhel11@gmail.com', 'jeveuxlescheveuxderoro', 'roro_cheveux_de_reve', '2022-11-15 14:28:41', '2022-11-15 14:28:41');
+
+--
 -- Index pour les tables déchargées
 --
+
+--
+-- Index pour la table `inscription`
+--
+ALTER TABLE `inscription`
+  ADD PRIMARY KEY (`ID`);
 
 --
 -- Index pour la table `jeu`
@@ -109,6 +136,12 @@ ALTER TABLE `utilisateur`
 --
 
 --
+-- AUTO_INCREMENT pour la table `inscription`
+--
+ALTER TABLE `inscription`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT pour la table `jeu`
 --
 ALTER TABLE `jeu`
@@ -130,7 +163,7 @@ ALTER TABLE `scores`
 -- AUTO_INCREMENT pour la table `utilisateur`
 --
 ALTER TABLE `utilisateur`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
