@@ -5,7 +5,7 @@ $name -> $_POST['name'];
 $email -> $_POST['mail'];
 $password -> $_POST['mdp'];  
 
-$sth = $dbh->prepare('INSERT INTO utilisateur (email, mdp, pseudo,date_heure_inscr,date_heure_last) VALUES (:email, :password, :name,2022-10-13 12:22:59,2022-10-13 12:22:59 )');
+$sth = $dbh->prepare('INSERT INTO inscription (email, mdp, pseudo,date_heure_inscr,date_heure_last) VALUES (:email, :password, :name,2022-10-13 12:22:59,2022-10-13 12:22:59 )');
 $sth->execute();
 }
 ?>
