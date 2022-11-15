@@ -7,3 +7,4 @@ if($_POST){
     $dbh = new PDO('mysql:host=localhost;dbname=puissance4', $user, $pass);
 
 }     
+?>
