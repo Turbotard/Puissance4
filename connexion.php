@@ -1,5 +1,8 @@
 
 <?PHP
+require ('./includes/database.inc.php');
+
+$error = 0;
 
 if( isset($_POST['connexion'])){
 
@@ -7,10 +10,15 @@ if( isset($_POST['connexion'])){
     $password = $_POST['password'];
 
     
-    $sth = $dbh->query('SELECT * FROM utilisateur WHERE email = $email AND mdp = $password;');
+    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
+    $sth->execute(['email'=> $email, 'password'=> $password]);
     $donnees = $sth->fetch();
-    print_r($donnees);
+    if( $donnees == '' )
+        $error = 1;
+    else
+        header('Location: ./site.php');
 }
+
 ?>
 
 
