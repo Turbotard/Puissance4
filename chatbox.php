@@ -20,10 +20,10 @@
                 <p><strong>The Power Of Memory</strong></p>
             </div>
             <div id="boxe2">
-                <a href="Site.html"> <strong> ACCUEIL </strong></a>
-                <a href="connexion.html"> <strong> JEU </strong></a>
-                <a href="connexion.html"> <strong> SCORE </strong></a>
-                <a href="aled.html"> <strong> ALED </strong></a>
+                <a href="Site.php"> <strong> ACCUEIL </strong></a>
+                <a href="connexion.php"> <strong> JEU </strong></a>
+                <a href="connexion.php"> <strong> SCORE </strong></a>
+                <a href="aled.php"> <strong> ALED </strong></a>
             </div>
             
         </nav>
@@ -31,7 +31,7 @@
         <div id="entree">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
-            <a href="connexion.html" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
+            <a href="connexion.php" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
         </div>
             </div>
@@ -166,9 +166,9 @@
             <h3>Power of Memory</h3>
             <div id="foot">
                 <ul class="foot">
-                    <li><a href="connexion.html">Jouer !</a></li>
-                    <li><a href="connexion.html">Les scores </a></li>
-                    <li><a href="aled.html">Aled !</a></li>
+                    <li><a href="connexion.php">Jouer !</a></li>
+                    <li><a href="connexion.php">Les scores </a></li>
+                    <li><a href="aled.php">Aled !</a></li>
                 </ul>
             </div> 
         </div>
