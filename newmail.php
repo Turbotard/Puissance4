@@ -21,10 +21,10 @@
             <p><strong>The Power Of Memory</strong></p>
         </div>
         <div id="boxe2">
-            <a href="Site.html"> <strong> ACCUEIL </strong></a>
-            <a href="connexion.html"> <strong> JEU </strong></a>
-            <a href="score.html"> <strong> SCORE </strong></a>
-            <a href="aled.html"> <strong> ALED </strong></a>
+            <a href="Site.php"> <strong> ACCUEIL </strong></a>
+            <a href="connexion.php"> <strong> JEU </strong></a>
+            <a href="score.php"> <strong> SCORE </strong></a>
+            <a href="aled.php"> <strong> ALED </strong></a>
         </div>
         </nav>
         <div id="entree">
