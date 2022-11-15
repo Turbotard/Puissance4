@@ -1,3 +1,19 @@
+
+<?PHP
+
+if( isset($_POST['connexion'])){
+
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    
+    $sth = $dbh->query('SELECT * FROM utilisateur WHERE email = $email AND mdp = $password;');
+    $donnees = $sth->fetch();
+    print_r($donnees);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,10 +55,11 @@
     </header>
         <section class="login">
             <div class="logs">
-                <input class="mailInput" type="email" placeholder="Email">
-                <input class="mailInput" type="password" placeholder="Mot de passe">
-                <button class="btnConnect">Connexion</button>
-    
+                <form method="post">
+                    <input class="mailInput" name="email" type="email" placeholder="Email">
+                    <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
+                    <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">
+                </form>
             </div>
             <div class="inscription">
                 <a class="inscription2" href="inscription.php"> Inscription  </a>
