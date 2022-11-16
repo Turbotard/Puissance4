@@ -2,9 +2,11 @@
 <?PHP
 require ('./includes/database.inc.php');
 
-$error = 0;
+session_start();
 
-if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || isset($_POST['password'])){
+$error = 0;
+if(isset($_POST['email']) || isset($_POST['password'])){
+if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
@@ -13,11 +15,12 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || isset($_POST['password
     $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
     $sth->execute(['email'=> $email, 'password'=> $password]);
     $donnees = $sth->fetch();
+    $_SESSION['user'] = $donnees;
     if( $donnees == '' )
         $error = 1;
     else
         header('Location: ./site.php');
-}
+}}
 
 ?>
 <?php 
