@@ -4,7 +4,7 @@ require ('./includes/database.inc.php');
 
 $error = 0;
 
-if( isset($_POST['connexion'])){
+if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || isset($_POST['password'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
