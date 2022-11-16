@@ -84,6 +84,12 @@ p {
 .slogan2 {
     color: white;
 }
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;  
+}
 .newmail {
     background-color: #0f0e2e;
     width: 100%;

@@ -16,7 +16,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 </head>
 <body>
         <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">       
-            <h1 class="slogan1"><stronger> MODIFIER MON ADRESSE MAIL</stronger></h1>
+            <h1 class="slogan3"><stronger> MODIFIER MON ADRESSE MAIL</stronger></h1>
     <section class="newmail">
         <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
     <div class="mail">
