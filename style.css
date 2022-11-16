@@ -492,16 +492,16 @@ button:hover {
 
 }
 .bouton2{
-    height: 7%;
-    width: 4%;
+    height: 2.5%;
+    width: 5%;
     background: rgba(255, 166, 0, 0.425);
-    border-radius: 8%;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     right: 3%;
-    top: 362%; 
+    top: 95%; 
     cursor: pointer;
 }
 .fleche{

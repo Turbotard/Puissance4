@@ -4,6 +4,7 @@
     height: 450px;
     display: flex;
     justify-content: space-evenly;
+    top: 200%;
 }
 .box11{
     display: flex;
@@ -67,27 +68,4 @@
     }
 }
 
-.fa-brands{
-    color: #e99122;
-    font-size: 25px;
-    margin-right: 4px;
-    margin-top: 25px;
 
-}
-.bouton2{
-    height: 7%;
-    width: 4%;
-    background: rgba(255, 166, 0, 0.425);
-    border-radius: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 3%;
-    top: 2%; 
-    cursor: pointer;
-}
-.fleche{
-    color: rgba(255, 255, 255, 0.463);
-    width: -1%;
-}
