@@ -240,6 +240,7 @@ p {
 .copy{
     color: #6a6c80;
     font-size: 0.75em;
+    margin-top: auto;
 }
 .bouton2{
     height: 7%;
