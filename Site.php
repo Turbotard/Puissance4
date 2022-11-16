@@ -1,5 +1,5 @@
 <?php
-require "/Applications/MAMP/htdocs/Puissance4/view/header.html";
+require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -119,5 +119,5 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.html";
 </body>
 </html>
 <?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.html";
+require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
 ?>
