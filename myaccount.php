@@ -16,7 +16,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 <body>
 <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
             <div id="entree">
-                <h1 class="slogan1"><stronger> MON PROFIL</stronger></h1>
+                <h1 class="slogan3"><stronger> MON PROFIL</stronger></h1>
             </div>
 
     <section class="deroule">
