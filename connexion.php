@@ -6,9 +6,12 @@ $error = 0;
 
 if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || isset($_POST['password'])){
 
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
     
-    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = ? AND mdp = ?');
-    $sth->execute([$_POST['email'], $_POST['password']]);
+    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
+    $sth->execute(['email'=> $email, 'password'=> $password]);
     $donnees = $sth->fetch();
     if( $donnees == '' )
         $error = 1;

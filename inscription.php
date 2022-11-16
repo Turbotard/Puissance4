@@ -1,10 +1,12 @@
 <?php
 require ('./includes/database.inc.php'); 
 
-if(isset($_POST['name']) || isset($_POST['email']) || isset($_POST['password']))
+if(isset($_POST['name']) || isset($_POST['email']))
 {
 
-$sth = $dbh->prepare("INSERT INTO utilisateur (email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES (?, ?, ?, NOW(), NOW())");
+
+
+$sth = $dbh->prepare("INSERT INTO inscription (mail, mdp, pseudo, date_heure_inscr) VALUES (?, ?, ?, NOW())");
 $sth->execute([$_POST['email'], $_POST['password'], $_POST['name']]);
 }
 

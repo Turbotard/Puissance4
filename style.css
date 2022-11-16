@@ -502,7 +502,7 @@ button:hover {
     position: absolute;
     margin-bottom: 90%;
     right: 3%;
-    top: 95%; 
+    top: 100%; 
     cursor: pointer;
 }
 .fleche{
