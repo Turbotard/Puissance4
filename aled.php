@@ -1,3 +1,22 @@
+<?PHP
+require ('./includes/database.inc.php');
+$error = 0;
+if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+    $nom =$_POST['nom'];
+    $email = $_POST['email'];
+    $sujet =$_POST['sujet'];
+    $message =$_POST['message'];
+    $sth = $dbh('SELECT * FROM utilisateur WHERE email = :email');
+    $sth->execute(['email'=>$email]);
+    $donnes = $sth->fetch();
+    if($donnes == ''){
+        $error = 1;
+    }
+    else
+        header('location: .site.php');
+        mail($email,$sujet,$message." vous nous avez demandez de l'aide");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,11 +62,11 @@
 
     <div class="formulaire">
     <form>
-        <input type="text" name="haha" id="nom" placeholder="Nom" class="nom">
-        <input type="email" name="haha" id="email" placeholder="Email" class="mail">
-        <input type="text" name="haha" id="sujet" placeholder="Sujet"class="sujet" >
-        <input type="text" name="haha" id="message" placeholder="Message" class="msg">
-        <button class="bouton" type="button"> Envoyer</button> 
+        <input type="text" name="nom" id="nom" placeholder="Nom" class="nom">
+        <input type="email" name="email" id="email" placeholder="Email" class="mail">
+        <input type="text" name="sujet" id="sujet" placeholder="Sujet"class="sujet" >
+        <input type="text" name="message" id="message" placeholder="Message" class="msg">
+        <input class="bouton" type="submit" name="aled" value="Envoyer">
     </form>
     </div>
 
