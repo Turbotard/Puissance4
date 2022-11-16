@@ -1,6 +1,7 @@
 
 <?PHP
 require ('./includes/database.inc.php');
+session_start();
 
 $error = 0;
 
@@ -13,6 +14,8 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL) || isset($_POST['password
     $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
     $sth->execute(['email'=> $email, 'password'=> $password]);
     $donnees = $sth->fetch();
+    $_SESSION['user'] = $donnees;
+
     if( $donnees == '' )
         $error = 1;
     else
