@@ -492,8 +492,8 @@ button:hover {
 
 }
 .bouton2{
-    height: 2.5%;
-    width: 5%;
+    height: 7%;
+    width: 4%;
     background: rgba(255, 166, 0, 0.425);
     border-radius: 5px;
     display: flex;
@@ -502,7 +502,7 @@ button:hover {
     position: absolute;
     margin-bottom: 90%;
     right: 3%;
-    top: 95%; 
+    top: 195%; 
     cursor: pointer;
 }
 .fleche{

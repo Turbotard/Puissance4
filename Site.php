@@ -19,7 +19,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
-            <a href="connexion.html" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
+            <a href="connexion.php" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
     
 
