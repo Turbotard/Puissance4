@@ -1,3 +1,9 @@
+body {
+    background-color:#11102f;
+    height: auto;
+    width: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 .slogan1 {
     font-size: 60px;
     margin-right: 20%;
