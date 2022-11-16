@@ -84,6 +84,12 @@ p {
 .slogan2 {
     color: white;
 }
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;  
+}
 .newmail {
     background-color: #0f0e2e;
     width: 100%;
@@ -233,7 +239,7 @@ button:hover {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 132%; 
+    top: 140%; 
     cursor: pointer; 
 }
 .fleche {
