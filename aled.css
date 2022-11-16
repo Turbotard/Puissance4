@@ -1,9 +1,10 @@
-body{
+body {
     background-color:#11102f;
     height: auto;
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
 header {
     justify-content: space-around;
 }
@@ -12,8 +13,10 @@ header {
     width: 100%;
     height: auto;
     justify-content: space-around;
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
+    
 }
+
 #back {
     position: absolute;
     width: 100%;
@@ -24,10 +27,12 @@ header {
     margin-top: 5%;
 
 }
+
 #opaque {
     position: relative;
     opacity: 1;
 }
+
 #entree {
     display: flex;
     flex-direction: column;
@@ -37,17 +42,14 @@ header {
     text-align: center;
 }
 
-
-
 h1 {
     display: flex;
-    margin-left: 42%;
+    margin-left: 45%;
     margin-top: 3%;
     color: rgb(251, 251, 251);
-    font-size: 40px;
-    
-    
+    font-size: 40px;  
 }
+
 p {
     display: flex;
     color : white;
@@ -55,6 +57,7 @@ p {
 
 
 }
+
 #boxe {
     display: flex;
     justify-content: space-between;
@@ -91,58 +94,118 @@ p {
     text-align: center;         
     font-size: small;
     color: #fff;                
-    text-decoration: none;        
-    
+    text-decoration: none;  
 }
-#boxe2 a:hover{
+
+#boxe2 a:hover {
     opacity: 0.76;
     color: orange;
 }
-.mailInput{
-    background-color: #282645;
-    border: none;
-    color: #6a6c80;
-    border-radius: 5px;
-    width: 375px;
-    height: 40px;
-    margin-top: 10px;
-    padding-left: 22px;
+
+.telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
 }
-.login{
-    background-color: #0f0e2e;
-    width: 100%;
-    height: 460px;
+
+.contact {
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    margin-top: -5%;
+    height: 90%;
+    width: 75%;
 }
-.logs{
+
+.aya {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    font-size: 150%;
+    margin-right: 5%;
+    width: 20%;
+    height: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    background: #0c0b26;
 }
 
-.btnConnect{
-    cursor: pointer;
-    background-color: #e99122;
+.logo {
+    height: 40%;
+    width: 40%;
+    margin-bottom: 15%;
+    margin-top: 20%;
+}
+
+.text {
+    color:white;
+    font-size: 55%;
+    text-align: center;
+}
+
+form input {
     color: white;
-    border: none;
-    border-radius: 5px;
-    width: 110px;
-    height: 40px;
-    align-content: flex-start;
-    margin-top: 15px;
-    margin-left: -0.1%;
+    display: flex;
+    flex-direction: column;
+    background-color: #282645;
+    border-radius: 3px;
+    border:none;
+    margin-left: 10%; 
 }
 
-.boutonco{
-    margin-left: 37%;
-    border-radius: 3%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 0.75%;
+.nom {
     padding-bottom: 0.75%;
+    padding-top: 0.75%;
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+.mail {
+    display: flex;
+    margin-left: 24.75%;
+    margin-top: -2.63%;
+    margin-bottom: 1%;
+    padding-bottom: 0.75%;
+    padding-top: 0.75%;
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+.sujet {
+    display: flex;
+    margin-bottom:1%;
+    padding-bottom: 0.75%;
+    padding-top: 0.75%;
+    padding-left: 1%;
+    padding-right: 16.70%;
+}
+
+.msg {
+    display: flex;
+    margin-bottom: 1%;
+    padding-bottom: 7%;
+    padding-top: 1.25%;
+    padding-left: 1%;
+    padding-right: 16.70%;
+}
+
+form {
+    margin-top: -8%;
+    margin-bottom: 80px;
+    margin-right: 92px;
+    margin-left: 4%;
+    
+}
+
+button {
+    margin-left: 10%;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     color: white;
     background-color: orange;
     border-style: none;
@@ -152,31 +215,16 @@ p {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.boutonco:hover {
+
+button:hover {
     background-color: white;
     color: orange;
-
     -webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-.boutonco:hover{
-    background-color: white;
-    color: orange;
-}
-.inscription{
-    display: flex;
-    color: white;
-    margin-right: 22%;
-}
-.inscription a {
-    text-decoration: none;
-}
-.inscription a:hover{
-    opacity: 0.76;
-    color: orange;
-}
-.inscription2{
-    color: white;
+
+.inscription {
+    margin-left: 40%;
 }
 
 .footer{
@@ -240,6 +288,7 @@ p {
 .copy{
     color: #6a6c80;
     font-size: 0.75em;
+    margin-top: auto;
 }
 .bouton2{
     height: 7%;
@@ -251,9 +300,8 @@ p {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 132%; 
+    top: 165%; 
     cursor: pointer; 
-    
 }
 .fleche{
     color: rgba(255, 255, 255, 0.463);
