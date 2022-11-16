@@ -500,6 +500,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
+    margin-bottom: 90%;
     right: 3%;
     top: 95%; 
     cursor: pointer;

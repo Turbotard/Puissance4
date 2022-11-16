@@ -1,13 +1,16 @@
 <?php
 require ('./includes/database.inc.php'); 
-if( isset($_POST['connexion'])){    
-$name -> $_POST['name'];
-$email -> $_POST['mail'];
-$password -> $_POST['mdp'];  
 
-$sth = $dbh->prepare('INSERT INTO inscription (email, mdp, pseudo,date_heure_inscr,date_heure_last) VALUES (:email, :password, :name,2022-10-13 12:22:59,2022-10-13 12:22:59 )');
-$sth->execute();
+if(isset($_POST['name']) || isset($_POST['email']))
+{
+
+
+
+$sth = $dbh->prepare("INSERT INTO inscription (mail, mdp, pseudo, date_heure_inscr) VALUES (?, ?, ?, NOW())");
+$sth->execute([$_POST['email'], $_POST['password'], $_POST['name']]);
 }
+
+
 ?>
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
@@ -34,9 +37,9 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <section class="login">
         <div class="logs">
             <form method="post">
-            <input class="mailInput" type="email" name="mail" placeholder="Email">
-            <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo">
-            <input class="mailInput" type="password" name="mdp" placeholder="Mot de passe">
+            <input class="mailInput" type="email" name="email" placeholder="Email">
+            <input class="mailInput" type="username" name="name" placeholder="Pseudo">
+            <input class="mailInput" type="password" name="password" placeholder="Mot de passe">
             <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
             <input class="btnConnect" type="submit" name="inscription" value="S'inscrire">
             </form>
