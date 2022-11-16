@@ -1,3 +1,6 @@
+<?php
+require "/Applications/MAMP/htdocs/Puissance4/view/header.html";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -115,3 +118,6 @@
 
 </body>
 </html>
+<?php
+require "/Applications/MAMP/htdocs/Puissance4/view/footer.html";
+?>
