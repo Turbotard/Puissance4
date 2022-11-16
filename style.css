@@ -500,8 +500,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     position: absolute;
+    margin-bottom: 90%;
     right: 3%;
-    top: 900%; 
     cursor: pointer;
 }
 .fleche{
