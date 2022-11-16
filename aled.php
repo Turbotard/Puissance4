@@ -2,7 +2,6 @@
 require ('./includes/database.inc.php');
 session_start();
 $error = 0;
-$headers = 'turbotard2004@gmail.com';
 if(isset($_POST['email'])){
 if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     $nom =$_POST['nom'];
@@ -17,7 +16,8 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     }
     else
         header('location: .site.php');
-        mail($email,$sujet,$message." vous nous avez demandez de l'aide",$headers);
+        mail($email,$sujet,$message." vous nous avez demandez de l'aide");
+        imap_mail($email,$sujet,$message." vous nous avez demandez de l'aide");
 }}
 ?>
 <?php
