@@ -1,3 +1,6 @@
+<?php 
+require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,33 +15,9 @@
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <header id="header">
         <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
-        <div id="opaque">
-
-        <nav>
-        <div id="boxe">
-        <div id="boxe1">
-        <p><strong>The Power Of Memory</strong></p>
-        </div>
-        <div id="boxe2">
-            <a href="Site.php"> <strong> ACCUEIL </strong></a>
-            <a href="connexion.php"> <strong> JEU </strong></a>
-            <a href="score.php"> <strong> SCORE </strong></a>
-            <a href="aled.php"> <strong> ALED </strong></a>
-        </div>
-    
-
-        </nav>
-
-        <div id="entree">
         <h1 class="slogan1"><stronger>MODIFIER MON MOT DE PASSE</stronger></h1>
-        </div>
-        </div>
-        </div>
-    </header>
         
-    </header>
     <section class="newpassword">
         <h3 class="slogan2"><stronger> Changer le mot de passe</stronger></h3>
         <div class="password">
@@ -48,35 +27,9 @@
             <button class="btnConnect">Valider</button>
         </div>
     </section>
-    <footer class="footer">
-
-        <div class="box11">
-
-            <p class="white yo">Information</p>
-            <p class="gris">Quisque commodo facilisis purus, interdum volutpat arcu viverra sed.</p>
-            <p class="gris"><span class="orange">Tel : </span>06 05 04 03 02</p>
-            <p class="gris"><span class="orange">Email : </span>support@powerofmemory.com</p>
-            <p class="gris"><span class="orange">Location : </span>Paris</p>
-            <p><a href="https://www.facebook.com/" target="_blank"> <i  class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://www.google.com/" target="_blank"> <i class="fa-brands fa-google"></i></a>
-                <a href="https://www.pinterest.com/" target="_blank"> <i class="fa-brands fa-square-pinterest"></i></a>
-                <a href="https://www.instagram.com//" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a></p>
-
-                <p class="copy">Copyright © 2022 Tous droits réservés</p>
-        </div>
-
-       <section class="box22">
-        <h5 class="white">Power Of Memory</h5>
-        <div id="bullet">
-            <ul class="bullet">
-                <li><a href="url">Jouer !</a></li><br>
-                <li><a href="url">Les scores</a></li><br>
-                <li><a href="url">Nous contacter</a></li>
-            </ul>
-        </div>
-       </section>
-    </footer>
-    </footer>
+    
 </body>
 </html>
+<?php
+require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+?>
