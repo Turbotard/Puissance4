@@ -43,45 +43,9 @@ h1 {
     color: rgb(251, 251, 251);
     font-size: 40px;   
 }
-p {
-    display: flex;
-    color : white;
-    margin-left: 0%;
-}
 #boxe {
     display: flex;
     justify-content: space-between;
-}
-#boxe1 {
-    margin-left: 70px;
-    opacity: 1;
-    margin-top: 10px;
-}
-#boxe2 {
-    display: flex;
-    float: right;
-    justify-content:white;
-    align-items: center;
-    margin-right: 20px;
-    justify-content: space-between;
-    margin-top: 5px;
-}
-#boxe2 li {
-    list-style-type: none;
-}
-#boxe2 a {
-    display:block;                
-    min-width: 90px;             
-    margin: 2px;             
-    padding: 0.4rem 0;            
-    text-align: center;         
-    font-size: small;
-    color: #fff;                
-    text-decoration: none;           
-}
-#boxe2 a:hover {
-    opacity: 0.76;
-    color: orange;
 }
 .slogan2 {
     color: white;
@@ -106,19 +70,6 @@ p {
     display: flex;
     flex-direction:column;
 }
-.newpassword {
-    background-color: #0f0e2e;
-    width: 100%;
-    height: 460px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-}
-.password {
-    display: flex;
-    flex-direction:column;
-}
 .mailInput {
     background-color: #282645;
     border: none;
@@ -128,20 +79,6 @@ p {
     height: 40px;
     margin-top: 10px;
     padding-left: 22px;
-}
-.newpassword {
-    background-color: #0f0e2e;
-    width: 100%;
-    height: 460px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column;
-    margin-top: -5%;
-}
-.password {
-    display: flex;
-    flex-direction:column;
 }
 .btnConnect {
     cursor: pointer;
@@ -155,83 +92,6 @@ p {
     margin-top: 15px;
     margin-left: -0.1%;
 }
-button {
-    margin-left: 36%;
-    border-radius: 3%;
-    padding-left: 1%;
-    padding-right: 1%;
-    padding-top: 0.75%;
-    padding-bottom: 0.75%;
-    color: white;
-    background-color: orange;
-    border-style: none;
-    margin-bottom: 2%;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;  
-}
-button:hover {
-    background-color: white;
-    color: orange;
-    -webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-.footer {
-    background-color: #0e0b26;
-    width: 100%;
-    height: 450px;
-    display: flex;
-    justify-content: space-evenly;
-    
-}
-.box11 {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin-left: 150px;
-    margin-top: 100px;
-}
-.fa-brands {
-    color: #e99122;
-    font-size: 25px;
-    margin-right: 4px;
-    margin-top: 25px;
-}
-.box22 {
-    width: 40%;
-    margin-left: 90px;
-    margin-top: 100px;
-}
-.white {
-    color: white;
-    font-family: 'muli-semibold', sans-serif;
-}
-.orange {
-    color: #e99122;
-}
-.gris {
-    color: #6a6c80;
-    font-size: 0.8em;
-    margin-top: 20px;
-}
-.bullet a:link {
-    color: #6a6c80;
-    background-color: transparent;
-    text-decoration: none;
-    font-size: 0.8em;
-}
-#bullet li::marker {
-    color: #e99122;
-}
-.bullet {
-    margin-top: 20px;
-    list-style-type: square;
-}
-.copy {
-    color: #6a6c80;
-    font-size: 0.75em;
-}
 .bouton2 {
     height: 7%;
     width: 4%;
@@ -244,14 +104,4 @@ button:hover {
     right: 2%;
     top: 190%; 
     cursor: pointer; 
-}
-.fleche {
-    color: rgba(255, 255, 255, 0.463);
-    width: -1%;
-}
-.fa-brands {
-    color: #e99122;
-    font-size: 25px;
-    margin-right: 4px;
-    margin-top: 25px;
 }
