@@ -1,5 +1,22 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+session_start();
+require ('./includes/database.inc.php');
+
+
+$error = 0;
+if(isset($_POST['oldmail']) && isset($_POST['password'])){
+if( filter_var($_POST['oldmail'], FILTER_VALIDATE_EMAIL)){
+
+    $oldmail = $_POST['oldmail'];
+    $newmail = $P_POST['newmail'];
+    $password = $_POST['password'];
+
+    
+    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newmail WHERE email = :oldmail AND mdp = :password');
+    $sth->execute(['newmail'=> $newmail, 'password'=> $password]);
+    $donnees = $sth->fetch();    
+}}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,16 +32,24 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-        <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">       
+    <div id="fond">
+        <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+        <div id="opaque">
+        <div id="boxe">
+        <div id="entree">       
             <h1 class="slogan3"><stronger> MODIFIER MON ADRESSE MAIL</stronger></h1>
-    <section class="newmail">
+        </div>
+        </div>
+        </div>
+    <section class="nmail">
         <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
-    <div class="mail">
-        <input class="mailInput" type="email" placeholder="Ancien email">
-        <input class="mailInput" type="email" placeholder="Nouvel email">
-        <input class="mailInput" type="password" placeholder="Mot de passe">
-        <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
-        <button class="btnConnect">Valider</button>
+    <form class="mail">
+        <input class="mailInput" name="oldmail" type="email" placeholder="Ancien email">
+        <input class="mailInput" name="newmail"type="email" placeholder="Nouvel email">
+        <input class="mailInput" name="password"type="password" placeholder="Mot de passe">
+        <input class="mailInput" name="confirmpassword"type="password" placeholder="Confirmer le mot de passe">
+        <input class="btnConnect" type="submit" name="newmail" value="Valider">
+    </form>
     </div>
     </section>
 </body>

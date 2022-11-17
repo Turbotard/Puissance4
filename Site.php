@@ -16,11 +16,13 @@ include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 </head>
 <body>
 <div id="entree">
-    
+    <img id="back" src="ordi.jpg">
+        <div id="opaque">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
             <a href="connexion.php" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
+</div>
     
 
     <div class="LoremIpsum">
@@ -102,7 +104,7 @@ include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 
     <div class="crewname">
         <p id="crew"><strong>BBAM's Crew</strong></p>
-        <p id="cheval">Le cheval c'est trop génial !</p>
+        <p id="cheval">Développeurs pas médiocres</p>
     </div>
 
     <section class="ses4">
