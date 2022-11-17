@@ -1,21 +1,21 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 session_start();
+require ('/Applications/MAMP/htdocs/Puissance4/includes/database.inc.php');
+
 
 $error = 0;
-if(isset($_POST['newemail']) || isset($_POST['password'])){
-if( filter_var($_POST['newemail'], FILTER_VALIDATE_EMAIL)){
+if(isset($_POST['oldmail']) || isset($_POST['password'])){
+if( filter_var($_POST['newmail'], FILTER_VALIDATE_EMAIL)){
 
-    $oldemail = $_POST['oldemail'];
+    $oldmail = $_POST['oldmail'];
     $newmail = $P_POST['newmail'];
     $password = $_POST['password'];
 
     
-    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newemail WHERE email = :oldemail AND mdp = :password');
-    $sth->execute(['newemail'=> $newemail, 'password'=> $password]);
-    $donnees = $sth->fetch();
-    $_SESSION['user'] = $donnees;
-    
+    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newmail WHERE email = :oldmail AND mdp = :password');
+    $sth->execute(['newmail'=> $newmail, 'password'=> $password]);
+    $donnees = $sth->fetch();    
 }}
 ?>
 <!DOCTYPE html>
