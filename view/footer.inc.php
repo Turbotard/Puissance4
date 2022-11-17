@@ -36,9 +36,9 @@
 <h5 class="white">Power Of Memory</h5>
 <div id="bullet">
     <ul class="bullet">
-        <li><a href="url">Jouer !</a></li><br>
-        <li><a href="url">Les scores</a></li><br>
-        <li><a href="url">Nous contacter</a></li>
+        <li><a href="connexion.php">Jouer !</a></li><br>
+        <li><a href="score.php">Les scores</a></li><br>
+        <li><a href="aled.php">Nous contacter</a></li>
     </ul>
 </div>
 </section>
