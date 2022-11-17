@@ -90,17 +90,6 @@ h1 {
     align-content: flex-start;
     margin-top: 15px;
     margin-left: -0.1%;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
-button:hover {
-    background-color: white;
-    color: orange;
-
-    -webkit-transform: scale(1.3);
-	transform: scale(1.3);
 }
 .bouton2 {
     height: 7%;
