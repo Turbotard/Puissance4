@@ -41,7 +41,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         </div>
         </div>
         </div>
-    <section class="newmail">
+    <section class="nmail">
         <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
     <div class="mail">
         <input class="mailInput" name="oldmail" type="email" placeholder="Ancien email">
