@@ -94,10 +94,9 @@ include "./view/header.inc.php";
         </div>
 
     </section>
-    <a href="#"  class="bouton2">
-    <div class="fleche"><i class="fa-solid fa-chevron-up">
-    </i></div>
-</a>
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    ?>
 
     <?php 
         include "./view/footer.inc.php";

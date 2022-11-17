@@ -115,11 +115,9 @@ include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
            <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
         </div>
    </section>
-   <a href="#"  class="bouton2">
-    <div class="fleche"><i class="fa-solid fa-chevron-up">
-    </i></div>
-</a>
-   
+   <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    ?>
 
 </body>
 </html>

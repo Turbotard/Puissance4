@@ -21,6 +21,7 @@
                 <p><strong>The Power Of Memory</strong></p>
             </div>
             <div id="boxe2">
+                <a href="myaccount.php"> <strong> PROFIL </strong> </a>
                 <a href="Site.php"> <strong> ACCUEIL </strong></a>
                 <a href="connexion.php"> <strong> JEU </strong></a>
                 <a href="score.php"> <strong> SCORE </strong></a>
