@@ -58,11 +58,16 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     <?php 
     include "./view/header.inc.php";
     ?>
-
+    <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
-
+        <form method="post">
+                    <input class="mailInput" name="email" type="email" placeholder="Email">
+                    <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
+                    <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">
+                    <a class="inscription2" href="inscription.php"> Inscription </a>
+</form>
         
 
 
@@ -84,15 +89,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                     }
             }
             ?>
-                <form method="post">
-                    <input class="mailInput" name="email" type="email" placeholder="Email">
-                    <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
-                    <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">
-                </form>
-            </div>
-            <div class="inscription">
-                <a class="inscription2" href="inscription.php"> Inscription </a>
-            </div>
+                
     
         </section>
         <?php

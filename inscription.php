@@ -63,6 +63,7 @@ $sth->execute([$_POST['email'], $_POST['password'], $_POST['name']]);
 <?php 
 include "./view/header.inc.php";
 ?>
+<img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
 <div id="entree">
         <h1 class="slogan1"><stronger> INSCRIPTION</stronger></h1>
         </div>
