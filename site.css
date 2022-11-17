@@ -4,6 +4,89 @@ body {
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header {
+    justify-content: space-around;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+    margin-bottom: 10%; 
+}
+
+
+
+#opaque {
+    position: relative;
+    opacity: 1;
+}
+
+#entree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 70px;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    display: flex;
+    margin-left: 20%;
+    margin-top: 7%;
+    color: rgb(251, 251, 251);
+    font-size: 55px;  
+}
+
+p {
+    display: flex;
+    color : white;
+}
+
+#boxe {
+    display: flex;
+    justify-content: space-around;
+}
+
+#boxe1 {
+    display: flex;
+    margin-left: 70px;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+#boxe2 {
+    display: flex;
+    float: right;
+    justify-content:white;
+    align-items: center;
+    margin-right: 20px;
+    justify-content: space-around;
+    margin-top: 5px;
+    margin-left: 50%;
+}
+
+#boxe2 li {
+    list-style-type: none;
+}
+
+#boxe2 a {
+    display:block;                
+    min-width: 90px;          
+    
+    margin: 2px;             
+    padding: 0.4rem 0;            
+    text-align: center;         
+    font-size: small;
+    color: #fff;                
+    text-decoration: none;          
+}
+
+#boxe2 a:hover {
+    opacity: 0.76;
+    color: orange;
+}
 #entree {
     display: flex;
     flex-direction: column;
@@ -389,17 +472,20 @@ button:hover {
     font-size: 0.75em;
 }
 .bouton2{
-    height: 7%;
-    width: 4%;
-    background: rgba(255, 166, 0, 0.425);
-    border-radius: 8%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 2%;
-    top: 130%; 
-    cursor: pointer; 
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: orange;
+    bottom: 40px;
+    right: 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+    opacity: 0.76;
+    
 }
 .fleche{
     color: rgba(255, 255, 255, 0.463);

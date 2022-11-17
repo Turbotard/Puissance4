@@ -12,9 +12,7 @@ $sth->execute([$_POST['email'], $_POST['password'], $_POST['name']]);
 
 
 ?>
-<?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,33 +27,35 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<?php 
+include "./view/header.inc.php";
+?>
 <div id="entree">
         <h1 class="slogan1"><stronger> INSCRIPTION</stronger></h1>
-        </div>
-        </div>
         </div>
     <section class="login">
         <div class="logs">
             <form method="post">
-            <input class="mailInput" type="email" name="email" placeholder="Email">
-            <input class="mailInput" type="username" name="name" placeholder="Pseudo">
-            <input class="mailInput" type="password" name="password" placeholder="Mot de passe">
-            <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
-            <input class="btnConnect" type="submit" name="inscription" value="S'inscrire">
+                <input class="mailInput" type="email" name="email" placeholder="Email">
+                <input class="mailInput" type="username" name="name" placeholder="Pseudo">
+                <input class="mailInput" type="password" name="password" placeholder="Mot de passe">
+                <input class="mailInput" type="password" placeholder="Confirmer le mot de passe">
+                <input class="btnConnect" type="submit" name="inscription" value="S'inscrire">
             </form>
         </div>
 
     </section>
+    <a href="#"  class="bouton2">
+    <div class="fleche"><i class="fa-solid fa-chevron-up">
+    </i></div>
+</a>
 
-
-
-
+    <?php 
+        include "./view/footer.inc.php";
+    ?>
 
 
     
 
 </body>
 </html>
-<?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>
