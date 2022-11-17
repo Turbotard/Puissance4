@@ -62,9 +62,27 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
 
+        
+
 
         <section class="login">
             <div class="logs">
+                <?php
+                if(isset($_GET['login_err']))
+                {
+                    $err = htmlspecialchars($_GET['login_err']);
+                    switch($err)
+                    {
+                        case 'password':
+                ?>
+                        <div class="alert alert-danger">
+                            <strong>ERREUR</strong> mot de pass incorect
+                        </div>
+                <?php
+                    break;
+                    }
+            }
+            ?>
                 <form method="post">
                     <input class="mailInput" name="email" type="email" placeholder="Email">
                     <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
