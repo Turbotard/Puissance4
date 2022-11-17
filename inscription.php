@@ -26,7 +26,7 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
                         $password = hash('sha256', $password);
                         $ip = $_SERVER['REMOTE_ADOR'];
 
-                        $insert = $bdd->prepare('INSERT INTO utilisateur(')
+                        $insert = $bdd->prepare('INSERT INTO utilisateur(');
                     }
                 }else header('Location: inscription.php?reg_err=email');
             }else header('Location: inscription.php?reg_err=email_length');
