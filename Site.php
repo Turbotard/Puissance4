@@ -104,7 +104,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 
     <div class="crewname">
         <p id="crew"><strong>BBAM's Crew</strong></p>
-        <p id="cheval">Le cheval c'est trop génial !</p>
+        <p id="cheval">Développeurs pas médiocres</p>
     </div>
 
     <section class="ses4">

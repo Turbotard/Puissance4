@@ -1,10 +1,37 @@
-
+#back {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    opacity: 0.5;
+    background-position: 35% 60%;
+    background-size: cover;
+    margin-top: 5%;
+}
+#opaque {
+    position: relative;
+    opacity: 1;
+}
+#entree {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 0px;
+    color: white;
+    text-align: center;
+}
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;  
+}
 
 .telephone {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin-bottom: 10%;
+    margin-top: 19%;
 }
 
 .contact {
@@ -97,7 +124,7 @@ form {
     
 }
 
-button {
+.bouton {
     margin-left: 10%;
     border-radius: 3px;
     padding-left: 15px;
@@ -114,7 +141,7 @@ button {
 	transition: .3s ease-in-out;
 }
 
-button:hover {
+.bouton:hover {
     background-color: white;
     color: orange;
     -webkit-transform: scale(1.2);
@@ -198,7 +225,7 @@ button:hover {
     align-items: center;
     position: absolute;
     right: 2%;
-    top: 165%; 
+    top: 220%; 
     cursor: pointer; 
 }
 .fleche{

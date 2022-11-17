@@ -36,9 +36,12 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+        <div id="opaque">
 <div id="entree">
-        <h1 class="slogan1"><stronger> ALED</stronger></h1>
+        <h1 class="slogan3"><stronger> ALED</stronger></h1>
         </div>
+</div>
 
     <div class="telephone">
         <div class="contact">
