@@ -41,9 +41,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
 }else header('Location:./site.php');
 
 ?>
-<?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +57,11 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<div id="entree">
+<?php 
+include "./view/header.inc.php";
+?>
+
+    <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
 
@@ -95,9 +97,21 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </div>
     
         </section>
+        <a href="#"  class="bouton2">
+    <div class="fleche"><i class="fa-solid fa-chevron-up">
+    </i></div>
+</a>
+        
+    <?php
+    include "./view/footer.inc.php";
+    ?>
 
+
+
+
+
+
+
+        
 </body>
 </html>
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>

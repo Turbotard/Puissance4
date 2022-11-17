@@ -1,6 +1,4 @@
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +13,9 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
+<?php
+include "./view/header.inc.php";
+?>
 
     <div class="container">
         <div class="leaderboard">
@@ -79,6 +79,16 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         </div>
       </div>
 
+      <a href="#"  class="bouton2">
+    <div class="fleche"><i class="fa-solid fa-chevron-up">
+    </i></div>
+</a>
+
+
+      <?php
+      include "./view/footer.inc.php";
+      ?>
+
 
 
 
@@ -91,6 +101,3 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 
 </body>
 </html>
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>
