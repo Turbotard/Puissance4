@@ -97,7 +97,7 @@ form {
     
 }
 
-button {
+.bouton {
     margin-left: 10%;
     border-radius: 3px;
     padding-left: 15px;
@@ -114,7 +114,7 @@ button {
 	transition: .3s ease-in-out;
 }
 
-button:hover {
+.bouton:hover {
     background-color: white;
     color: orange;
     -webkit-transform: scale(1.2);
