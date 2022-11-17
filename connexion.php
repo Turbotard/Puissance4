@@ -25,9 +25,9 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             {
                 $_SESSION['user'] = $data['pseudo'];
                 header('Location:landing.php');
-            }else header('Location:./site.php?login_err=password');
-        }else header('Location:./site.php?login_err=email');
-    }header('Location:./site.php?login_err=already');
+            }else header('Location:site.php?login_err=password');
+        }else header('Location:site.php?login_err=email');
+    }header('Location:site.php?login_err=already');
 
     
     /*$sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
@@ -38,7 +38,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $error = 1;
     else
         header('Location: ./site.php');*/
-}else header('Location:./site.php');
+}/*else header('Location:./connexion.php');*/
 
 ?>
 
@@ -52,14 +52,12 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
     <link rel="stylesheet" href="connexion.css">
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<?php 
-include "./view/header.inc.php";
-?>
+    <?php 
+    include "./view/header.inc.php";
+    ?>
 
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
