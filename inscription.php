@@ -24,10 +24,12 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
                     if($password == $password_retype)
                     {
                         $password = hash('sha256', $password);
-                        $ip = $_SERVER['REMOTE_ADOR'];
+                        
 
-                        $insert = $bdd->prepare('INSERT INTO utilisateur(')
-                    }
+                        $insert = $bdd->prepare('INSERT INTO utilisateur(email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES(:email, :password, :pseudo, NOW(), NOW())');
+                        $insert->execute(array('email'=> $email, 'password'=>$password, 'pseudo'=>$pseudo));
+                        header('Location: inscription.php?reg_err=success')
+                    }else header('Location: inscription.php?reg_err=password');
                 }else header('Location: inscription.php?reg_err=email');
             }else header('Location: inscription.php?reg_err=email_length');
         }else header('Location: inscription.php?reg_err=pseudo_length');
@@ -67,6 +69,22 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         </div>
     <section class="login">
         <div class="logs">
+            <?php
+            if(isset($_GET['login_err']))
+            {
+                $err = htmlspecialchars($_GET['login_err']);
+                switch($err)
+                {
+                    case 'success':
+            ?>
+                    <div class="alert alert-danger">
+                        <strong>Succès</strong> inscription réussie ! 
+                    </div>
+            <?php
+                break;
+                }
+            }
+            ?>
             <form method="post">
             <input class="mailInput" type="email" name="email" placeholder="Email">
             <input class="mailInput" type="username" name="name" placeholder="Pseudo">
