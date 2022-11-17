@@ -60,14 +60,6 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     
         </section>
 
-
-
-
-
-
-
-
-        
 </body>
 </html>
 <?php

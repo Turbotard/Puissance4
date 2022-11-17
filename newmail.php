@@ -4,15 +4,15 @@ session_start();
 
 $error = 0;
 if(isset($_POST['newemail']) || isset($_POST['password'])){
-if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+if( filter_var($_POST['newemail'], FILTER_VALIDATE_EMAIL)){
 
     $oldemail = $_POST['oldemail'];
     $newmail = $P_POST['newmail'];
     $password = $_POST['password'];
 
     
-    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newemail WHERE email = :email AND mdp = :password');
-    $sth->execute(['email'=> $newemail, 'password'=> $password]);
+    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newemail WHERE email = :oldemail AND mdp = :password');
+    $sth->execute(['newemail'=> $newemail, 'password'=> $password]);
     $donnees = $sth->fetch();
     $_SESSION['user'] = $donnees;
     
