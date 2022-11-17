@@ -52,6 +52,9 @@ if( filter_var($_POST['oldmail'], FILTER_VALIDATE_EMAIL)){
     </form>
     </div>
     </section>
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    ?>
 </body>
 </html>
 <?php
