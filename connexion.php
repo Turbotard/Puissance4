@@ -1,7 +1,8 @@
 
 <?PHP
-session_start();
+
 require ('./includes/database.inc.php');
+session_start();
 
 
 if(isset($_POST['email']) && isset($_POST['password'])){
@@ -24,9 +25,9 @@ if(isset($_POST['email']) && isset($_POST['password'])){
             {
                 $_SESSION['user'] = $data['pseudo'];
                 header('Location:landing.php');
-            }else header('Location: ./site.php?login_err=password');
-        }else header('Location: ./site.php?login_err=email');
-    }header('Location: ./site.php?login_err=already');
+            }else header('Location:./site.php?login_err=password');
+        }else header('Location:./site.php?login_err=email');
+    }header('Location:./site.php?login_err=already');
 
     
     /*$sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
@@ -37,7 +38,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         $error = 1;
     else
         header('Location: ./site.php');*/
-}else header('Location: ./site.php');
+}else header('Location:./site.php');
 
 ?>
 
