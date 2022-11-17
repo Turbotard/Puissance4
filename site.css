@@ -8,7 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding-top: 70px;
+    padding-top: 0px;
     color: white;
     text-align: center;
 }
@@ -325,4 +325,91 @@ button:hover {
     flex-direction: row;
     justify-content: space-evenly;
     
+}
+.footer{
+    background-color: #0e0b26;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.box11{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.fa-brands{
+    color: #e99122;
+    font-size: 25px;
+    margin-right: 4px;
+    margin-top: 25px;
+
+}
+.box22{
+    width: 40%;
+    margin-left: 90px;
+    margin-top: 100px;
+
+}
+.white{
+    color: white;
+    font-family: 'muli-semibold', sans-serif;
+}
+
+.orange{
+    color: #e99122;
+}
+.gris{
+    color: #6a6c80;
+    font-size: 0.8em;
+    margin-top: 20px;
+
+}
+
+.bullet a:link {
+    color: #6a6c80;
+    background-color: transparent;
+    text-decoration: none;
+    font-size: 0.8em;
+
+  }
+
+#bullet li::marker{
+
+    color: #e99122;
+}
+.bullet{
+    margin-top: 20px;
+    list-style-type: square;
+}
+.copy{
+    color: #6a6c80;
+    font-size: 0.75em;
+}
+.bouton2{
+    height: 7%;
+    width: 4%;
+    background: rgba(255, 166, 0, 0.425);
+    border-radius: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 2%;
+    top: 130%; 
+    cursor: pointer; 
+}
+.fleche{
+    color: rgba(255, 255, 255, 0.463);
+    width: -1%;
+}
+
+.fa-brands{
+    color: #e99122;
+    font-size: 25px;
+    margin-right: 4px;
+    margin-top: 25px;
+
 }

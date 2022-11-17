@@ -32,8 +32,15 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-        <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">       
+    <div id="fond">
+        <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+        <div id="opaque">
+        <div id="boxe">
+        <div id="entree">       
             <h1 class="slogan3"><stronger> MODIFIER MON ADRESSE MAIL</stronger></h1>
+        </div>
+        </div>
+        </div>
     <section class="newmail">
         <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
     <div class="mail">
@@ -42,6 +49,7 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         <input class="mailInput" name="password"type="password" placeholder="Mot de passe">
         <input class="mailInput" name="confirmpassword"type="password" placeholder="Confirmer le mot de passe">
         <input class="bouton" type="submit" name="newmail" value="Valider">
+    </div>
     </div>
     </section>
 </body>
