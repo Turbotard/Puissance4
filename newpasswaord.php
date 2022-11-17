@@ -34,6 +34,9 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             <input class="btnConnect" type="submit" name="newmail" value="Valider">
         </div>
     </section>
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    ?>
     
 </body>
 </html>
