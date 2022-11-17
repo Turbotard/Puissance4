@@ -1,26 +1,43 @@
 
 <?PHP
+session_start();
 require ('./includes/database.inc.php');
 
-session_start();
 
-$error = 0;
-if(isset($_POST['email']) || isset($_POST['password'])){
-if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+if(isset($_POST['email']) && isset($_POST['password'])){
 
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $email = htmlspecialchars($_POST['email']);
+    $password = htmlspecialchars($_POST['password']);
+
+    $check = $dbh->prepare('SELECT pseudo, email, mdp FROM utilisateur WHERE email = ?');
+    $check->execute(array($email));
+    $data = $check->fetch();
+    $row = $check->rowCount();
+
+    if($row == 1)
+    {
+        if(filter_var($email, FILTER_VALIDATE_EMAIL))
+        {
+            $password = hash('sha256', $password);
+
+            if($data['password'] == $password)
+            {
+                $_SESSION['user'] = $data['pseudo'];
+                header('Location:landing.php');
+            }else header('Location: ./site.php?login_err=password');
+        }else header('Location: ./site.php?login_err=email');
+    }header('Location: ./site.php?login_err=already');
 
     
-    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
+    /*$sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
     $sth->execute(['email'=> $email, 'password'=> $password]);
     $donnees = $sth->fetch();
     $_SESSION['user'] = $donnees;
     if( $donnees == '' )
         $error = 1;
     else
-        header('Location: ./site.php');
-}}
+        header('Location: ./site.php');*/
+}else header('Location: ./site.php');
 
 ?>
 <?php 
@@ -44,8 +61,8 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
-        </div>
-        </div>
+
+
         <section class="login">
             <div class="logs">
                 <form method="post">
@@ -55,7 +72,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
                 </form>
             </div>
             <div class="inscription">
-                <a class="inscription2" href="inscription.php"> Inscription  </a>
+                <a class="inscription2" href="inscription.php"> Inscription </a>
             </div>
     
         </section>
