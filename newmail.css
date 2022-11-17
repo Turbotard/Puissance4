@@ -4,10 +4,10 @@ body {
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header {
+.fond {
     justify-content: space-around;
 }
-#header {
+.fond {
     width: 100%;
     height: auto;
     justify-content: space-around;
@@ -84,7 +84,14 @@ p {
 .slogan2 {
     color: white;
 }
-.newmail {
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;  
+}
+.nmail {
+    margin-top: 10%;
     background-color: #0f0e2e;
     width: 100%;
     height: 460px;
@@ -92,14 +99,14 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    margin-top: -5%;
 }
 .mail {
     display: flex;
     flex-direction:column;
 }
 .newpassword {
-    background-color: #0f0e2e;width: 100%;
+    background-color: #0f0e2e;
+    width: 100%;
     height: 460px;
     display: flex;
     justify-content: center;

@@ -13,6 +13,12 @@ header {
     justify-content: space-around;
     margin-bottom: 10%; 
 }
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;  
+}
 #back {
     position: absolute;
     width: 100%;
