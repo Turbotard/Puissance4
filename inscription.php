@@ -29,11 +29,11 @@ if(isset($_POST['pseudo']) && isset($_POST['email']) && isset($_POST['password']
                         $insert = $bdd->prepare('INSERT INTO utilisateur(email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES(:email, :password, :pseudo, NOW(), NOW())');
                         $insert->execute(array('email'=> $email, 'password'=>$password, 'pseudo'=>$pseudo));
                         header('Location: inscription.php?reg_err=success')
-                    }else header('Location: inscription.php?reg_err=password');
-                }else header('Location: inscription.php?reg_err=email');
-            }else header('Location: inscription.php?reg_err=email_length');
-        }else header('Location: inscription.php?reg_err=pseudo_length');
-   }else header('Location: inscription.php?reg_err=already');
+                    }else header('Location:inscription.php?reg_err=password');
+                }else header('Location:inscription.php?reg_err=email');
+            }else header('Location:inscription.php?reg_err=email_length');
+        }else header('Location:inscription.php?reg_err=pseudo_length');
+   }else header('Location:inscription.php?reg_err=already');
 
 }
 
