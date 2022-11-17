@@ -34,6 +34,9 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </li>
         </ul>
     </section>
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    ?>
 </body>
 </html>
 <?php
