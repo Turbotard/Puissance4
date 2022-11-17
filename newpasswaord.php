@@ -38,8 +38,8 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
     
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+    ?>
 </body>
 </html>
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>
