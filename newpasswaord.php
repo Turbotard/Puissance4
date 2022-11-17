@@ -31,7 +31,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             <input class="mailInput" type="password" placeholder="Ancien mot de passe">
             <input class="mailInput" type="password" placeholder="Nouveau mot de passe">
             <input class="mailInput" type="password" placeholder="Confirmer nouveau le mot de passe">
-            <button class="btnConnect">Valider</button>
+            <input class="btnConnect" type="submit" name="newmail" value="Valider">
         </div>
     </section>
     
