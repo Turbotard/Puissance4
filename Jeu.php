@@ -10,30 +10,9 @@
     <title>The Game </title>
 </head>
 <body>
-    <header id="header">
-        <div id="opaque">
-
-        <nav>
-            <div id="boxe">
-            <div id="boxe1">
-                <p><strong>The Power Of Memory</strong></p>
-            </div>
-            <div id="boxe2">
-                <a href="Site.php"> <strong> ACCUEIL </strong></a>
-                <a href="connexion.php"> <strong> JEU </strong></a>
-                <a href="score.php"> <strong> SCORE </strong></a>
-                <a href="aled.php"> <strong> ALED </strong></a>
-            </div>
-            
-        </nav>
-
-        <div id="entree">
-            <h1 class="slogan1"><stronger> BIENVENUE DANS LE JEU ULTIME !</stronger></h1>
-            <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
-        </div>
-        </div>
-            </div>
-    </header>
+    <?php 
+    require "./view/header.inc.php";
+    ?>
     <table>
         <tr>
         <td>#</td>
@@ -70,38 +49,13 @@
         <td>#</td>
         <td>#</td>
       </tr></table>
+      <?php
+      require "./view/bouton.php";
+      ?>
 
-<footer class="footer">
-
-        <div class="box11">
-
-            <p class="white yo">Information</p>
-            <p class="gris">Quisque commodo facilisis purus, interdum volutpat arcu viverra sed.</p>
-            <p class="gris"><span class="orange">Tel : </span>06 05 04 03 02</p>
-            <p class="gris"><span class="orange">Email : </span>support@powerofmemory.com</p>
-            <p class="gris"><span class="orange">Location : </span>Paris</p>
-            <p><a href="https://www.facebook.com/" target="_blank"> <i  class="fa-brands fa-square-facebook"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
-                <a href="https://www.google.com/" target="_blank"> <i class="fa-brands fa-google"></i></a>
-                <a href="https://www.pinterest.com/" target="_blank"> <i class="fa-brands fa-square-pinterest"></i></a>
-                <a href="https://www.instagram.com//" target="_blank"> <i class="fa-brands fa-square-instagram"></i></a></p>
-
-                <p class="copy">Copyright © 2022 Tous droits réservés</p>
-        </div>
-
-
-
-       <section class="box22">
-        <h5 class="white">Power Of Memory</h5>
-        <div id="bullet">
-            <ul class="bullet">
-                <li><a href="url">Jouer !</a></li><br>
-                <li><a href="url">Les scores</a></li><br>
-                <li><a href="url">Nous contacter</a></li>
-            </ul>
-        </div>
-       </section>
-</footer>
+      <?php
+      require "./view/footer.inc.php";
+      ?>
 
 </body>
 </html>
