@@ -1,12 +1,12 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 session_start();
-require ('/Applications/MAMP/htdocs/Puissance4/includes/database.inc.php');
+require ('./includes/database.inc.php');
 
 
 $error = 0;
-if(isset($_POST['oldmail']) || isset($_POST['password'])){
-if( filter_var($_POST['newmail'], FILTER_VALIDATE_EMAIL)){
+if(isset($_POST['oldmail']) && isset($_POST['password'])){
+if( filter_var($_POST['oldmail'], FILTER_VALIDATE_EMAIL)){
 
     $oldmail = $_POST['oldmail'];
     $newmail = $P_POST['newmail'];
