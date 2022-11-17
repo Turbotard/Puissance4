@@ -36,40 +36,49 @@ include "./view/header.inc.php";
 
 
               <li class="lol">
+                <form>
                 <mark><strong> Kawoff </strong></mark>
                 <table><td><strong><a class="niveau"><strong>Difficile</strong></a> </strong></td>
                   <td><a class="date"><strong>09/11/22</strong></a><a class="heure"><strong>10h23</strong></a></strong></td></table>
                 <small>22 s</small>
+</form>
               </li>
 
               <li class="lol">
+                <form>
                 <mark><strong> Turbo </strong></mark>
                 <table><td><strong><a class="niveau"><strong>Difficile</strong></a> </strong></td>
                   <td><strong><a class="date"><strong>23/10/22</strong></a><a class="date"><strong>03h46</strong> </a> </strong></td>
                 </table>
                 <small>34 s</small>
-
+</form>
               </li>
 
               <li class="lol">
+                <form>
                 <mark><strong> RedPointExe </strong></mark>
                 <table><td><strong><a class="niveau2"><strong>Moyen</strong></a> </strong></td>
                   <td><strong><a class="date2"><strong>11/04/22</strong></a><a class="date2"><strong>00h02</strong></a></strong></td></table>
                 <small>600 s</small>
+</form>
               </li>
 
               <li class="lol">
+                <form>
                 <mark><strong>Matlam</strong></mark>
                 <table><td><strong><a class="niveau"><strong>Difficile</strong></a></strong></td>
                   <td><strong><a class="date2"><strong>11/04/22</strong></a><a class="date2"><strong>08h02</strong></a></strong></td></table>
                 <small>602 s</small>
+</form>
               </li>
 
               <li class="lol">
+                <form>
                 <mark><strong> Naooki </strong></mark>
                 <table><td><strong><a class="niveau2"><strong>Facile</strong></a></strong></td>
                   <td><strong><a class="date3"><strong>29/02/22</strong></a><a class="date3"><strong>12h00</strong></a></strong></td></table>
                 <small>2600 s</small>
+</form>
               </li>
 
               
