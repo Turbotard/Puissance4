@@ -4,10 +4,10 @@ body {
     width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-header {
+.fond {
     justify-content: space-around;
 }
-#header {
+.fond {
     width: 100%;
     height: auto;
     justify-content: space-around;
