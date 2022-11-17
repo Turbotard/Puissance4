@@ -17,10 +17,9 @@
 <div class="box11">
 
     <p class="white yo">Information</p>
-    <p class="gris">Quisque commodo facilisis purus, interdum volutpat arcu viverra sed.</p>
-    <p class="gris"><span class="orange">Tel : </span>06 05 04 03 02</p>
-    <p class="gris"><span class="orange">Email : </span>support@powerofmemory.com</p>
-    <p class="gris"><span class="orange">Location : </span>Paris</p>
+    <p class="gris"><span class="orange">Tel : </span>07 83 49 44 12</p>
+    <p class="gris"><span class="orange">Email : </span>aya.aidouni@edu.esiee-it.fr</p>
+    <p class="gris"><span class="orange">Location : </span>Chez AYA</p>
     <p><a href="https://www.facebook.com/" target="_blank"> <i  class="fa-brands fa-square-facebook"></i></a>
         <a href="https://www.twitter.com/" target="_blank"> <i class="fa-brands fa-square-twitter"></i></a>
         <a href="https://www.google.com/" target="_blank"> <i class="fa-brands fa-google"></i></a>
@@ -36,9 +35,9 @@
 <h5 class="white">Power Of Memory</h5>
 <div id="bullet">
     <ul class="bullet">
-        <li><a href="url">Jouer !</a></li><br>
-        <li><a href="url">Les scores</a></li><br>
-        <li><a href="url">Nous contacter</a></li>
+        <li><a href="connexion.php">Jouer !</a></li><br>
+        <li><a href="score.php">Les scores</a></li><br>
+        <li><a href="aled.php">Nous contacter</a></li>
     </ul>
 </div>
 </section>
