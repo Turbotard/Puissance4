@@ -7,16 +7,11 @@ body {
 .fond {
     justify-content: space-around;
 }
+
 #fond {
     width: 100%;
     height: auto;
     justify-content: space-around; 
-}
-.slogan3 {
-    font-size: 60px;
-    margin-right: 10%;
-    margin-left: 10%;
-    justify-content: space-around;  
 }
 #back {
     position: absolute;
@@ -25,7 +20,8 @@ body {
     opacity: 0.5;
     background-position: 35% 60%;
     background-size: cover;
-    margin-top: 2%;
+    margin-top: 5%;
+
 }
 #opaque {
     position: relative;
@@ -35,67 +31,42 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 60px;
+    padding-top: 70px;
     color: white;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 h1 {
     display: flex;
-    margin-left: 42%;
+    margin-left: 26%;
     margin-top: 3%;
     color: rgb(251, 251, 251);
-    font-size: 40px;    
+    font-size: 40px;
+    
+    
 }
 p {
     display: flex;
     color : white;
     margin-left: 0%;
-}
-.telephone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-bottom: 10%;
-    margin-top: 19%;
-}
-.contact {
-    display: flex;
-    justify-content: center;
-    height: 90%;
-    width: 75%;
-}
-.aya {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:aliceblue;
-    font-size: 150%;
-    margin-right: 5%;
-    width: 20%;
-    height: 30%;
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 3%;
-    background: #0c0b26;
-}
-.logo {
-    height: 40%;
-    width: 40%;
-    margin-bottom: 15%;
-    margin-top: 20%;
+
+
 }
 #boxe {
     display: flex;
     justify-content: space-between;
 }
+
 #boxe1 {
     margin-left: 70px;
     opacity: 1;
     margin-top: 10px;
 }
+
 #boxe2 {
     display: flex;
     float: right;
@@ -104,10 +75,14 @@ p {
     margin-right: 20px;
     justify-content: space-between;
     margin-top: 5px;
+
 }
+
 #boxe2 li {
     list-style-type: none;
+
 }
+
 #boxe2 a {
     display:block;                
     min-width: 90px;          
@@ -117,135 +92,166 @@ p {
     text-align: center;         
     font-size: small;
     color: #fff;                
-    text-decoration: none;           
+    text-decoration: none;        
+    
 }
-#boxe2 a:hover {
+#boxe2 a:hover{
     opacity: 0.76;
     color: orange;
 }
-.deroule {
-    float: left;
-    width: 25%;
-    margin: 0 auto;
-    margin-top: 4%;
+.slogan3 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;
+    margin-top: 5%;  
 }
-.deroule ul {
-    list-style-type: none;
+.slogan2 {
+    color: white;
 }
-.deroule ul li {
-    float: left;
-    width: 25%;
-    text-align: center;
-}
-.deroule ul::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-.deroule .menu {
-    display: block;
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-    border-bottom: 2px solid transparent;
-    padding: 10px 0px;
-}
-.menu:hover { 
-    cursor: pointer;
-    color: #e99122;
-    border-bottom: 2px solid gold;
-}
-.sous {
-    display: none;
-    box-shadow: 0px 1px 2px #11102f;
-    background-color: #11102f;
-}
-.deroule > ul li:hover .sous {
+.newmail {
+    background-color: #0f0e2e;
+    width: 100%;
+    height: 460px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: -5%;
 }
-.sous li {
-    float: none;
+.mail{
+    display: flex;
+    flex-direction:column;
+}
+.newpassword {
+    background-color: #0f0e2e;width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+}
+.password{
+    display: flex;
+    flex-direction:column;
+}
+.mailInput{
+    background-color: #282645;
+    border: none;
+    color: #6a6c80;
+    border-radius: 5px;
+    width: 375px;
+    height: 40px;
+    margin-top: 10px;
+    padding-left: 22px;
+}
+.newpassword{
+    background-color: #0f0e2e;
     width: 100%;
-    text-align: center;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    margin-top: 8%;
 }
-.sous .menu {
-    padding: 10px;
-    border-bottom: none;
+.password{
+    display: flex;
+    flex-direction:column;
 }
-.sous .menu:hover {
-    border-bottom: none;
-    background-color: RGBa(200,200,200,0.1);
+
+.btnConnect{
+    cursor: pointer;
+    background-color: #e99122;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 110px;
+    height: 40px;
+    align-content: flex-start;
+    margin-top: 15px;
+    margin-left: -0.1%;
 }
-.deroulant > .menu::after {
-    content: ▼;
-    font-size: 12px;
+
+button{
+    margin-left: 36%;
+    border-radius: 3%;
+    color: white;
+    background-color: orange;
+    border-style: none;
+    margin-bottom: 2%;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    
 }
-.sous {
-    display: none;
-    box-shadow: 0px 1px 2px #11102f;
-    position: absolute;
-    background-color: #11102f;
-    width: 100%;
-    z-index: 1000%;
+button:hover{
+    background-color: white;
+    color: orange;
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
 }
-.deroule ul li {
-    float: left;
-    width: 100%;
-    text-align: left;
-    position: relative;
-}
-.footer {
+.footer{
     background-color: #0e0b26;
     width: 100%;
     height: 450px;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 30%;
-}
-.box11 {
+    margin-top: 0%;
+  }
+.box11{
     display: flex;
     flex-direction: column;
     width: 40%;
     margin-left: 150px;
     margin-top: 100px;
 }
-.fa-brands {
+.fa-brands{
     color: #e99122;
     font-size: 25px;
     margin-right: 4px;
     margin-top: 25px;
+
 }
-.box22 {
+.box22{
     width: 40%;
     margin-left: 90px;
     margin-top: 100px;
+
 }
-.white {
+.white{
     color: white;
     font-family: 'muli-semibold', sans-serif;
 }
-.orange {
+
+.orange{
     color: #e99122;
 }
-.gris {
+.gris{
     color: #6a6c80;
     font-size: 0.8em;
     margin-top: 20px;
+
 }
+
 .bullet a:link {
     color: #6a6c80;
     background-color: transparent;
     text-decoration: none;
     font-size: 0.8em;
-}
-#bullet li::marker {
+
+  }
+
+#bullet li::marker{
+
     color: #e99122;
 }
-.bullet {
+.bullet{
     margin-top: 20px;
     list-style-type: square;
 }
-.copy {
+.copy{
     color: #6a6c80;
     font-size: 0.75em;
 }

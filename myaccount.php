@@ -23,17 +23,22 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </div>
             </div>
         </div>
+    <div class="telephone">
     <section class="deroule">
         <ul>
             <li class="deroulant"><a class="menu" href="#">Profil</a>
                 <ul class="sous">
-                    <li><a class="menu" href="#">Modifier mon profil</a></li>
+                    <li><a class="menu" href="newprofil.php">Modifier mon profil</a></li>
                     <li><a class="menu" href="newmail.php">Modifier mon adresse mail</a></li>
                     <li><a class="menu" href="newpasswaord.php">Modifier mon mot de passe</a></li>
                 </ul>
             </li>
         </ul>
     </section>
+    <div class="contact">
+            <p class="aya"><img class ="logo" src="telephone.png"><span class="text">Pseudo</span></p>
+        </div>
+    </div>
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
