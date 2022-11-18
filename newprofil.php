@@ -20,17 +20,17 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         <div id="opaque">
         <div id="boxe">
         <div id="entree"> 
-        <h1 class="slogan3"><stronger>MODIFIER MON MOT DE PASSE</stronger></h1>
+        <h1 class="slogan3"><stronger>MODIFIER MON PSEUDO</stronger></h1>
         </div>
         </div>
         </div>
         
     <section class="newpassword">
-        <h3 class="slogan2"><stronger> Changer le mot de passe</stronger></h3>
+        <h3 class="slogan2"><stronger> Changer le pseudo</stronger></h3>
         <div class="password">
-            <input class="mailInput" type="password" placeholder="Ancien mot de passe">
-            <input class="mailInput" type="password" placeholder="Nouveau mot de passe">
-            <input class="mailInput" type="password" placeholder="Confirmer nouveau le mot de passe">
+            <input class="mailInput" type="password" placeholder="Ancien pseudo">
+            <input class="mailInput" type="password" placeholder="Nouveau pseudo">
+            <input class="mailInput" type="password" placeholder="Confirmer nouveau le nouveau pseudo">
             <input class="btnConnect" type="submit" name="newmail" value="Valider">
         </div>
     </section>

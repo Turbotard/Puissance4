@@ -7,38 +7,33 @@ session_start();
 
 if(isset($_POST['email']) && isset($_POST['password'])){
 
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $error = 0;
 
-    $check = $dbh->prepare('SELECT pseudo, email, mdp FROM utilisateur WHERE email = ?');
-    $check->execute(array($email));
-    $data = $check->fetch();
-    $row = $check->rowCount();
+    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
+    $sth->execute(['email'=> $email, 'password'=> $password]);
+    $donnees = $sth->fetch();
+    if( $donnees == '' )
+            $error = 1;
+        else
+            header('Location:site.php');
+    
 
-    if($row == 1)
-    {
-        if(filter_var($email, FILTER_VALIDATE_EMAIL))
+    if(filter_var($email, FILTER_VALIDATE_EMAIL))
         {
             $password = hash('sha256', $password);
 
-            if($data['password'] == $password)
+            if($donnees['password'] == $password)
             {
-                $_SESSION['user'] = $data['pseudo'];
-                header('Location:landing.php');
+                $_SESSION['user'] = $donnees;
+                header('Location:site.php');
             }else header('Location:site.php?login_err=password');
         }else header('Location:site.php?login_err=email');
-    }header('Location:site.php?login_err=already');
 
+        
     
-    /*$sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
-    $sth->execute(['email'=> $email, 'password'=> $password]);
-    $donnees = $sth->fetch();
-    $_SESSION['user'] = $donnees;
-    if( $donnees == '' )
-        $error = 1;
-    else
-        header('Location: ./site.php');*/
-}/*else header('Location:./connexion.php');*/
+}
 
 ?>
 
@@ -62,7 +57,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
-        <form method="post">
+        <form method="post" >
                     <input class="mailInput" name="email" type="email" placeholder="Email">
                     <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
                     <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">

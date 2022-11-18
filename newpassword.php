@@ -8,18 +8,16 @@ $error = 0;
 if(isset($_POST['submit']))
 {
 
-    $oldmail = $_POST['oldmail'];
-    $newmail = $_POST['newmail'];
-    $password = $_POST['password'];
-    $confirmpassword = $_POST['confirmpassword'];
+    $oldpassword = $_POST['oldpassword'];
+    $newpassword = $_POST['newpassword'];
+    $confirm = $_POST['confirm'];
 
-    if($confirmpassword == $password){
-        $sth = $dbh->prepare('UPDATE utilisateur SET email = ? WHERE email = ? AND mdp = ?');
-        $sth->execute([$newmail, $oldmail, $password]);
+    if($confirm == $newpassword){
+        $sth = $dbh->prepare('UPDATE utilisateur SET mdp = ? WHERE mdp = ?');
+        $sth->execute([$newpassword, $oldpassword]);
         $donnees = $sth->fetch();    
     }
 }
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -28,38 +26,38 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modifier mon mail</title>
-    <link rel="stylesheet" href="newmail.css">
+    <title>Modifier mon mot de passe</title>
+    <link rel="stylesheet" href="newpassword.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <div id="fond">
+<div id="fond">
         <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
         <div id="opaque">
         <div id="boxe">
-        <div id="entree">       
-            <h1 class="slogan3"><stronger> MODIFIER MON ADRESSE MAIL</stronger></h1>
+        <div id="entree"> 
+        <h1 class="slogan3"><stronger>MODIFIER MON MOT DE PASSE</stronger></h1>
         </div>
         </div>
         </div>
-    <section class="nmail">
-        <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
-    <form method="post" class="mail">
-        <input class="mailInput" name="oldmail" type="email" placeholder="Ancien email">
-        <input class="mailInput" name="newmail"type="email" placeholder="Nouvel email">
-        <input class="mailInput" name="password"type="password" placeholder="Mot de passe">
-        <input class="mailInput" name="confirmpassword"type="password" placeholder="Confirmer le mot de passe">
-        <input class="btnConnect" type="submit" name="submit" value="Valider">
-    </form>
-    </div>
+        
+    <section class="newpassword">
+        <h3 class="slogan2"><stronger> Changer le mot de passe</stronger></h3>
+        <form method="post" class="password">
+            <input class="mailInput" name="oldpassword" type="password" placeholder="Ancien mot de passe">
+            <input class="mailInput" name="newpassword" type="password" placeholder="Nouveau mot de passe">
+            <input class="mailInput" name="confirm" type="password" placeholder="Confirmer nouveau le mot de passe">
+            <input class="btnConnect" name="submit" type="submit"  value="Valider">
+        </form>
     </section>
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
+    
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+    ?>
 </body>
 </html>
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>
