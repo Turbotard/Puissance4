@@ -18,7 +18,7 @@ if(isset($_POST['submit']))
         $sth->execute([$newmail, $oldmail, $password]);
         $donnees = $sth->fetch();    
     }
-}else echo 'ça marche pas ';
+}
 
 ?>
 <!DOCTYPE html>
