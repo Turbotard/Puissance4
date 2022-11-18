@@ -15,7 +15,7 @@ if(isset($_POST['submit']))
             $data = $sth->fetch();
             
             $_SESSION['user'] = $data;
-            header('Location:site.php');
+            header('Location:connexion.php');
 
 }}}
 
