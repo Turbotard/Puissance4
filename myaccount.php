@@ -23,6 +23,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </div>
             </div>
         </div>
+    <div class="telephone">
     <section class="deroule">
         <ul>
             <li class="deroulant"><a class="menu" href="#">Profil</a>
@@ -34,6 +35,10 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </li>
         </ul>
     </section>
+    <div class="contact">
+            <p class="aya"><img class ="logo" src="telephone.png"><span class="text">Pseudo</span></p>
+        </div>
+    </div>
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>

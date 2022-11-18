@@ -53,6 +53,40 @@ p {
     color : white;
     margin-left: 0%;
 }
+.telephone {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 10%;
+    margin-top: 19%;
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 75%;
+}
+.aya {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:aliceblue;
+    font-size: 150%;
+    margin-right: 5%;
+    width: 20%;
+    height: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-bottom: 3%;
+    background: #0c0b26;
+}
+.logo {
+    height: 40%;
+    width: 40%;
+    margin-bottom: 15%;
+    margin-top: 20%;
+}
 #boxe {
     display: flex;
     justify-content: space-between;
