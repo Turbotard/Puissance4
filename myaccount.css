@@ -85,11 +85,14 @@ p {
     width: 40%;
     margin-bottom: 15%;
     margin-top: 20%;
+    clip-path: ellipse(50% 50%);
+    object-fit: cover;
 }
 .text {
     color:white;
-    font-size: 120%;
+    font-size: 110%;
     text-align: center;
+    margin-left: 10%;
 }
 #boxe {
     display: flex;
