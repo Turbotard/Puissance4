@@ -16,6 +16,7 @@ if(isset($_POST['submit'])){
             $donnees = $sth->fetch();
             if(!empty($donnees)){
                 $_SESSION['user'] = $donnees;
+                $_SESSION['loggedin'] = true;
                 header('Location:site.php');
             }else echo 'login error'; 
         }else echo 'login or mail error'; 

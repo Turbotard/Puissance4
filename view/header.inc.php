@@ -1,3 +1,15 @@
+<?php
+require ('./includes/database.inc.php');
+session_start();
+if (!isset($_SESSION['loggedin'])){
+     $isconnect = 'connexion.php';
+     $isconnect2 ='connexion.php';
+}
+else{
+     $isconnect = 'Jeu.php';
+     $isconnect2 ='myaccount.php';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,9 +33,9 @@
                 <p><strong>The Power Of Memory</strong></p>
             </div>
             <div id="boxe2">
-                <a href="myaccount.php"> <strong> PROFIL </strong> </a>
+                <a href="<?php echo $isconnect2?>"> <strong> PROFIL </strong> </a>
                 <a href="Site.php"> <strong> ACCUEIL </strong></a>
-                <a href="connexion.php"> <strong> JEU </strong></a>
+                <a href="<?php echo $isconnect?>"> <strong> JEU </strong></a>
                 <a href="score.php"> <strong> SCORE </strong></a>
                 <a href="aled.php"> <strong> ALED </strong></a>
             </div>
