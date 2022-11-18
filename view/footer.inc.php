@@ -1,12 +1,9 @@
 <?php
-
 require ('./includes/database.inc.php');
-session_start();
 if (!isset($_SESSION['loggedin']))
      $isconnect = 'connexion.php';
 else
      $isconnect = 'Jeu.php';
-     
 ?>
 <!DOCTYPE html>
 <html lang="en">
