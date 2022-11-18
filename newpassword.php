@@ -1,5 +1,22 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+require ('./includes/database.inc.php');
+
+
+$error = 0;
+if(isset($_POST['submit']))
+{
+
+    $oldpassword = $_POST['oldpassword'];
+    $newpassword = $_POST['newpassword'];
+    $confirm = $_POST['confirm'];
+
+    if($confirm == $newpassword){
+        $sth = $dbh->prepare('UPDATE utilisateur SET mdp = ? WHERE mdp = ?');
+        $sth->execute([$newpassword, $oldpassword]);
+        $donnees = $sth->fetch();    
+    }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +44,19 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         
     <section class="newpassword">
         <h3 class="slogan2"><stronger> Changer le mot de passe</stronger></h3>
-        <div class="password">
-            <input class="mailInput" type="password" placeholder="Ancien mot de passe">
-            <input class="mailInput" type="password" placeholder="Nouveau mot de passe">
-            <input class="mailInput" type="password" placeholder="Confirmer nouveau le mot de passe">
-            <input class="btnConnect" type="submit" name="newmail" value="Valider">
-        </div>
+        <form method="post" class="password">
+            <input class="mailInput" name="oldpassword" type="password" placeholder="Ancien mot de passe">
+            <input class="mailInput" name="newpassword" type="password" placeholder="Nouveau mot de passe">
+            <input class="mailInput" name="confirm" type="password" placeholder="Confirmer nouveau le mot de passe">
+            <input class="btnConnect" name="submit" type="submit"  value="Valider">
+        </form>
     </section>
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
     
+    <?php
+    require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+    ?>
 </body>
 </html>
-<?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-?>

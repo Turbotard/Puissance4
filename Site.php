@@ -1,5 +1,11 @@
 <?php
 include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+require ('./includes/database.inc.php');
+session_start();
+if (!isset($_SESSION['loggedin']))
+     $isconnect = 'connexion.php';
+else
+     $isconnect = 'Jeu.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -20,7 +26,7 @@ include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         <div id="opaque">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
-            <a href="connexion.php" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
+            <a href="<?php echo $isconnect?>" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
 </div>
     

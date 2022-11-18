@@ -103,7 +103,8 @@ p {
     font-size: 60px;
     margin-right: 10%;
     margin-left: 10%;
-    justify-content: space-around;  
+    justify-content: space-around;
+    margin-top: 5%;  
 }
 .slogan2 {
     color: white;

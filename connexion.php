@@ -2,46 +2,26 @@
 <?PHP
 
 require ('./includes/database.inc.php');
-session_start();
+if(isset($_POST['submit'])){
 
-
-if(isset($_POST['email']) && isset($_POST['password'])){
-
-    $email = htmlspecialchars($_POST['email']);
-    $password = htmlspecialchars($_POST['password']);
-
-    $check = $dbh->prepare('SELECT pseudo, email, mdp FROM utilisateur WHERE email = ?');
-    $check->execute(array($email));
-    $data = $check->fetch();
-    $row = $check->rowCount();
-
-    if($row == 1)
-    {
-        if(filter_var($email, FILTER_VALIDATE_EMAIL))
-        {
-            $password = hash('sha256', $password);
-
-            if($data['password'] == $password)
-            {
-                $_SESSION['user'] = $data['pseudo'];
-                header('Location:landing.php');
-            }else header('Location:site.php?login_err=password');
-        }else header('Location:site.php?login_err=email');
-    }header('Location:site.php?login_err=already');
-
+    $email = $_POST['email'];
+    $password = $_POST['password'];
     
-    /*$sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
-    $sth->execute(['email'=> $email, 'password'=> $password]);
-    $donnees = $sth->fetch();
-    $_SESSION['user'] = $donnees;
-    if( $donnees == '' )
-        $error = 1;
-    else
-        header('Location: ./site.php');*/
-}/*else header('Location:./connexion.php');*/
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+
+        if($email != '' && $password != ''){
+            $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = ? AND mdp = ?');
+            $sth->execute([$email, $password]);
+            $donnees = $sth->fetch();
+            if(!empty($donnees)){
+                $_SESSION['user'] = $donnees;
+                $_SESSION['loggedin'] = true;
+                header('Location:site.php');
+            }else echo 'login error'; 
+        }else echo 'login or mail error'; 
+}}
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,11 +38,16 @@ if(isset($_POST['email']) && isset($_POST['password'])){
     <?php 
     include "./view/header.inc.php";
     ?>
-
+    <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
-
+        <form method="post" >
+                    <input class="mailInput" name="email" type="email" placeholder="Email">
+                    <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
+                    <input type="submit" name="submit" value="Connexion" class="btnConnect">
+                    <a class="inscription2" href="inscription.php"> Inscription </a>
+</form>
         
 
 
@@ -84,15 +69,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
                     }
             }
             ?>
-                <form method="post">
-                    <input class="mailInput" name="email" type="email" placeholder="Email">
-                    <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
-                    <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">
-                </form>
-            </div>
-            <div class="inscription">
-                <a class="inscription2" href="inscription.php"> Inscription </a>
-            </div>
+                
     
         </section>
         <?php

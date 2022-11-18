@@ -1,22 +1,25 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-session_start();
 require ('./includes/database.inc.php');
+session_start();
 
 
 $error = 0;
-if(isset($_POST['oldmail']) && isset($_POST['password'])){
-if( filter_var($_POST['oldmail'], FILTER_VALIDATE_EMAIL)){
+if(isset($_POST['submit']))
+{
 
     $oldmail = $_POST['oldmail'];
-    $newmail = $P_POST['newmail'];
+    $newmail = $_POST['newmail'];
     $password = $_POST['password'];
+    $confirmpassword = $_POST['confirmpassword'];
 
-    
-    $sth = $dbh->prepare('UPDATE utilisateur SET email = :newmail WHERE email = :oldmail AND mdp = :password');
-    $sth->execute(['newmail'=> $newmail, 'password'=> $password]);
-    $donnees = $sth->fetch();    
-}}
+    if($confirmpassword == $password){
+        $sth = $dbh->prepare('UPDATE utilisateur SET email = ? WHERE email = ? AND mdp = ?');
+        $sth->execute([$newmail, $oldmail, $password]);
+        $donnees = $sth->fetch();    
+    }
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -43,12 +46,12 @@ if( filter_var($_POST['oldmail'], FILTER_VALIDATE_EMAIL)){
         </div>
     <section class="nmail">
         <h3 class="slogan2"><stronger> Changer l'adresse mail</stronger></h3>
-    <form class="mail">
+    <form method="post" class="mail">
         <input class="mailInput" name="oldmail" type="email" placeholder="Ancien email">
         <input class="mailInput" name="newmail"type="email" placeholder="Nouvel email">
         <input class="mailInput" name="password"type="password" placeholder="Mot de passe">
         <input class="mailInput" name="confirmpassword"type="password" placeholder="Confirmer le mot de passe">
-        <input class="btnConnect" type="submit" name="newmail" value="Valider">
+        <input class="btnConnect" type="submit" name="submit" value="Valider">
     </form>
     </div>
     </section>
