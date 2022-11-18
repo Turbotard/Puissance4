@@ -28,7 +28,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         <ul>
             <li class="deroulant"><a class="menu" href="#">Profil</a>
                 <ul class="sous">
-                    <li><a class="menu" href="#">Modifier mon profil</a></li>
+                    <li><a class="menu" href="newprofil.php">Modifier mon profil</a></li>
                     <li><a class="menu" href="newmail.php">Modifier mon adresse mail</a></li>
                     <li><a class="menu" href="newpasswaord.php">Modifier mon mot de passe</a></li>
                 </ul>
