@@ -3,40 +3,25 @@
 
 require ('./includes/database.inc.php');
 session_start();
-
-
-if(isset($_POST['email']) && isset($_POST['password'])){
+if(isset($_POST['submit'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $error = 0;
-
-    $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = :email AND mdp = :password');
-    $sth->execute(['email'=> $email, 'password'=> $password]);
-    $donnees = $sth->fetch();
-    if( $donnees == '' )
-            $error = 1;
-        else
-            header('Location:site.php');
     
+    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
 
-    if(filter_var($email, FILTER_VALIDATE_EMAIL))
-        {
-            $password = hash('sha256', $password);
-
-            if($donnees['password'] == $password)
-            {
+        if($email != '' && $password != ''){
+            $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = ? AND mdp = ?');
+            $sth->execute([$email, $password]);
+            $donnees = $sth->fetch();
+            if(!empty($donnees)){
                 $_SESSION['user'] = $donnees;
                 header('Location:site.php');
-            }else header('Location:site.php?login_err=password');
-        }else header('Location:site.php?login_err=email');
-
-        
-    
-}
+            }else echo 'login error'; 
+        }else echo 'login or mail error'; 
+}}
 
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -60,7 +45,7 @@ if(isset($_POST['email']) && isset($_POST['password'])){
         <form method="post">
                     <input class="mailInput" name="email" type="email" placeholder="Email">
                     <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
-                    <input class="boutonco" type="submit" name="connexion" value="Connexion" class="btnConnect">
+                    <input type="submit" name="submit" value="Connexion" class="btnConnect">
                     <a class="inscription2" href="inscription.php"> Inscription </a>
 </form>
         
