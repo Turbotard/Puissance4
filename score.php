@@ -1,4 +1,6 @@
-
+<?php
+require ('./includes/database.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
