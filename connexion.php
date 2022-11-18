@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
-        <form method="post">
+        <form method="post" >
                     <input class="mailInput" name="email" type="email" placeholder="Email">
                     <input class="mailInput" name="password" type="password" placeholder="Mot de passe">
                     <input type="submit" name="submit" value="Connexion" class="btnConnect">

@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
         $sth->execute([$newpassword, $oldpassword]);
         $donnees = $sth->fetch();    
     }
-}else echo 'ça marche pas ';
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
