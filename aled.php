@@ -1,6 +1,5 @@
 <?PHP
 require ('./includes/database.inc.php');
-session_start();
 $error = 0;
 if(isset($_POST['email'])){
 if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
@@ -63,9 +62,6 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
-
-
-    
 </body>
 </html>
 <?php
