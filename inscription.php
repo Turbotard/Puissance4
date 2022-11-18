@@ -1,6 +1,5 @@
 <?php
 require ('./includes/database.inc.php'); 
-session_start();
 
 if(isset($_POST['submit']))
 {
@@ -9,15 +8,15 @@ if(isset($_POST['submit']))
    $password = $_POST['password'];
    $password_retype = $_POST['password_retype'];
    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-        if($password_retype == $password){
-            $sth = $dbh->prepare("INSERT INTO utilisateur (email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES (?, ?, ?, NOW(), NOW())");
-            $sth->execute([$email, $password, $pseudo]);
-            $data = $sth->fetch();
-            
-            $_SESSION['user'] = $data;
-            header('Location:connexion.php');
+    if (preg_match('/[a-z]/', $password) && preg_match('/[A-Z]/', $password)  && preg_match('/\d/', $password) || preg_match('/[^a-zA-Z\d]/', $password)) {
+            if($password_retype == $password){
+                $sth = $dbh->prepare("INSERT INTO utilisateur (email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES (?, ?, ?, NOW(), NOW())");
+                $sth->execute([$email, $password, $pseudo]);
+                $data = $sth->fetch();
+                header('Location:connexion.php');
 
-}}}
+}}
+}}
 
 
 
@@ -65,8 +64,8 @@ include "./view/header.inc.php";
             ?>
             <form method="post">
                 <input class="mailInput" type="email" name="email" placeholder="Email">
-                <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo">
-                <input class="mailInput" type="password" name="password" placeholder="Mot de passe">
+                <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo" minlength="4">
+                <input class="mailInput" type="password" name="password" placeholder="Mot de passe" minlength="8">
                 <input class="mailInput" type="password" name="password_retype" placeholder="Confirmer le mot de passe">
                 <input class="btnConnect" type="submit" name="submit" value="S'inscrire">
             </form>
