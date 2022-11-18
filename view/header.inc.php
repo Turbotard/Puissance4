@@ -1,6 +1,6 @@
 <?php
 require ('./includes/database.inc.php');
-
+session_start();
 if (!isset($_SESSION['loggedin'])){
      $isconnect = 'connexion.php';
      $isconnect2 ='connexion.php';
