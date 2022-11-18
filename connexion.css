@@ -34,7 +34,7 @@ header {
 h1 {
     display: flex;
     margin-left: 20%;
-    margin-top: 11%;
+    margin-top: -2%;
     color: rgb(251, 251, 251);
     font-size: 55px; 
     margin-left: auto;
@@ -93,11 +93,11 @@ p {
 #back {
     position: absolute;
     width: 100%;
-    height: 40%;
+    height: 250px;
     opacity: 0.5;
     background-position: 35% 60%;
     background-size: cover;
-    
+    margin-top: -8%;
 }
 
 .login{
@@ -115,20 +115,9 @@ p {
     flex-direction:column;
 }
 
-.btnConnect{
-    cursor: pointer;
-    background-color: #e99122;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    width: 110px;
-    height: 40px;
-    align-content: flex-start;
-    margin-top: 15px;
-    margin-left: -0.1%;
-}
 
-.boutonco{
+
+.btnConnect{
     margin-left: 37%;
     border-radius: 3%;
     padding-left: 1%;
@@ -144,14 +133,14 @@ p {
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
-.boutonco:hover {
+.btnConnect:hover {
     background-color: white;
     color: orange;
 
     -webkit-transform: scale(1.2);
 	transform: scale(1.2);
 }
-.boutonco:hover{
+.btnConnect:hover{
     background-color: white;
     color: orange;
 }
@@ -167,8 +156,16 @@ p {
     opacity: 0.76;
     color: orange;
 }
+.inscription2{
+    color: white;
+}
+.inscription2 :hover{
+    opacity: 0.76;
+    color: orange;
+}
+
 .footer{
-    background-color: #0e0b26;
+    background-color: #11102f;
     width: 100%;
     height: 450px;
     display: flex;
@@ -271,5 +268,6 @@ p {
     
 }
 form{
-    margin-top: 6%;
+    margin-top: 15%;
+    margin-bottom: 10%;
 }
