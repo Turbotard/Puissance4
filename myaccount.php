@@ -26,7 +26,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <div class="telephone">
     <section class="deroule">
         <ul>
-            <li class="deroulant"><a class="menu" href="#">Profil</a>
+            <li class="deroulant"><a class="menu" href="myaccount.php">Profil</a>
                 <ul class="sous">
                     <li><a class="menu" href="newprofil.php">Modifier mon profil</a></li>
                     <li><a class="menu" href="newmail.php">Modifier mon adresse mail</a></li>
