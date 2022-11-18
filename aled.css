@@ -34,9 +34,12 @@ header {
 h1 {
     display: flex;
     margin-left: 20%;
-    margin-top: 11%;
+    margin-top: -2%;
     color: rgb(251, 251, 251);
-    font-size: 55px;  
+    font-size: 55px; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: auto;
 }
 
 p {
@@ -95,7 +98,7 @@ p {
     opacity: 0.5;
     background-position: 35% 60%;
     background-size: cover;
-    margin-top: 5%;
+    margin-top: -8%;
 }
 #opaque {
     position: relative;
@@ -129,6 +132,7 @@ p {
     justify-content: center;
     height: 90%;
     width: 75%;
+    margin-top: -10%;
 }
 
 .aya {
