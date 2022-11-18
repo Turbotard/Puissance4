@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
             $sth->execute([$email, $password, $pseudo]);
             $data = $sth->fetch();
             
-            $_SESSION['user'] = $data;
+            
             header('Location:connexion.php');
 
 }}}
