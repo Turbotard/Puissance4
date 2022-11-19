@@ -54,18 +54,25 @@ p {
     margin-left: 0%;
 }
 .telephone {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    margin-left: 49%;
+    margin-top: -16%;
+    margin-bottom: 15%;
+}
+.pseudo{
+    margin-left: 11%;
+}
+.profil{
+    margin-left: 45%;
+    margin-top: -20.5%;
     margin-bottom: 5%;
-    margin-top: 5%;
 }
 .contact {
     display: flex;
     justify-content: center;
     height: 100%;
     width: 50%;
-    
+    margin-right: 50%;
+    margin-top: 2%;
 }
 .aya {
     display: flex;

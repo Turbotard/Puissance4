@@ -23,6 +23,13 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </div>
             </div>
         </div>
+        <div class="contact">
+            <p class="aya"><span class="text">Pseudo</span><img class ="logo" src="roro.jpeg"></p>
+        </div>
+        <div>
+            <p class="pseudo" ><span class="text">Cliquez sur l'avatar pour en savoir plus sur votre pseudo ⬆️</span></p>
+</div>
+    </div>
     <div class="telephone">
     <section class="deroule">
         <ul>
@@ -36,10 +43,12 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </li>
         </ul>
     </section>
-    <div class="contact">
-            <p class="aya"><span class="text">Pseudo</span><img class ="logo" src="roro.jpeg"></p>
-        </div>
-    </div>
+</div>
+<div>
+            <p class="profil"><span class="text">Cliquez sur profil pour aller dans les paramètres ⬆️</span></p>
+</div>
+
+    
     <?php
     require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
     ?>
