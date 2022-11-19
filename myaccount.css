@@ -64,7 +64,8 @@ p {
     display: flex;
     justify-content: center;
     height: 100%;
-    width: 75%;
+    width: 50%;
+    
 }
 .aya {
     display: flex;
@@ -79,20 +80,24 @@ p {
     padding-left: 5%;
     padding-bottom: 3%;
     background: #0c0b26;
+    border-radius: 10px;
 }
 .logo {
     height: 40%;
     width: 40%;
-    margin-bottom: 15%;
-    margin-top: 20%;
+    margin-bottom: 5%;
+    margin-top: 5%;
     clip-path: ellipse(50% 50%);
     object-fit: cover;
+    margin-right: 0%;
+    
 }
 .text {
     color:white;
-    font-size: 110%;
+    font-size: 80%;
     text-align: center;
-    margin-left: 10%;
+    margin-bottom: 5%;
+    margin-right: 10%;
 }
 #boxe {
     display: flex;
@@ -134,7 +139,8 @@ p {
     float: left;
     width: 25%;
     margin: 0 auto;
-    margin-top: 4%;
+    margin-top: -4%;
+    margin-left: -2%;
 }
 .deroule ul {
     list-style-type: none;
