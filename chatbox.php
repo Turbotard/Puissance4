@@ -176,10 +176,19 @@
         </div>
 
         <div class="chatbox">
-            <div class="bordure">
-                <p><img src="groot.jpeg">Je s'appel GROOT!</p>
+            <div class="tete">
+                <img src="groot.jpeg">
+                <p>Je s'appelle GROOT!</p>
             </div>
-        
+            <div class="corps">
+
+            </div>
+            <div class="pied">
+                <input type="text" placeholder="Votre message ..." class="msg">
+                <button>Envoyer</button>
+            </div>
+
+
         </div>
     </footer>
 
