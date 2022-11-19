@@ -1,4 +1,6 @@
 <?php 
+require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+require ('./includes/database.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,32 +14,14 @@
 </head>
 <body>
 
-    <header id="header">
-        <img id="back" src="ordi.jpg">
+<div id="entree">
+    <img id="back" src="ordi.jpg">
         <div id="opaque">
-
-        <nav>
-            <div id="boxe">
-            <div id="boxe1">
-                <p><strong>The Power Of Memory</strong></p>
-            </div>
-            <div id="boxe2">
-                <a href="Site.html"> <strong> ACCUEIL </strong></a>
-                <a href="connexion.html"> <strong> JEU </strong></a>
-                <a href="connexion.html"> <strong> SCORE </strong></a>
-                <a href="aled.html"> <strong> ALED </strong></a>
-            </div>
-            
-        </nav>
-
-        <div id="entree">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
-            <a href="connexion.html" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
+            <a href="<?php echo $isconnect?>" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
-        </div>
-            </div>
-    </header>
+</div>
 
     <div class="LoremIpsum">
         <div class ="picture1">
@@ -129,53 +113,12 @@
            <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
         </div>
    </section>
+   <?php
+   require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+   ?>
+   
         
-    <footer>
-        <div class="box1">
-            <ul>
-                <h3>Information</h3>
-                <div id="footg">
-                    <p>Quisque commodo facilisis purus, interduo volutpat arcu viverra sed.</p>
-                </div>
-               <div id="footg">
-                    <h5>Tel :  </h5><p> 0783494412</p>
-               </div>
-               <div id="footg">
-                    <h5>Email :  </h5><p> Aya.aidouni@edu.esiee-it.fr</p>
-                </div>
-                <div id="footg">
-                    <h5>Location :  </h5><p> Chez AYA</p>
-                </div>
-
-                <div class="test">
-                    <div class="logo">
-                        <a href="https://www.google.com/" target="_blank"><i  class="fa-brands fa-google"></i></a>
-                    </div>
-                    <div class="logo">
-                        <a href="https://www.facebook.com/"target="_blank"><i  class="fa-brands fa-square-facebook"></i></a>
-                    </div>
-                    <div class="logo">
-                        <a href="https://www.twitter.com/"target="_blank"><i  class="fa-brands fa-square-twitter"></i></a>
-                    </div>
-                    <div class="logo">
-                        <a href="https://www.instagram.com/"target="_blank"><i  class="fa-brands fa-square-instagram"></i></a>
-                    </div>
-                </div>
-            </ul>
-        </div>
-
-        <div class="box2">
-            <h3>Power of Memory</h3>
-            <div id="foot">
-                <ul class="foot">
-                    <li><a href="connexion.html">Jouer !</a></li>
-                    <li><a href="connexion.html">Les scores </a></li>
-                    <li><a href="aled.html">Aled !</a></li>
-                </ul>
-            </div> 
-        </div>
-
-        <div class="chatbox">
+   <div class="chatbox">
             <div class="tete">
                 <img src="groot.jpeg">
                 <p>Je s'appelle GROOT!</p>
@@ -190,7 +133,9 @@
 
 
         </div>
-    </footer>
+        <?php
+   require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+   ?>
 
 </body>
 </html>
