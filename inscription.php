@@ -18,8 +18,7 @@ if(isset($_POST['submit']))
 }}
 }}
 
-
-
+include "./view/header.inc.php";
 
 ?>
 
@@ -37,9 +36,7 @@ if(isset($_POST['submit']))
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-<?php 
-include "./view/header.inc.php";
-?>
+
 <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
 <div id="entree">
         <h1 class="slogan1"><stronger> INSCRIPTION</stronger></h1>

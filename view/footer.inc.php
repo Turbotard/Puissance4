@@ -43,7 +43,7 @@ else
     <ul class="bullet">
         <li><a href="<?php echo $isconnect?>">Jouer !</a></li><br>
         <li><a href="score.php">Les scores</a></li><br>
-        <li><a href="aled.php">Nous contacter</a></li>
+        <li><a href="aled.php">Aled</a></li>
     </ul>
 </div>
 </section>

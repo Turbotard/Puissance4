@@ -6,20 +6,19 @@ if(isset($_POST['submit'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-    
-    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
+    $_SESSION['loggedin'] = false;
 
         if($email != '' && $password != ''){
             $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = ? AND mdp = ?');
             $sth->execute([$email, $password]);
             $donnees = $sth->fetch();
-            if(!empty($donnees)){
+            if($donnees != ""){
                 $_SESSION['user'] = $donnees;
                 $_SESSION['loggedin'] = true;
-                header('Location:site.php');
-            }else echo 'login error'; 
-        }else echo 'login or mail error'; 
-}}
+                header('Location:Site.php');
+            }
+        }
+}
 
 ?>
 

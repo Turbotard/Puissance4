@@ -31,6 +31,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
                     <li><a class="menu" href="newprofil.php">Modifier mon profil</a></li>
                     <li><a class="menu" href="newmail.php">Modifier mon adresse mail</a></li>
                     <li><a class="menu" href="newpassword.php">Modifier mon mot de passe</a></li>
+                    <li><a class="menu" href="deconnexion.php">Déconnexion</a></li>
                 </ul>
             </li>
         </ul>
