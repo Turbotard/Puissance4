@@ -1,6 +1,33 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 require ('./includes/database.inc.php');
+
+if ($_SESSION['loggedin'] == false)
+    $isconnect = 'connexion.php';
+else
+    $isconnect = 'Jeu.php';
+
+
+if(isset($_POST['submit'])){
+
+    $message = $_POST['message'];
+    $pseu = $_SESSION['pseu'];
+
+    if (isset($_SESSION['loggedin']) ) {
+        if (isset($_POST['message'])) {
+
+            $uim = $dbh->prepare("SELECT ID FROM utilisateur WHERE pseudo = ?");
+            $uim->execute(array($pseu));
+            $idpseudo = $uim;
+            $sql = "INSERT INTO message ( ID_jeu, ID_utilisateur, message, date_heure_mess ) VALUES (1, ?, ?, NOW())";
+            $sth = $dbh->prepare($sql);
+            $sth->execute(array($idpseudo, $message));
+
+        }
+    }
+    
+
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -126,10 +153,10 @@ require ('./includes/database.inc.php');
             <div class="corps">
 
             </div>
-            <div class="pied">
-                <input type="text" placeholder="Votre message ..." class="msg">
-                <button>Envoyer</button>
-            </div>
+            <form method="post" class="pied">
+                <input type="text" name="message" placeholder="Votre message ..." class="msg">
+                <input type="submit" name="submit" value="Envoyer">
+            </form>
 
 
         </div>
