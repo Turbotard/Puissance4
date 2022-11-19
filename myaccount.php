@@ -37,7 +37,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         </ul>
     </section>
     <div class="contact">
-            <p class="aya"><img class ="logo" src="roro.jpeg"><span class="text">Pseudo</span></p>
+            <p class="aya"><span class="text">Pseudo</span><img class ="logo" src="roro.jpeg"></p>
         </div>
     </div>
     <?php
