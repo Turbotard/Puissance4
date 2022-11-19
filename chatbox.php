@@ -1,4 +1,7 @@
-
+<?php 
+require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+require ('./includes/database.inc.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
