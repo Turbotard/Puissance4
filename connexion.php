@@ -15,6 +15,7 @@ if(isset($_POST['submit'])){
             if($donnees != ""){
                 $_SESSION['user'] = $donnees;
                 $_SESSION['loggedin'] = true;
+                $_SESSION['pseu'] = $donnees['pseudo'];
                 header('Location:Site.php');
             }
         }
