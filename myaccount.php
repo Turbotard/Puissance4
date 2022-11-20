@@ -26,9 +26,6 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         <div class="contact">
             <p class="aya"><span class="text">Pseudo</span><img class ="logo" src="roro.jpeg"></p>
         </div>
-        <div>
-            <p class="pseudo" ><span class="text">Cliquez sur l'avatar pour en savoir plus sur votre pseudo ⬆️</span></p>
-</div>
     </div>
     <div class="telephone">
     <section class="deroule">
