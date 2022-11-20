@@ -54,11 +54,41 @@ p {
     margin-left: 0%;
 }
 .telephone {
-    margin-left: 47%;
+    margin-left: 50%;
     margin-top: -14%;
-    margin-bottom: 15%;
+    margin-bottom: 30%;
+}
+.text {
+    font-size: 60px;
+    margin-right: 20%;
+    margin-left: 20%;
+    justify-content: space-around;  
+
+    text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #cddc47 0%,
+    #ac80db 29%,
+    #13ff66 67%,
+    #ff00fb 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
 }
 
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
 .profil{
     margin-left: 44%;
     margin-top: -19%;
@@ -94,10 +124,17 @@ p {
     margin-top: 5%;
     clip-path: ellipse(50% 50%);
     object-fit: cover;
-    margin-right: 0%;
+    margin-right: 15%;
     
 }
 .text {
+    color:white;
+    font-size: 80%;
+    text-align: center;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+.text1 {
     color:white;
     font-size: 80%;
     text-align: center;

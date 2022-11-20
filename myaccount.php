@@ -24,7 +24,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
             </div>
         </div>
         <div class="contact">
-            <p class="aya"><span class="text">Pseudo</span><img class ="logo" src="roro.jpeg"></p>
+            <p class="aya"><span class="text"><strong>Pseudo</strong></span><img class ="logo" src="roro.jpeg"></p>
         </div>
     </div>
     <div class="telephone">
@@ -41,9 +41,7 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
         </ul>
     </section>
 </div>
-<div>
-            <p class="profil"><span class="text">Cliquez sur profil pour aller dans les paramètres ⬆️</span></p>
-</div>
+
 
     
     <?php
