@@ -1,11 +1,11 @@
 <?php
 include "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-require ('./includes/database.inc.php');
+require_once ('./includes/database.inc.php');
 
-if ($_SESSION['loggedin'] == false)
-    $isconnect = 'connexion.php';
-else
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     $isconnect = 'Jeu.php';
+else
+    $isconnect = 'connexion.php';
 
 ?>
 <!DOCTYPE html>
@@ -21,6 +21,7 @@ else
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+    <?php echo var_dump($_SESSION)?>
 <div id="entree">
     <img id="back" src="ordi.jpg">
         <div id="opaque">

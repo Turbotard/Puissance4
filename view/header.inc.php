@@ -1,7 +1,7 @@
 <?php
-require ('./includes/database.inc.php');
-session_start();
-if (!$_SESSION['loggedin']){
+require_once ('./includes/database.inc.php');
+
+if (!isset($_SESSION['loggedin'])){
      $isconnect = 'connexion.php';
      $isconnect2 ='connexion.php';
 }

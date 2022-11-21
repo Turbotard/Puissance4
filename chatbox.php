@@ -1,6 +1,6 @@
 <?php 
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-require ('./includes/database.inc.php');
+require_once ('./includes/database.inc.php');
 
 if ($_SESSION['loggedin'] == false)
     $isconnect = 'connexion.php';

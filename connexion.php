@@ -1,17 +1,18 @@
 
 <?PHP
 
-require ('./includes/database.inc.php');
+require_once ('./includes/database.inc.php');
+session_start();
 if(isset($_POST['submit'])){
 
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $_SESSION['loggedin'] = false;
-
+    
         if($email != '' && $password != ''){
             $sth = $dbh->prepare('SELECT * FROM utilisateur WHERE email = ? AND mdp = ?');
             $sth->execute([$email, $password]);
             $donnees = $sth->fetch();
+            
             if($donnees != ""){
                 $_SESSION['user'] = $donnees;
                 $_SESSION['loggedin'] = true;
