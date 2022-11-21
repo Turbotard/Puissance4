@@ -24,7 +24,7 @@ require("/Applications/MAMP/htdocs/Puissance4/view/header.inc.php");
             </div>
         </div>
         <div class="contact">
-            <p class="aya"><span class="text"><strong>Pseudo</strong></span><img class ="logo" src="roro.jpeg"></p>
+            <p class="aya"><span class="text"><strong><?php echo $_SESSION['pseu'] ?></strong></span><img class ="logo" src="roro.jpeg"></p>
         </div>
     </div>
     <div class="telephone">
