@@ -8,7 +8,7 @@ if(isset($_POST['submit']))
    $password = $_POST['password'];
    $password_retype = $_POST['password_retype'];
    if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-    if (preg_match('/[a-z]/', $password) && preg_match('/[A-Z]/', $password)  && preg_match('/\d/', $password) || preg_match('/[^a-zA-Z\d]/', $password)) {
+    
             if($password_retype == $password){
                 $sth = $dbh->prepare("INSERT INTO utilisateur (email, mdp, pseudo, date_heure_inscr, date_heure_last) VALUES (?, ?, ?, NOW(), NOW())");
                 $sth->execute([$email, $password, $pseudo]);
@@ -16,7 +16,7 @@ if(isset($_POST['submit']))
                 header('Location:connexion.php');
 
 }}
-}}
+}
 
 include "./view/header.inc.php";
 
