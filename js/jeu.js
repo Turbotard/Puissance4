@@ -1,13 +1,24 @@
 const divresult = document.querySelector("#resultat");
 
 var tab = [
-    [1,0,0,0,0,0],
     [0,0,0,0,0,0],
     [0,0,0,0,0,0],
-    [0,0,0,0,0,1],
+    [0,0,0,0,0,0],
+    [0,0,0,0,0,0],
     [0,0,0,0,0,0],
     [0,0,0,0,0,0]
 ];
+var tabresult= [
+    [1,1,0,0,0,0],
+    [0,0,0,0,0,0],
+    [0,0,0,0,0,0],
+    [0,0,0,0,2,2],
+    [0,0,0,0,0,0],
+    [0,0,0,0,0,0]
+]
+var oldselection = [];
+var nbaffich = 0;
+var ready = true;
 
 affichertab();
 
@@ -17,9 +28,9 @@ function affichertab(){
         txt += "<div>";
         for (var j=0; j < tab[i].length;j++){
             if (tab[i][j] === 0){
-                txt += "<button class='btn btn-primary m-2' style='widht: 200px;height:100px'>afficher</button>";
+                txt += "<button class='btn btn-primary m-2' style='widht: 100px;height:150px' onClick = 'verif(\""+i+"-"+j+"\")'>afficher</button>";
             }else{
-                txt += "<img src ='"+getimage(tab[i][j])+"'  style='widht: 200px;height:100px' class='m-2'>";
+                txt += "<img src ='"+getimage(tab[i][j])+"'  style='widht: 100px;height:150px' class='m-2'>";
             }
         }
     }   txt+= "</div>"
@@ -67,4 +78,33 @@ function getimage(valeur){
         default : console.log("connais pas");
     }
     return  imgtxt;
+}
+function verif(element){
+    if(ready ===true){
+
+    
+        nbaffich++;
+        var ligne = element.substr(0,1);
+        var colonne = element.substr(2,1)
+        tab[ligne][colonne] = tabresult[ligne][colonne];
+        affichertab();
+        if (nbaffich > 1){
+            ready = false;
+            setTimeout(() => {
+                if (tab[ligne][colonne]!== tabresult[oldselection[0]][oldselection[1]]){
+                    tab[ligne][colonne] = 0;
+                    tab[oldselection[0]][oldselection[1]] = 0;
+                } 
+                affichertab();
+                ready = true;
+                nbaffich=0;
+                oldselection = [ligne, colonne];
+            }, 600);
+            
+            
+        } else{
+            oldselection = [ligne, colonne];
+        }
+    
+    }
 }
