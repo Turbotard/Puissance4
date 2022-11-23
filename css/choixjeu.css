@@ -16,7 +16,8 @@ body {
     font-size: 60px;
     margin-right: 10%;
     margin-left: 10%;
-    justify-content: space-around;  
+    justify-content: space-around;
+    font-weight: bold;
 }
 #back {
     position: absolute;
@@ -60,6 +61,7 @@ h2 {
     margin-bottom: 0%;
     margin-left: 10%;
     margin-right: 0%;
+    font-weight: bold;
 }
 .telephone {
     margin-left: 38%;
@@ -213,6 +215,7 @@ h2 {
     padding: 10px 0px;
     font-size: 40px;
     font-weight: bold;
+    margin-top: 8%;
 }
 .menu:hover { 
     cursor: pointer;
@@ -295,6 +298,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     margin-left: 30%;
+    margin-top: 8%;
 }
 .menu2:hover { 
     cursor: pointer;
