@@ -1,26 +1,16 @@
 <?php
+$pageTitle = "The power of memory";
+$cssFileName = "../css/site.css";
 include "../view/header.inc.php";
 require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = '../Jeu.php';
+    $isconnect = './Jeu.php';
 else
-    $isconnect = '../connexion.php';
+    $isconnect = './connexion.php';
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the power of memory</title>
-    <link rel="stylesheet" href="../css/site.css">
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-    <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+
 <div id="entree">
     <img id="back" src="../image/ordi.jpg">
         <div id="opaque">
@@ -125,8 +115,6 @@ else
     require "../view/bouton.php";
     ?>
 
-</body>
-</html>
 <?php
 include "../view/footer.inc.php";
 ?>
