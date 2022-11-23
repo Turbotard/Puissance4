@@ -14,27 +14,18 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         $error = 1;
     }
     else
-        header('location: ../site.php');
+        header('location: ./site.php');
         mail($email,$sujet,$message." vous nous avez demandez de l'aide");
         imap_mail($email,$sujet,$message." vous nous avez demandez de l'aide");
 }}
 ?>
 <?php
+$pageTitle = "Aled";
+$cssFileName = "../css/aled.css";
 require "../view/header.inc.php";
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aled</title>
-    <link rel="stylesheet" href="../css/aled.css">
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-</head>
-<body>
+
 <img id="back" src="../image/fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
         <div id="opaque">
 <div id="entree">
@@ -62,8 +53,7 @@ require "../view/header.inc.php";
     <?php
     require "../view/bouton.php";
     ?>
-</body>
-</html>
+
 <?php
 require "../view/footer.inc.php";
 ?>

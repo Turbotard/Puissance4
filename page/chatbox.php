@@ -1,11 +1,13 @@
 <?php 
+$pageTitle = "chatbox";
+$cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
 require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = '../Jeu.php';
+    $isconnect = './Jeu.php';
 else
-    $isconnect = '../connexion.php';
+    $isconnect = './connexion.php';
 
 
 if(isset($_POST['submit'])){
@@ -22,23 +24,11 @@ if(isset($_POST['submit'])){
 
         }
     }
-    //else 
-    //header('Location:connexion.php');
+
     
 
 }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>the power of memory</title>
-    <link rel="stylesheet" href="../css/chatbox.css">
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-</head>
-<body>
 
 <div id="entree">
     <img id="back" src="../image/ordi.jpg">
@@ -160,5 +150,3 @@ if(isset($_POST['submit'])){
 
         </div>
 
-</body>
-</html>
