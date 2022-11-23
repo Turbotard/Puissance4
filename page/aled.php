@@ -1,5 +1,5 @@
 <?PHP
-require ('./includes/database.inc.php');
+require ('../includes/database.inc.php');
 $error = 0;
 if(isset($_POST['email'])){
 if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
@@ -14,13 +14,13 @@ if( filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         $error = 1;
     }
     else
-        header('location: .site.php');
+        header('location: ../site.php');
         mail($email,$sujet,$message." vous nous avez demandez de l'aide");
         imap_mail($email,$sujet,$message." vous nous avez demandez de l'aide");
 }}
 ?>
 <?php
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
+require "../view/header.inc.php";
 
 ?>
 <!DOCTYPE html>
@@ -31,11 +31,11 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aled</title>
-    <link rel="stylesheet" href="aled.css">
+    <link rel="stylesheet" href="../css/aled.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+<img id="back" src="../image/fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
         <div id="opaque">
 <div id="entree">
         <h1 class="slogan3"><stronger> ALED</stronger></h1>
@@ -44,9 +44,9 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 
     <div class="telephone">
         <div class="contact">
-            <p class="aya"><img class ="logo" src="telephone.png"><span class="text">07 83 49 44 12</span></p>
-            <p class="aya"><img class="logo" src="mail.png"><span class="text">aya.aidouni@edu.esiee-it.fr</span></p>
-            <p class="aya"><img class="logo" src="localisation.png"><span class="text">chez Aya</span></p>
+            <p class="aya"><img class ="logo" src="../image/telephone.png"><span class="text">07 83 49 44 12</span></p>
+            <p class="aya"><img class="logo" src="../image/mail.png"><span class="text">aya.aidouni@edu.esiee-it.fr</span></p>
+            <p class="aya"><img class="logo" src="../image/localisation.png"><span class="text">chez Aya</span></p>
         </div>
     </div>
 
@@ -60,10 +60,10 @@ require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
     </form>
     </div>
     <?php
-    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    require "../view/bouton.php";
     ?>
 </body>
 </html>
 <?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+require "../view/footer.inc.php";
 ?>

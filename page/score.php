@@ -1,5 +1,5 @@
 <?php
-require ('./includes/database.inc.php');
+require_once ('../includes/database.inc.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -9,14 +9,14 @@ require ('./includes/database.inc.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Score</title>
-    <link rel="stylesheet" href="score.css">
+    <link rel="stylesheet" href="../css/score.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 <?php
-include "./view/header.inc.php";
+include "../view/header.inc.php";
 ?>
 
     <div class="container">
@@ -91,12 +91,12 @@ include "./view/header.inc.php";
       </div>
 
       <?php
-      require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+      require "../view/bouton.php";
       ?>
 
 
       <?php
-      include "./view/footer.inc.php";
+      include "../view/footer.inc.php";
       ?>
 
 
