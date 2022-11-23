@@ -396,6 +396,33 @@ h2 {
     color: #6a6c80;
     font-size: 0.75em;
 }
+button {
+    display: flex;
+    border-radius: 3px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: orange;
+    border-style: none;
+    margin-top: 25px;
+    margin-bottom: 3%;
+    
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    cursor: pointer;
+}
+button:hover {
+    background-color: white;
+    color: orange;
+
+    -webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
 .bouton2{
     position: fixed;
     width: 50px;

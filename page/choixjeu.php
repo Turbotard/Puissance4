@@ -19,7 +19,9 @@ require("../view/header.inc.php");
     <div id="opaque">
         <div id="boxe">
             <div id="entree">
+            <div id="opaque">
                 <h1 class="slogan3"><stronger> CHOIX DU JEU</stronger></h1>
+            </div>
             </div>
             </div>
         </div>
@@ -52,7 +54,7 @@ require("../view/header.inc.php");
         </ul>
     </section>
 </div>
-
+<a href="<?php echo $isconnect?>" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
     <script src="../js/choixjeu.js"></script>
     <?php
     require "../view/bouton.php";
