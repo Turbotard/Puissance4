@@ -6,16 +6,7 @@ var tab = [
     [0,0,0,0],
     [0,0,0,0]
 ];
-/*
-var tabresult= [
-    [1,1,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,2,2],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0]
-] 
-*/
+
 var tabresult = generaterandomresult();
 var oldselection = [];
 var nbaffich = 0;
@@ -29,7 +20,7 @@ function affichertab(){
         txt += "<div>";
         for (var j=0; j < tab[i].length;j++){
             if (tab[i][j] === 0){
-                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px' onClick = 'verif(\""+i+"-"+j+"\")'>afficher</button>";
+                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px;padding:0%' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/Dabeur.png></button>";
             }else{
                 txt += "<img src ='"+getimage(tab[i][j])+"'  style='width: 150px;height:150px' class='m-1'>";
             }
