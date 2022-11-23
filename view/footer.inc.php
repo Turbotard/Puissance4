@@ -1,5 +1,5 @@
 <?php
-require_once ('./includes/database.inc.php');
+require_once ('../includes/database.inc.php');
 if (!isset($_SESSION['loggedin']))
      $isconnect = 'connexion.php';
 else
@@ -43,7 +43,7 @@ else
     <ul class="bullet">
         <li><a href="<?php echo $isconnect?>">Jouer !</a></li><br>
         <li><a href="score.php">Les scores</a></li><br>
-        <li><a href="aled.php">Aled</a></li>
+        <li><a href="../page/aled.php">Aled</a></li>
     </ul>
 </div>
 </section>

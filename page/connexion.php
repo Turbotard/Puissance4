@@ -1,8 +1,8 @@
 
 <?PHP
 
-require_once ('./includes/database.inc.php');
-session_start();
+require_once ('../includes/database.inc.php');
+
 if(isset($_POST['submit'])){
 
     $email = $_POST['email'];
@@ -17,7 +17,7 @@ if(isset($_POST['submit'])){
                 $_SESSION['user'] = $donnees;
                 $_SESSION['loggedin'] = true;
                 $_SESSION['pseu'] = $donnees['pseudo'];
-                header('Location:Site.php');
+                header('Location:../Site.php');
             }
         }
 }
@@ -32,14 +32,14 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="../css/connexion.css">
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <?php 
-    include "./view/header.inc.php";
+    include "../view/header.inc.php";
     ?>
-    <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+    <img id="back" src="../image/fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
     <div id="entree">
         <h1 class="slogan1"><stronger> CONNEXION</stronger></h1>
         </div>
@@ -74,11 +74,11 @@ if(isset($_POST['submit'])){
     
         </section>
         <?php
-        require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+        require "../view/bouton.php";
         ?>
         
     <?php
-    include "./view/footer.inc.php";
+    include "../view/footer.inc.php";
     ?>
 
 

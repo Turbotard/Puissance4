@@ -1,11 +1,11 @@
 <?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-require_once ('./includes/database.inc.php');
+require "../view/header.inc.php";
+require_once ('../includes/database.inc.php');
 
-if ($_SESSION['loggedin'] == false)
-    $isconnect = 'connexion.php';
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
+    $isconnect = '../Jeu.php';
 else
-    $isconnect = 'Jeu.php';
+    $isconnect = '../connexion.php';
 
 
 if(isset($_POST['submit'])){
@@ -36,13 +36,13 @@ if(isset($_POST['submit'])){
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the power of memory</title>
-    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="../css/chatbox.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 <div id="entree">
-    <img id="back" src="ordi.jpg">
+    <img id="back" src="../image/ordi.jpg">
         <div id="opaque">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
@@ -52,15 +52,15 @@ if(isset($_POST['submit'])){
 
     <div class="LoremIpsum">
         <div class ="picture1">
-            <img src="pcvieux.png"> 
+            <img src="../image/pcvieux.png"> 
         </div>
 
         <div class ="picture2">
-            <img src="Dabeur.png">
+            <img src="../image/Dabeur.png">
         </div>
 
         <div class ="picture3">
-            <img src="poker.png">
+            <img src="../image/poker.png">
         </div>
     </div>
     <div class="grosgrostexte">
@@ -105,7 +105,7 @@ if(isset($_POST['submit'])){
 
     <div class="flex2">
         <div class="image">
-            <p><img class="photo" src="watch-dogs-2-san-francisco-personnages-jeux - Petite.jpeg" height="300"/></p>
+            <p><img class="photo" src="../image/watchdogs.jpeg" height="300"/></p>
         </div>
 
         <div class="conteneur2 flex">
@@ -134,20 +134,20 @@ if(isset($_POST['submit'])){
 
     <section class="ses4">
         <div class="sobox">
-           <p class="name"><a href="https://www.instagram.com/reel/CjDyjKqpmOT/?utm_source=ig_web_copy_link"target="_blank"><img src="tete_aya.jpg" class="end1"></a><span class="text">Aya <br/>AIDOUNI</span></p>
-           <p class="name"><a href="https://www.leagueoflegends.com/fr-fr/"target="_blank"><img src="tete_ben.jpg" class="end1"></a><span class="text">Benjamin<br/> HENRY</span></p>
-           <p class="name"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank"><img src="tete_turbo.jpg" class="end1"></a><span class="text">Benjamin TISSERAND</span></p>
-           <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
+           <p class="name"><a href="https://www.instagram.com/reel/CjDyjKqpmOT/?utm_source=ig_web_copy_link"target="_blank"><img src="../image/tete_aya.jpg" class="end1"></a><span class="text">Aya <br/>AIDOUNI</span></p>
+           <p class="name"><a href="https://www.leagueoflegends.com/fr-fr/"target="_blank"><img src="../image/tete_ben.jpg" class="end1"></a><span class="text">Benjamin<br/> HENRY</span></p>
+           <p class="name"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank"><img src="../image/tete_turbo.jpg" class="end1"></a><span class="text">Benjamin TISSERAND</span></p>
+           <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="../image/tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
         </div>
    </section>
    <?php
-   require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+   require "../view/footer.inc.php";
    ?>
    
         
    <div class="chatbox">
             <div class="tete">
-                <img src="groot.jpeg">
+                <img src="../image/groot.jpeg">
                 <p>Je s'appelle GROOT!</p>
             </div>
             <div class="corps">
