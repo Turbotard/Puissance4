@@ -1,65 +1,47 @@
-<?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-require_once ('./includes/database.inc.php');
+<?php
+include "../view/header.inc.php";
+require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = 'Jeu.php';
+    $isconnect = '../Jeu.php';
 else
-    $isconnect = 'connexion.php';
+    $isconnect = '../connexion.php';
 
-
-if(isset($_POST['submit'])){
-
-    $message = $_POST['message'];
-    $pseu = $_SESSION['pseu'];
-    $idpseu = $_SESSION['idpseu'];
-
-    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-        if (isset($_POST['message'])) {
-            $sql = "INSERT INTO message ( ID_jeu, ID_utilisateur, message, date_heure_mess ) VALUES (1, ?, ?, NOW())";
-            $sth = $dbh->prepare($sql);
-            $sth->execute(array($idpseu, $message));
-
-        }
-    }
-    //else 
-    //header('Location:connexion.php');
-    
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>the power of memory</title>
-    <link rel="stylesheet" href="chatbox.css">
+    <link rel="stylesheet" href="../css/site.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
+    <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-
 <div id="entree">
-    <img id="back" src="ordi.jpg">
+    <img id="back" src="../image/ordi.jpg">
         <div id="opaque">
             <h1 class="slogan1"><stronger> BIENVENUE DANS NOTRE STUDIO !</stronger></h1>
             <h2 class="slogan2">Venez challenger les cerveaux les plus agiles ! (les nôtres)</h2>
             <a href="<?php echo $isconnect?>" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
         </div>
 </div>
+    
 
     <div class="LoremIpsum">
         <div class ="picture1">
-            <img src="pcvieux.png"> 
+            <img src="../image/pcvieux.png"> 
         </div>
 
         <div class ="picture2">
-            <img src="Dabeur.png">
+            <img src="../image/Dabeur.png">
         </div>
 
         <div class ="picture3">
-            <img src="poker.png">
+            <img src="../image/poker.png">
         </div>
     </div>
     <div class="grosgrostexte">
@@ -104,7 +86,7 @@ if(isset($_POST['submit'])){
 
     <div class="flex2">
         <div class="image">
-            <p><img class="photo" src="watch-dogs-2-san-francisco-personnages-jeux - Petite.jpeg" height="300"/></p>
+            <p><img class="photo" src="../image/watchdogs.jpeg" height="300"/></p>
         </div>
 
         <div class="conteneur2 flex">
@@ -128,37 +110,23 @@ if(isset($_POST['submit'])){
 
     <div class="crewname">
         <p id="crew"><strong>BBAM's Crew</strong></p>
-        <p id="cheval">Le cheval c'est trop génial !</p>
+        <p id="cheval">Développeurs pas médiocres</p>
     </div>
 
     <section class="ses4">
         <div class="sobox">
-           <p class="name"><a href="https://www.instagram.com/reel/CjDyjKqpmOT/?utm_source=ig_web_copy_link"target="_blank"><img src="tete_aya.jpg" class="end1"></a><span class="text">Aya <br/>AIDOUNI</span></p>
-           <p class="name"><a href="https://www.leagueoflegends.com/fr-fr/"target="_blank"><img src="tete_ben.jpg" class="end1"></a><span class="text">Benjamin<br/> HENRY</span></p>
-           <p class="name"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank"><img src="tete_turbo.jpg" class="end1"></a><span class="text">Benjamin TISSERAND</span></p>
-           <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
+           <p class="name"><a href="https://www.instagram.com/reel/CjDyjKqpmOT/?utm_source=ig_web_copy_link"target="_blank"><img src="../image/tete_aya.jpg" class="end1"></a><span class="text">Aya <br/>AIDOUNI</span></p>
+           <p class="name"><a href="https://www.leagueoflegends.com/fr-fr/"target="_blank"><img src="../image/tete_ben.jpg" class="end1"></a><span class="text">Benjamin<br/> HENRY</span></p>
+           <p class="name"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"target="_blank"><img src="../image/tete_turbo.jpg" class="end1"></a><span class="text">Benjamin TISSERAND</span></p>
+           <p class="name"><a href="https://www.youtube.com/watch?v=330lah3v-ec"target="_blank"><img src="../image/tete_mat.JPG" class="end1"></a><span class="text">Mattéo LAMARDELLE</span></p>
         </div>
    </section>
    <?php
-   require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
-   ?>
-   
-        
-   <div class="chatbox">
-            <div class="tete">
-                <img src="groot.jpeg">
-                <p>Je s'appelle GROOT!</p>
-            </div>
-            <div class="corps">
-
-            </div>
-            <form method="post" class="pied">
-                <input type="text" name="message" placeholder="Votre message ..." class="msg">
-                <input type="submit" name="submit" value="Envoyer">
-            </form>
-
-
-        </div>
+    require "../view/bouton.php";
+    ?>
 
 </body>
 </html>
+<?php
+include "../view/footer.inc.php";
+?>

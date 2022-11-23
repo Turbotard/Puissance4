@@ -1,6 +1,6 @@
 <?php 
-require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
-require ('./includes/database.inc.php');
+require "../view/header.inc.php";
+require_once ('../includes/database.inc.php');
 
 
 
@@ -29,14 +29,14 @@ if(isset($_POST['submit']))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modifier mon mail</title>
-    <link rel="stylesheet" href="newmail.css">
+    <link rel="stylesheet" href="../css/newmail.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <div id="fond">
-        <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
+        <img id="back" src="../image/fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
         <div id="opaque">
         <div id="boxe">
         <div id="entree">       
@@ -56,10 +56,10 @@ if(isset($_POST['submit']))
     </div>
     </section>
     <?php
-    require "/Applications/MAMP/htdocs/Puissance4/view/bouton.php";
+    require "../view/bouton.php";
     ?>
 </body>
 </html>
 <?php
-require "/Applications/MAMP/htdocs/Puissance4/view/footer.inc.php";
+require "../view/footer.inc.php";
 ?>
