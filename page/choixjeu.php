@@ -24,21 +24,33 @@ require("../view/header.inc.php");
             </div>
         </div>
     </div>
-    <p><span id = "theme"> Je choisi le thème </span>
+    <h2 id="theme">Je choisi le thème</h2>
     <div class="telephone">
     <section class="deroule">
         <ul>
-            <li class="deroulant"><a class="menu" href="myaccount.php">Profil</a>
+            <li class="deroulant"><a class="menu" href="myaccount.php">thème</a>
                 <ul class="sous">
-                    <li><a class="menu" href="newprofil.php">Modifier mon profil</a></li>
-                    <li><a class="menu" href="newmail.php">Modifier mon adresse mail</a></li>
-                    <li><a class="menu" href="newpassword.php">Modifier mon mot de passe</a></li>
-                    <li><a class="menu" href="deconnexion.php">Déconnexion</a></li>
+                    <li><a class="menu" href="newprofil.php">jeux vidéos</a></li>
+                    <li><a class="menu" href="newmail.php">animaux</a></li>
+                    <li><a class="menu" href="newpassword.php">NASA</a></li>
                 </ul>
             </li>
         </ul>
     </section>
-    </p>
+</div>
+<h2 id="theme">Je choisi la difficulté</h2>
+    <div class="telephone2">
+    <section class="deroule2">
+        <ul>
+            <li class="deroulant2"><a class="menu2" href="myaccount.php">difficulté</a>
+                <ul class="sous2">
+                    <li><a class="menu2" href="newprofil.php">baby</a></li>
+                    <li><a class="menu2" href="newmail.php">human</a></li>
+                    <li><a class="menu2" href="newpassword.php">god</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
 </div>
 
 
