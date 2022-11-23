@@ -22,6 +22,7 @@ else{
     <link rel="stylesheet" href="header.inc.css">
     <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
     <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title><?= $pageTitle ?></title>
     <?php
     if (isset($cssFileName)){
