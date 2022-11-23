@@ -18,24 +18,15 @@ if(isset($_POST['submit']))
 }}
 }
 
+$pageTitle = "Inscription";
+$cssFileName = "inscription.css";
+
 include "./view/header.inc.php";
 
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription</title>
-    <link rel="stylesheet" href="inscription.css">
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/81dc5c492f.js" crossorigin="anonymous"></script>
-    <link href="https://www.dafontfree.net/embed/bXVsaS1zZW1pYm9sZCZkYXRhLzE2L20vNzg2NTYvTXVsaS1TZW1pQm9sZC50dGY" rel="stylesheet" type="text/css"/>
-</head>
-<body>
+
+
 
 <img id="back" src="fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
 <div id="entree">
@@ -62,7 +53,16 @@ include "./view/header.inc.php";
             <form method="post">
                 <input class="mailInput" type="email" name="email" placeholder="Email">
                 <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo" minlength="4">
-                <input class="mailInput" type="password" name="password" placeholder="Mot de passe" minlength="8">
+                
+                <div class="input-group">
+                    <input type="password" class="mailInput" placeholder="Mot de passe" name="password" minlength="8">
+                </div>
+                <p>Le mot de passe doit contenir: <br> -8 caractères minimum <br> -Une majuscule <br> -Un chiffre <br> -Un caractère spécial<br> </p>
+                <h5> Sécurité du mot de passe</h5>
+                <div class="progress">
+                    <div class="bar">
+                    </div>
+                </div>
                 <input class="mailInput" type="password" name="password_retype" placeholder="Confirmer le mot de passe">
                 <input class="btnConnect" type="submit" name="submit" value="S'inscrire">
             </form>
@@ -80,5 +80,4 @@ include "./view/header.inc.php";
 
     
 
-</body>
-</html>
+

@@ -2,29 +2,28 @@
 require "/Applications/MAMP/htdocs/Puissance4/view/header.inc.php";
 require_once ('./includes/database.inc.php');
 
-if ($_SESSION['loggedin'] == false)
-    $isconnect = 'connexion.php';
-else
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     $isconnect = 'Jeu.php';
+else
+    $isconnect = 'connexion.php';
 
 
 if(isset($_POST['submit'])){
 
     $message = $_POST['message'];
     $pseu = $_SESSION['pseu'];
+    $idpseu = $_SESSION['idpseu'];
 
-    if (isset($_SESSION['loggedin']) ) {
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         if (isset($_POST['message'])) {
-
-            $uim = $dbh->prepare("SELECT ID FROM utilisateur WHERE pseudo = ?");
-            $uim->execute(array($pseu));
-            $idpseudo = $uim;
             $sql = "INSERT INTO message ( ID_jeu, ID_utilisateur, message, date_heure_mess ) VALUES (1, ?, ?, NOW())";
             $sth = $dbh->prepare($sql);
-            $sth->execute(array($idpseudo, $message));
+            $sth->execute(array($idpseu, $message));
 
         }
     }
+    //else 
+    //header('Location:connexion.php');
     
 
 }

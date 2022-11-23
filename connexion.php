@@ -17,7 +17,8 @@ if(isset($_POST['submit'])){
                 $_SESSION['user'] = $donnees;
                 $_SESSION['loggedin'] = true;
                 $_SESSION['pseu'] = $donnees['pseudo'];
-                header('Location:Site.php');
+                $_SESSION['idpseu'] = $donnees['ID'];
+                header('Location:chatbox.php');
             }
         }
 }

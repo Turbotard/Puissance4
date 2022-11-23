@@ -101,6 +101,7 @@ p {
     opacity: 0.76;
     color: orange;
 }
+
 #entree {
     display: flex;
     flex-direction: column;
@@ -140,7 +141,7 @@ p {
     to {
       background-position: 200% center;
     }
-  }
+}
 
 .slogan2 {
     font-size: smaller;
@@ -180,17 +181,21 @@ button:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 5%;
 }
+
 .grosgrostexte {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
     color: white;
 }
+
 .textetexte {
     display: flex;
     flex-direction: column;
 }
+
 .picture1 {
     display: flex;
     color: white;
@@ -426,46 +431,48 @@ button:hover {
 }
 
 
-.footer{
+.footer {
     background-color: #0e0b26;
     width: 100%;
     height: 450px;
     display: flex;
     justify-content: space-evenly;
 }
-.box11{
+
+.box11 {
     display: flex;
     flex-direction: column;
     width: 40%;
     margin-left: 150px;
     margin-top: 100px;
 }
-.fa-brands{
+
+.fa-brands {
     color: #e99122;
     font-size: 25px;
     margin-right: 4px;
     margin-top: 25px;
-
 }
-.box22{
+
+.box22 {
     width: 40%;
     margin-left: 90px;
     margin-top: 100px;
-
 }
-.white{
+
+.white {
     color: white;
     font-family: 'muli-semibold', sans-serif;
 }
 
-.orange{
+.orange {
     color: #e99122;
 }
-.gris{
+
+.gris {
     color: #6a6c80;
     font-size: 0.8em;
     margin-top: 20px;
-
 }
 
 .bullet a:link {
@@ -473,18 +480,18 @@ button:hover {
     background-color: transparent;
     text-decoration: none;
     font-size: 0.8em;
+}
 
-  }
-
-#bullet li::marker{
-
+#bullet li::marker {
     color: #e99122;
 }
-.bullet{
+
+.bullet {
     margin-top: 20px;
     list-style-type: square;
 }
-.copy{
+
+.copy {
     color: #6a6c80;
     font-size: 0.75em;
 }
@@ -494,10 +501,7 @@ button:hover {
     font-size: 25px;
     margin-right: 4px;
     margin-top: 25px;
-
 }
-
-
 
 .chatbox {
     height: 60%;
