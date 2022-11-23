@@ -217,6 +217,7 @@ h2 {
     font-size: 40px;
     font-weight: bold;
     margin-top: 8%;
+    width: 280px;
 }
 .menu:hover { 
     cursor: pointer;
@@ -300,6 +301,7 @@ h2 {
     font-weight: bold;
     margin-left: 30%;
     margin-top: 8%;
+    width: 200px;
 }
 .menu2:hover { 
     cursor: pointer;
