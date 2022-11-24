@@ -6,7 +6,7 @@ $cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = './Jeu.php';
+    $isconnect = './choixjeu.php';
 else
     $isconnect = './connexion.php';
 
