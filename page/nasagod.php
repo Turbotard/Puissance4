@@ -3,8 +3,8 @@ $pageTitle = "The game";
 $cssFileName = "../css/Jeu.css";
     require "../view/header.inc.php";
     ?>
-
-  <div class="container text-center">
+    <span id="chrono">00:00:00</span>
+    <div class="container text-center" OnClick="chronoStart()">
     <div id="resultat"></div>
 
 
