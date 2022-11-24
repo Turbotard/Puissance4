@@ -1,27 +1,19 @@
 <?php 
 $pageTitle = "The game";
-$cssFileName = "../css/Jeu.css";
+$cssFileName = "../css/baby.css";
     require "../view/header.inc.php";
     ?>
 
-    
-    <table>
+
+<h1 class="baby">Baby</h1>
+    <table class="grille">
         <tr>
         <td>#</td>
         <td>#</td>
         <td>#</td>
         <td>#</td>
-        <td>#</td>
       </tr>
       <tr>
-        <td>#</td>
-        <td>#</td>
-        <td>#</td>
-        <td>#</td>
-        <td>#</td>
-      </tr>
-      <tr>
-        <td>#</td>
         <td>#</td>
         <td>#</td>
         <td>#</td>
@@ -32,10 +24,8 @@ $cssFileName = "../css/Jeu.css";
         <td>#</td>
         <td>#</td>
         <td>#</td>
-        <td>#</td>
       </tr>
       <tr>
-        <td>#</td>
         <td>#</td>
         <td>#</td>
         <td>#</td>
@@ -48,4 +38,3 @@ $cssFileName = "../css/Jeu.css";
       <?php
       require "../view/footer.inc.php";
       ?>
-
