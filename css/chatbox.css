@@ -135,6 +135,7 @@ p {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
+    font-weight: bold;
 }
 
 @keyframes textclip {
@@ -561,7 +562,7 @@ p {
     background-color: #282645;
     border-radius: 3px;
     border:none; 
-    padding: 5% 18% 2% 2%;
+    padding: 5% 5% 2% 2%;
 }
 
 .pied button {
