@@ -31,21 +31,21 @@ function affichertab(){
 function getimage(valeur){
     var imgtxt ="../image/nasa/";
     switch(valeur){
-        case 1: imgtxt +="nasa1.png"
+        case 1: imgtxt +="nasa1.jpg"
         break;
-        case 2: imgtxt +="nasa2.png"
+        case 2: imgtxt +="nasa2.jpg"
         break;
-        case 3: imgtxt +="nasa3.png"
+        case 3: imgtxt +="nasa3.jpg"
         break;
-        case 4: imgtxt +="nasa4.png"
+        case 4: imgtxt +="nasa4.jpg"
         break;
-        case 5: imgtxt +="nasa5.png"
+        case 5: imgtxt +="nasa5.jpg"
         break;
-        case 6: imgtxt +="nasa6.png"
+        case 6: imgtxt +="nasa6.jpg"
         break;
-        case 7: imgtxt +="nasa7.png"
+        case 7: imgtxt +="nasa7.jpg"
         break;
-        case 8: imgtxt +="nasa8.png"
+        case 8: imgtxt +="nasa8.jpg"
         default : console.log("connais pas");
     }
     return  imgtxt;
