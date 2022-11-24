@@ -44,35 +44,35 @@ function getimage(valeur){
     switch(valeur){
         case 1: imgtxt +="nasa1.jpg"
         break;
-        case 2: imgtxt +="nasa2.png"
+        case 2: imgtxt +="nasa2.jpg"
         break;
-        case 3: imgtxt +="nasa3.png"
+        case 3: imgtxt +="nasa3.jpg"
         break;
-        case 4: imgtxt +="nasa4.png"
+        case 4: imgtxt +="nasa4.jpg"
         break;
-        case 5: imgtxt +="nasa5.png"
+        case 5: imgtxt +="nasa5.jpg"
         break;
         case 6: imgtxt +="nasa6.jpg"
         break;
-        case 7: imgtxt +="nasa7.png"
+        case 7: imgtxt +="nasa7.jpg"
         break;
         case 8: imgtxt +="nasa8.jpg"
         break;
-        case 9: imgtxt +="nasa9.png"
+        case 9: imgtxt +="nasa9.jpg"
         break;
         case 10: imgtxt +="nasa10.jpg"
         break;
         case 11: imgtxt +="nasa11.jpg"
         break;
-        case 12: imgtxt +="nasa12.png"
+        case 12: imgtxt +="nasa12.jpg"
         break;
         case 13: imgtxt +="nasa13.jpg"
         break;
         case 14: imgtxt +="nasa14.jpg"
         break;
-        case 15: imgtxt +="nasa15.png"
+        case 15: imgtxt +="nasa15.jpg"
         break;
-        case 16: imgtxt +="nasa16.png"
+        case 16: imgtxt +="nasa16.jpg"
         break;
         case 17: imgtxt +="nasa17.jpg"
         break;
