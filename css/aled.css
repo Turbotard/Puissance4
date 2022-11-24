@@ -116,7 +116,8 @@ p {
     font-size: 60px;
     margin-right: 10%;
     margin-left: 10%;
-    justify-content: space-around;  
+    justify-content: space-around;
+    font-weight: bold;
 }
 
 .telephone {
@@ -178,13 +179,13 @@ form input {
     padding-bottom: 0.75%;
     padding-top: 0.75%;
     padding-left: 1%;
-    padding-right: 2%;
+    padding-right: 0%;
 }
 
 .mail {
     display: flex;
-    margin-left: 24.75%;
-    margin-top: -2.63%;
+    margin-left: 26.75%;
+    margin-top: -3.35%;
     margin-bottom: 1%;
     padding-bottom: 0.75%;
     padding-top: 0.75%;
