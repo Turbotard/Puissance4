@@ -22,7 +22,7 @@ $jeuselect= '<script type="../js/choixjeu.js">document.whrite(jeuselect)</script
     <div class="telephone">
     <section class="deroule">
         <ul>
-            <li class="deroulant"><a id="a" class="menu" href="myaccount.php">thème</a>
+            <li class="deroulant"><div class="menu"><div id="a">thème</div></div>
                 <ul class="sous">
                     <div class="menu"><li onclick="ChangeText1()">jeux vidéos</a></li></div>
                     <div class="menu"><li onclick="ChangeText2()">animaux</a></li></div>
@@ -36,7 +36,7 @@ $jeuselect= '<script type="../js/choixjeu.js">document.whrite(jeuselect)</script
     <div class="telephone2">
     <section class="deroule2">
         <ul>
-            <li class="deroulant2"><a id="b" class="menu2" href="myaccount.php">difficulté</a>
+            <li class="deroulant2"><div class="menu2"><div id="b">difficulté</div></div>
                 <ul class="sous2">
                     <div class="menu2"><li onclick="ChangeText4()">baby</a></li></div>
                     <div class="menu2"><li onclick="ChangeText5()">human</a></li></div>
