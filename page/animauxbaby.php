@@ -5,7 +5,6 @@ $cssFileName = "../css/Jeu.css";
     ?>
 
 <span id="chrono">00:00:00</span>
-    <script src="../js/chrono.js"></script>
   <div class="container text-center" OnClick="chronoStart()">
     <div id="resultat"></div>
 
