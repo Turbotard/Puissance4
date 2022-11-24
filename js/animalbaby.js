@@ -143,7 +143,7 @@ function chronoStop(){
 }
 
 function conditionfin(){
-    if (tab==tabresult){
+    if (tab== tabresult){
         chronoStop();
         return true;
     }
