@@ -5,7 +5,6 @@ let jeuselect;
 function ChangeText1(){
     document.getElementById("a").innerHTML="jeux vidéos";
     theme = "jeux";
-    console.log(theme);
 }
 function ChangeText2(){
     document.getElementById("a").innerHTML="animaux";
@@ -18,7 +17,6 @@ function ChangeText3(){
 function ChangeText4(){
     document.getElementById("b").innerHTML="baby";
     diff = "baby";
-    console.log(diff);
 }
 function ChangeText5(){
     document.getElementById("b").innerHTML="human";
@@ -34,5 +32,45 @@ function jeuxchoisis(){
             jeuselect = "../page/jeuxbaby.php"
             return jeuselect;
         }
+        if(diff =="human"){
+            jeuselect = "../page/jeuxhuman.php"
+            return jeuselect;
+        }
+        if(diff =="god"){
+            jeuselect = "../page/jeuxgod.php"
+            return jeuselect;
+        }
+    }
+    if (theme == "animaux"){
+        if(diff == "baby"){
+            jeuselect = "../page/animauxbaby.php"
+            return jeuselect;
+        }
+        if(diff == "human"){
+            jeuselect = "../page/animauxhuman.php"
+            return jeuselect;
+        }
+        if(diff == "god"){
+            jeuselect = "../page/animauxgod.php"
+            return jeuselect;
+        }
+    }
+    if (theme == "nasa"){
+        if(diff == "baby"){
+            jeuselect = "../page/nasababy.php"
+            return jeuselect;
+        }
+        if(diff == "human"){
+            jeuselect = "../page/nasahuman.php"
+            return jeuselect;
+        }
+        if(diff == "god"){
+            jeuselect = "../page/nasagod.php"
+            return jeuselect;
+        }
+    }
+    else{
+        jeuselect = "../page/choixjeu.php"
+        return jeuselect;
     }
 }
