@@ -2,7 +2,7 @@
 require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true){
-     $isconnect = 'Jeu.php';
+     $isconnect = 'choixjeu.php';
      $isconnect2 ='myaccount.php';
      $isconnect3 = 'chatbox.php';
 }
