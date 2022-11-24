@@ -5,12 +5,13 @@ $pageTitle = "chatbox";
 $cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
 
+$idpseu = $_SESSION['idpseu'];
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     $isconnect = './choixjeu.php';
 else
     $isconnect = './connexion.php';
 
-$idpseu = $_SESSION['idpseu'];
+
 if(isset($_POST['submit'])){
 
     $message = $_POST['message'];
