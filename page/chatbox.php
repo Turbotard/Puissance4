@@ -1,11 +1,13 @@
 <?php 
+
+require_once ('../includes/database.inc.php');
 $pageTitle = "chatbox";
 $cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
-require_once ('../includes/database.inc.php');
 
+$idpseu = $_SESSION['idpseu'];
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = './Jeu.php';
+    $isconnect = './choixjeu.php';
 else
     $isconnect = './connexion.php';
 
@@ -13,21 +15,21 @@ else
 if(isset($_POST['submit'])){
 
     $message = $_POST['message'];
-    $pseu = $_SESSION['pseu'];
-    $idpseu = $_SESSION['idpseu'];
+    
+    
 
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         if (isset($_POST['message'])) {
             $sql = "INSERT INTO message ( ID_jeu, ID_utilisateur, message, date_heure_mess ) VALUES (1, ?, ?, NOW())";
             $sth = $dbh->prepare($sql);
-            $sth->execute(array($idpseu, $message));
+            $sth->execute([$idpseu, $message]);
 
+            
         }
-    }
-
-    
-
+    } 
 }
+
+
 ?>
 
 <div id="entree">
@@ -140,13 +142,24 @@ if(isset($_POST['submit'])){
                 <p>Je s'appelle GROOT!</p>
             </div>
             <div class="corps">
+                <?php 
+                    $sql = "SELECT message FROM message WHERE ID_utilisateur = ?";
+                    $sth = $dbh->prepare($sql);
+                    $sth->execute([$idpseu]);
+                    $data = $sth->fetchAll();
+                    foreach($data as $row){
+                        echo '<div class="messagechat">'.$row['message'].'</div>';
+                    }
+                ?>
 
             </div>
             <form method="post" class="pied">
                 <input type="text" name="message" placeholder="Votre message ..." class="msg">
                 <input type="submit" name="submit" value="Envoyer">
             </form>
-
-
         </div>
+    
+
+
+
 

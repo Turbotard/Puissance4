@@ -150,7 +150,7 @@ p {
     margin-top: 0px;
 }
 
-button {
+.bouton {
     display: flex;
     border-radius: 3px;
     margin:auto;
@@ -169,7 +169,7 @@ button {
 	transition: .3s ease-in-out;
 }
 
-button:hover {
+.bouton:hover {
     background-color: white;
     color: orange;
 
@@ -537,9 +537,13 @@ button:hover {
 }
 
 .corps {
+    display: flex;
     background-color: rgb(179, 197, 247);
     height: 75%;
     width: auto;
+    overflow: auto;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .pied {
@@ -567,4 +571,11 @@ button:hover {
     padding: 14px 28px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.messagechat {
+    overflow-wrap: break-word;
+    background-color: #13ff66;
+    padding: 3px;
+    
 }
