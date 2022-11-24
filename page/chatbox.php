@@ -1,8 +1,9 @@
 <?php 
+
+require_once ('../includes/database.inc.php');
 $pageTitle = "chatbox";
 $cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
-require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
     $isconnect = './Jeu.php';
@@ -13,14 +14,14 @@ else
 if(isset($_POST['submit'])){
 
     $message = $_POST['message'];
-    $pseu = $_SESSION['pseu'];
+    
     $idpseu = $_SESSION['idpseu'];
 
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         if (isset($_POST['message'])) {
             $sql = "INSERT INTO message ( ID_jeu, ID_utilisateur, message, date_heure_mess ) VALUES (1, ?, ?, NOW())";
             $sth = $dbh->prepare($sql);
-            $sth->execute(array($idpseu, $message));
+            $sth->execute([$idpseu, $message]);
 
         }
     }
@@ -146,7 +147,9 @@ if(isset($_POST['submit'])){
                 <input type="text" name="message" placeholder="Votre message ..." class="msg">
                 <input type="submit" name="submit" value="Envoyer">
             </form>
-
-
         </div>
+    
+
+
+
 

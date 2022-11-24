@@ -48,14 +48,14 @@ include "../view/header.inc.php";
                 }
             }
             ?>
-            <form method="post">
+            <form method="post" class="user-box">
                 <input class="mailInput" type="email" name="email" placeholder="Email">
                 <input class="mailInput" type="username" name="pseudo" placeholder="Pseudo" minlength="4">
                 
                 <div class="input-group">
-                    <input type="password" class="mailInput" placeholder="Mot de passe" name="password" minlength="8">
+                    <input type="password" class="mailInput" id="password" placeholder="Mot de passe" name="password">
                 </div>
-                <p>Le mot de passe doit contenir: <br> -8 caractères minimum <br> -Une majuscule <br> -Un chiffre <br> -Un caractère spécial<br> </p>
+                
                 <h5> Sécurité du mot de passe</h5>
                 <div class="progress">
                     <div class="bar">
@@ -67,6 +67,7 @@ include "../view/header.inc.php";
         </div>
 
     </section>
+    <script src="../js/password.js">
     <?php
     require "../view/bouton.php";
     ?>

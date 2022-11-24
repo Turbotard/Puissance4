@@ -150,7 +150,7 @@ p {
     margin-top: 0px;
 }
 
-button {
+.bouton {
     display: flex;
     border-radius: 3px;
     margin:auto;
@@ -169,7 +169,7 @@ button {
 	transition: .3s ease-in-out;
 }
 
-button:hover {
+.bouton:hover {
     background-color: white;
     color: orange;
 
