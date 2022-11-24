@@ -1,0 +1,201 @@
+const divresult = document.querySelector("#resultat");
+
+var tab = [
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],    
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0],
+    [0,0,0,0,0,0,0,0,0,0]
+];
+/*
+var tabresult= [
+    [1,1,0,0,0,0],
+    [0,0,0,0,0,0],
+    [0,0,0,0,0,0],
+    [0,0,0,0,2,2],
+    [0,0,0,0,0,0],
+    [0,0,0,0,0,0]
+]  tab == tabresult -> victoire !
+*/
+var tabresult = generaterandomresult();
+var oldselection = [];
+var nbaffich = 0;
+var ready = true;
+
+affichertab();
+
+function affichertab(){
+    var txt ="";
+    for(var i =0; i<tab.length; i++){
+        txt += "<div>";
+        for (var j=0; j < tab[i].length;j++){
+            if (tab[i][j] === 0){
+                txt += "<button class='btn btn-primary m-5' style='width: 150px;height:150px;' onClick = 'verif(\""+i+"-"+j+"\")'>afficher</button>";
+            }else{
+                txt += "<img src ='"+getimage(tab[i][j])+"'  style='width: 150px;height:150px' class='m-5'>";
+            }
+        }
+    }   txt+= "</div>"
+    divresult.innerHTML =txt;
+}
+function getimage(valeur){
+    var imgtxt ="../image/jeux/lol/";
+    switch(valeur){
+        case 1: imgtxt +="aatrox.jpg"
+        break;
+        case 2: imgtxt +="ahri.jpg"
+        break;
+        case 3: imgtxt +="akali.jpg"
+        break;
+        case 4: imgtxt +="alistar.jpg"
+        break;
+        case 5: imgtxt +="aphelios.jpg"
+        break;
+        case 6: imgtxt +="aurelionsol.jpg"
+        break;
+        case 7: imgtxt +="azir.jpg"
+        break;
+        case 8: imgtxt +="belveth.jpg"
+        break;
+        case 9: imgtxt +="braum.jpg"
+        break;
+        case 10: imgtxt +="caitlyn.jpg"
+        break;
+        case 11: imgtxt +="darius.jpg"
+        break;
+        case 12: imgtxt +="fiddlestick.jpg"
+        break;
+        case 13: imgtxt +="gangplank.jpg"
+        break;
+        case 14: imgtxt +="garen.jpg"
+        break;
+        case 15: imgtxt +="irelia.jpg"
+        break;
+        case 16: imgtxt +="janna.jpg"
+        break;
+        case 17: imgtxt +="jhin.jpg"
+        break;
+        case 18: imgtxt +="jinx.jpeg"
+        break;
+        case 19 : imgtxt +="kayn.jpg"
+        break;
+        case 20 : imgtxt +="kdagragas.jpg"
+        break;
+        case 21: imgtxt +="ksante.jpg"
+        break;
+        case 22: imgtxt +="leesin.jpg"
+        break;
+        case 23: imgtxt +="lux.jpg"
+        break;
+        case 24: imgtxt +="maitreyi.jpg"
+        break;
+        case 25: imgtxt +="missfortune.jpg"
+        break;
+        case 26: imgtxt +="mordkaiser.jpg"
+        break;
+        case 27: imgtxt +="nami.jpeg"
+        break;
+        case 28: imgtxt +="olaf.jpg"
+        break;
+        case 29: imgtxt +="ornn.jpg"
+        break;
+        case 30: imgtxt +="rakan.jpg"
+        break;
+        case 31: imgtxt +="rammus.jpg"
+        break;
+        case 32: imgtxt +="ryze.jpg"
+        break;
+        case 33: imgtxt +="senna.jpg"
+        break;
+        case 34: imgtxt +="seraphine.jpg"
+        break;
+        case 35: imgtxt +="sett.jpg"
+        break;
+        case 36: imgtxt +="sonna.jpg"
+        break;
+        case 37: imgtxt +="soraka.jpg"
+        break;
+        case 38: imgtxt +="teemo.jpg"
+        break;
+        case 39 : imgtxt +="tristana.jpg"
+        break;
+        case 40 : imgtxt +="twistedfate.jpg"
+        break;
+        case 41: imgtxt +="varus.jpg"
+        break;
+        case 42: imgtxt +="veigar.jpg"
+        break;
+        case 43: imgtxt +="vi.jpg"
+        break;
+        case 44: imgtxt +="viktor.jpg"
+        break;
+        case 45: imgtxt +="xayah.jpg"
+        break;
+        case 46: imgtxt +="yasuo.jpg"
+        break;
+        case 47: imgtxt +="yone.jpg"
+        break;
+        case 48: imgtxt +="yummi.jpg"
+        break;
+        case 49: imgtxt +="zed.jpg"
+        break;
+        case 50: imgtxt +="volibear.jpg"
+        break;
+        default : console.log("connais pas");
+    }
+    return  imgtxt;
+}
+function verif(element){
+    if(ready ===true){
+
+    
+        nbaffich++;
+        var ligne = element.substr(0,1);
+        var colonne = element.substr(2,1)
+        tab[ligne][colonne] = tabresult[ligne][colonne];
+        affichertab();
+        if (nbaffich > 1){
+            ready = false;
+            setTimeout(() => {
+                if (tab[ligne][colonne]!== tabresult[oldselection[0]][oldselection[1]]){
+                    tab[ligne][colonne] = 0;
+                    tab[oldselection[0]][oldselection[1]] = 0;
+                } 
+                affichertab();
+                ready = true;
+                nbaffich=0;
+                oldselection = [ligne, colonne];
+            }, 600);
+            
+            
+        } else{
+            oldselection = [ligne, colonne];
+        }
+    
+    }
+}
+function generaterandomresult(){
+    var tab = [];
+    var nbimagepos = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    for (var i =0;i<10;i++){
+        var ligne = [];
+        for (var j =0;j<10;j++){
+            var fin = false;
+            while(!fin){
+                var randomimage = Math.floor(Math.random()*50)
+                if (nbimagepos[randomimage]<2){
+                    ligne.push(randomimage+1);
+                    nbimagepos[randomimage]++;
+                    fin=true;
+            }
+            }
+        }
+        tab.push(ligne);
+    }
+    return tab;
+}

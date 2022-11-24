@@ -1,23 +1,12 @@
 const divresult = document.querySelector("#resultat");
 
 var tab = [
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0]
+    [0,0,0,0],
+    [0,0,0,0],
+    [0,0,0,0],
+    [0,0,0,0]
 ];
-/*
-var tabresult= [
-    [1,1,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0],
-    [0,0,0,0,2,2],
-    [0,0,0,0,0,0],
-    [0,0,0,0,0,0]
-] 
-*/
+
 var tabresult = generaterandomresult();
 var oldselection = [];
 var nbaffich = 0;
@@ -31,7 +20,7 @@ function affichertab(){
         txt += "<div>";
         for (var j=0; j < tab[i].length;j++){
             if (tab[i][j] === 0){
-                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/jeux/owerwatch/logooverwatch.png></button>";
+                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px;padding:0%' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/jeux/valorant/logovalorant.png></button>";
             }else{
                 txt += "<img src ='"+getimage(tab[i][j])+"'  style='width: 150px;height:150px' class='m-1'>";
             }
@@ -40,44 +29,23 @@ function affichertab(){
     divresult.innerHTML =txt;
 }
 function getimage(valeur){
-    var imgtxt ="../image/jeux/";
+    var imgtxt ="../image/jeux/valorant/";
     switch(valeur){
-        case 1: imgtxt +="ana.jpg"
+        case 1: imgtxt +="brimstone.png"
         break;
-        case 2: imgtxt +="bastion.png"
+        case 2: imgtxt +="jett.png"
         break;
-        case 3: imgtxt +="brigitte.png"
+        case 3: imgtxt +="omen.png"
         break;
-        case 4: imgtxt +="chacal.png"
+        case 4: imgtxt +="phoenix.png"
         break;
-        case 5: imgtxt +="chopper.png"
+        case 5: imgtxt +="reina.png"
         break;
-        case 6: imgtxt +="faucheur.jpg"
+        case 6: imgtxt +="sage.png"
         break;
-        case 7: imgtxt +="lucio.png"
+        case 7: imgtxt +="sova.png"
         break;
-        case 8: imgtxt +="mcree.jpg"
-        break;
-        case 9: imgtxt +="orisa.png"
-        break;
-        case 10: imgtxt +="reinhardt.jpg"
-        break;
-        case 11: imgtxt +="sigma.jpg"
-        break;
-        case 12: imgtxt +="soldier.png"
-        break;
-        case 13: imgtxt +="sombra.jpg"
-        break;
-        case 14: imgtxt +="tracer.jpg"
-        break;
-        case 15: imgtxt +="widow.png"
-        break;
-        case 16: imgtxt +="winston.png"
-        break;
-        case 17: imgtxt +="zarya.jpg"
-        break;
-        case 18: imgtxt +="zenyatta.jpg"
-        break;
+        case 8: imgtxt +="viper.png"
         default : console.log("connais pas");
     }
     return  imgtxt;
@@ -113,13 +81,13 @@ function verif(element){
 }
 function generaterandomresult(){
     var tab = [];
-    var nbimagepos = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-    for (var i =0;i<6;i++){
+    var nbimagepos = [0,0,0,0,0,0,0,0]
+    for (var i =0;i<4;i++){
         var ligne = [];
-        for (var j =0;j<6;j++){
+        for (var j =0;j<4;j++){
             var fin = false;
             while(!fin){
-                var randomimage = Math.floor(Math.random()*18)
+                var randomimage = Math.floor(Math.random()*8)
                 if (nbimagepos[randomimage]<2){
                     ligne.push(randomimage+1);
                     nbimagepos[randomimage]++;
