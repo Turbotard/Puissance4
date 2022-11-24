@@ -1,7 +1,8 @@
-<?php 
+<?php
 $pageTitle = "choix jeu";
 $cssFileName = "../css/choixjeu.css";
 require("../view/header.inc.php");
+$jeuselect= '<script type="../js/choixjeu.js">document.whrite(jeuselect)</script>';
 ?>
 
 
@@ -45,7 +46,7 @@ require("../view/header.inc.php");
         </ul>
     </section>
 </div>
-<a href="<?php echo $isconnect?>" style="text-decoration: none"><button class="bouton" type="button" > JOUER !</button></a>
+<a href='choixjeu.php' style="text-decoration: none" onclick ="this.href =(jeuxchoisis())";><button class="bouton" type="button" > JOUER !</button></a>
     <script src="../js/choixjeu.js"></script>
     <?php
     require "../view/bouton.php";
