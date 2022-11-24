@@ -5,7 +5,7 @@ include "../view/header.inc.php";
 require_once ('../includes/database.inc.php');
 
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = './Jeu.php';
+    $isconnect = './choixjeu.php';
 else
     $isconnect = './connexion.php';
 
