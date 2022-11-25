@@ -4,8 +4,8 @@ $cssFileName = "../css/Jeu.css";
     require "../view/header.inc.php";
     ?>
     <span id="chrono">00:00:00</span>
-  <div class="container text-center" OnClick="chronoStart()">
-    <div id="resultat"></div>
+  <div class="container text-center" >
+    <div id="resultat" OnClick="chronoStart()"></div>
 
 
   </div>

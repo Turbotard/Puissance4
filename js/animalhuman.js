@@ -194,13 +194,13 @@ function conditionfin(){
     }
 }
 let phrase = 'Votre score est ';
-
+let s = 's';
 function veriffin(){
     if (fin== true){
         chronoStop();
         alert('La partie est terminée, vous avez gagné!');
         let chr = document.getElementById("chrono").innerHTML;
-        let chro = phrase + chr;
+        let chro = phrase + chr + s;
         alert(chro);
     }
     

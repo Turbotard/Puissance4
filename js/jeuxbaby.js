@@ -150,7 +150,7 @@ function chronoStop(){
     
 }
 let phrase = 'Votre score est ';
-
+let s = 's';
 function veriffin(){
     if (fin== true){
         chronoStop();
