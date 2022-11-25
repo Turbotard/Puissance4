@@ -159,6 +159,5 @@ function veriffin(){
     if (fin== true){
         chronoStop();
         alert('La partie est terminée, vous avez gagné!')
-        alert(chr);
     }
 }
