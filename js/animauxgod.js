@@ -53,7 +53,7 @@ function getimage(valeur){
         break;
         case 3: imgtxt +="cacatoes.jpg"
         break;
-        case 4: imgtxt +="camaleon.jpg"
+        case 4: imgtxt +="cameleon.jpg"
         break;
         case 5: imgtxt +="canard.jpg"
         break;
