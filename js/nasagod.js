@@ -26,6 +26,8 @@ var tabresult = generaterandomresult();
 var oldselection = [];
 var nbaffich = 0;
 var ready = true;
+let compteur = 0;
+let fin = false;
 
 affichertab();
 
@@ -166,6 +168,15 @@ function verif(element){
                     tab[ligne][colonne] = 0;
                     tab[oldselection[0]][oldselection[1]] = 0;
                 } 
+                if (tab[ligne][colonne]=== tabresult[oldselection[0]][oldselection[1]]){
+                    compteur +=1;
+                    console.log(compteur);
+                    if (compteur === 8){
+                        fin = true;
+                        veriffin();
+                    }
+                }
+                
                 affichertab();
                 ready = true;
                 nbaffich=0;
@@ -250,4 +261,10 @@ function conditionfin(){
     else {
         return false;
     }
+}
+function veriffin(){
+    if (fin== true){
+        chronoStop();
+    }
+    
 }
