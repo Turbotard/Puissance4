@@ -261,6 +261,7 @@ function conditionfin(){
         return false;
     }
 }
+let chr;
 function veriffin(){
     if (fin== true){
         chronoStop();
