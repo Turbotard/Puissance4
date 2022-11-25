@@ -36,7 +36,7 @@ function affichertab(){
         txt += "<div>";
         for (var j=0; j < tab[i].length;j++){
             if (tab[i][j] === 0){
-                txt += "<button class='btn btn-primary m-5' style='width: 150px;height:150px;' onClick = 'verif(\""+i+"-"+j+"\")'>afficher</button>";
+                txt += "<button class='btn btn-primary m-5' style='width: 150px;height:150px;' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/animaux/logoanimaux.jpg></button>";
             }else{
                 txt += "<img src ='"+getimage(tab[i][j])+"'  style='width: 150px;height:150px' class='m-5'>";
             }
@@ -53,7 +53,7 @@ function getimage(valeur){
         break;
         case 3: imgtxt +="cacatoes.jpg"
         break;
-        case 4: imgtxt +="camaleon.jpg"
+        case 4: imgtxt +="cameleon.jpg"
         break;
         case 5: imgtxt +="canard.jpg"
         break;
@@ -170,7 +170,7 @@ function verif(element){
                 if (tab[ligne][colonne]=== tabresult[oldselection[0]][oldselection[1]]){
                     compteur +=1;
                     console.log(compteur);
-                    if (compteur === 8){
+                    if (compteur === 50){
                         fin = true;
                         veriffin();
                     }
@@ -261,9 +261,15 @@ function conditionfin(){
         return false;
     }
 }
+let phrase = 'Votre score est ';
+let s = ' s';
 function veriffin(){
     if (fin== true){
         chronoStop();
+        alert('La partie est terminée, vous avez gagné!');
+        let chr = document.getElementById("chrono").innerHTML;
+        let chro = phrase + chr + s;
+        alert(chro);
     }
     
 }

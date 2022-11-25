@@ -22,7 +22,7 @@ function affichertab(){
         txt += "<div>";
         for (var j=0; j < tab[i].length;j++){
             if (tab[i][j] === 0){
-                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px;padding:0%' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/Dabeur.png></button>";
+                txt += "<button class='btn btn-primary m-1' style='width: 150px;height:150px;padding:0%' onClick = 'verif(\""+i+"-"+j+"\")'><img style='width:150px;height:150px;padding:0%' src=../image/animaux/logoanimaux.jpg></button>";
             }else{
                 txt += "<img src ='"+getimage(tab[i][j])+"'  style='width: 150px;height:150px' class='m-1'>";
             }
@@ -162,10 +162,16 @@ function conditionfin(){
         return false;
     }
 }
+let phrase = 'Votre score est ';
+let s = ' s';
 
 function veriffin(){
     if (fin== true){
         chronoStop();
+        alert('La partie est terminée, vous avez gagné!');
+        let chr = document.getElementById("chrono").innerHTML;
+        let chro = phrase + chr + s;
+        alert(chro);
     }
     
 }
