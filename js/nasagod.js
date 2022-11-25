@@ -82,7 +82,7 @@ function getimage(valeur){
         break;
         case 17: imgtxt +="nasa17.jpg"
         break;
-        case 18: imgtxt +="nasa18.jpeg"
+        case 18: imgtxt +="nasa18.jpg"
         break;
         case 19 : imgtxt +="nasa19.jpg"
         break;
@@ -100,7 +100,7 @@ function getimage(valeur){
         break;
         case 26: imgtxt +="nasa26.jpg"
         break;
-        case 27: imgtxt +="nasa27.jpeg"
+        case 27: imgtxt +="nasa27.jpg"
         break;
         case 28: imgtxt +="nasa28.jpg"
         break;
