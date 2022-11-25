@@ -54,8 +54,6 @@ function getimage(valeur){
 }
 function verif(element){
     if(ready ===true){
-
-    
         nbaffich++;
         var ligne = element.substr(0,1);
         var colonne = element.substr(2,1)
@@ -75,16 +73,13 @@ function verif(element){
                         fin = true;
                         veriffin();
                     }
-                }
-                
+                }   
                 affichertab();
                 ready = true;
                 nbaffich=0;
                 oldselection = [ligne, colonne];
                 
             }, 600);
-            
-            
             
         } else{
             oldselection = [ligne, colonne];
