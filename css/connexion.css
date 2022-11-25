@@ -14,7 +14,13 @@ header {
     justify-content: space-around;
     margin-bottom: 10%; 
 }
-
+.slogan1 {
+    font-size: 60px;
+    margin-right: 10%;
+    margin-left: 10%;
+    justify-content: space-around;
+    font-weight: bold;
+}
 
 
 #opaque {

@@ -28,7 +28,9 @@ include "../view/header.inc.php";
 
 <img id="back" src="../image/fond-nuit-ville-futuriste-extraterrestre_1441-2823.jpg - copie - Petite.jpeg">
 <div id="entree">
+<div id="opaque">
         <h1 class="slogan1"><stronger> INSCRIPTION</stronger></h1>
+        </div>
         </div>
     <section class="login">
         <div class="logs">
