@@ -35,11 +35,20 @@ if(isset($_POST['submit']))
         <h3 class="slogan2"><stronger> Changer le mot de passe</stronger></h3>
         <form method="post" class="password">
             <input class="mailInput" name="oldpassword" type="password" placeholder="Ancien mot de passe">
-            <input class="mailInput" name="newpassword" type="password" placeholder="Nouveau mot de passe">
+            <div class="input-group">
+                    <input type="password" class="mailInput" id="password" placeholder="Nouveau Mot de passe" name="newpassword">
+                </div>
+                
+                <h5> Sécurité du mot de passe</h5>
+                <div class="progress">
+                    <div class="bar">
+                    </div>
+                </div>
             <input class="mailInput" name="confirm" type="password" placeholder="Confirmer nouveau le mot de passe">
             <input class="btnConnect" name="submit" type="submit"  value="Valider">
         </form>
     </section>
+    <script src="../js/newpassword.js">
     <?php
     require "../view/bouton.php";
     ?>
