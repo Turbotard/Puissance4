@@ -262,7 +262,7 @@ function conditionfin(){
     }
 }
 let phrase = 'Votre score est ';
-let s = 's';
+let s = ' s';
 function veriffin(){
     if (fin== true){
         chronoStop();
