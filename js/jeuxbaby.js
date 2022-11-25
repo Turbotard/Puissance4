@@ -11,6 +11,8 @@ var tabresult = generaterandomresult();
 var oldselection = [];
 var nbaffich = 0;
 var ready = true;
+let compteur = 0;
+let fin = false;
 
 affichertab();
 
@@ -46,7 +48,7 @@ function getimage(valeur){
         case 7: imgtxt +="sova.png"
         break;
         case 8: imgtxt +="viper.png"
-        default : console.log("connais pas");
+        default : console.log("");
     }
     return  imgtxt;
 }
@@ -64,13 +66,24 @@ function verif(element){
             setTimeout(() => {
                 if (tab[ligne][colonne]!== tabresult[oldselection[0]][oldselection[1]]){
                     tab[ligne][colonne] = 0;
-                    tab[oldselection[0]][oldselection[1]] = 0;
+                    tab[oldselection[0]][oldselection[1]] = 0;   
                 } 
+                if (tab[ligne][colonne]=== tabresult[oldselection[0]][oldselection[1]]){
+                    compteur +=1;
+                    console.log(compteur);
+                    if (compteur === 8){
+                        fin = true;
+                        veriffin();
+                    }
+                }
+                
                 affichertab();
                 ready = true;
                 nbaffich=0;
                 oldselection = [ligne, colonne];
+                
             }, 600);
+            
             
             
         } else{
@@ -141,13 +154,9 @@ function chronoStop(){
         clearTimeout(timerID);
     
 }
-
-function conditionfin(){
-    if (tab== tabresult){
+function veriffin(){
+    if (fin== true){
         chronoStop();
-        return true;
     }
-    else {
-        return false;
-    }
+    
 }
