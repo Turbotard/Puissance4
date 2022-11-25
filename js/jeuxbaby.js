@@ -154,10 +154,12 @@ function chronoStop(){
         clearTimeout(timerID);
     
 }
-var chr = min + sec + msec;
+let chr;
 function veriffin(){
     if (fin== true){
         chronoStop();
         alert('La partie est terminée, vous avez gagné!');
+        chr = document.getElementById("chrono").innerHTML;
+        alert(chr);
     }
 }
