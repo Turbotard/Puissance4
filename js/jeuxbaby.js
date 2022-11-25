@@ -158,7 +158,7 @@ var chr = min + sec + msec;
 function veriffin(){
     if (fin== true){
         chronoStop();
-        alert('La partie est terminée, vous avez gagné!')
+        alert('La partie est terminée, vous avez gagné!');
         alert(chr);
     }
 }
