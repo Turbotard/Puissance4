@@ -135,30 +135,50 @@ if(isset($_POST['submit'])){
    require "../view/footer.inc.php";
    ?>
    
+   <!-- <button class="chatButton" onclick="testtest()">
+      <div class="chatbox">
         
-   <div class="chatbox">
             <div class="tete">
-                <img src="../image/groot.jpeg">
+                <img src="../image/groot.jpeg" >
                 <p>Je s'appelle GROOT!</p>
             </div>
-            <div class="corps">
-                <?php 
-                    $sql = "SELECT message FROM message WHERE ID_utilisateur = ?";
-                    $sth = $dbh->prepare($sql);
-                    $sth->execute([$idpseu]);
-                    $data = $sth->fetchAll();
-                    foreach($data as $row){
-                        echo '<div class="messagechat">'.$row['message'].'</div>';
-                    }
-                ?>
 
+            <div class="corps">
             </div>
+            
             <form method="post" class="pied">
                 <input type="text" name="message" placeholder="Votre message ..." class="msg">
                 <input type="submit" name="submit" value="Envoyer">
             </form>
+        </div> -->
+        <button class="chatButton2">
+        <div class="chatBox2">
+
+            <div class="chatHead">
+                <img src="../image/groot.jpeg" >
+                <p>Je s'appelle GROOT!</p>
+            </div>
+            <div class="chatBody">
+                <?php 
+                        $sql = "SELECT message FROM message WHERE ID_utilisateur = ?";
+                        $sth = $dbh->prepare($sql);
+                        $sth->execute([$idpseu]);
+                        $data = $sth->fetchAll();
+                        foreach($data as $row){
+                            echo '<div class="messagechat">'.$row['message'].'</div>';
+                        }
+                    ?>
+            </div>
+            <form method="post" class="chatFeet">
+                <input type="text" name="message" placeholder="Votre message ..." class="msg">
+                <input type="submit" name="submit" value="Envoyer">
+            </form>
         </div>
-    
+
+
+
+        <script src="../js/chat.js"></script>
+
 
 
 

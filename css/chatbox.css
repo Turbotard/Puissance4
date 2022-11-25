@@ -504,78 +504,6 @@ p {
     margin-top: 25px;
 }
 
-.chatbox {
-    height: 60%;
-    width: 25%;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.tete {
-    display: flex;
-    background-color: rgb(50, 47, 116);
-    top: 0;
-    height: 12.5%;
-    width: auto;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.tete img {
-    clip-path: ellipse(50% 50%);
-    height: auto;
-    width: 15%;
-}
-
-.tete p {
-    color: rgb(255, 255, 255);
-}
-
-.corps {
-    display: flex;
-    text-align: end;
-    justify-content:end;
-    background-color: rgb(179, 197, 247);
-    height: 75%;
-    width: auto;
-    overflow: auto;
-    flex-direction: column;
-    gap: 3px;
-    
-}
-
-.pied {
-    display: flex;
-    background-color: rgb(50, 47, 116);
-    height: 12.5%;
-    width: auto;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.pied input {
-    display: flex;
-    color: white;
-    background-color: #282645;
-    border-radius: 3px;
-    border:none; 
-    padding: 5% 5% 2% 2%;
-}
-
-.pied button {
-    display: flex;
-    border: none;
-    background-color: inherit;
-    padding: 14px 28px;
-    font-size: 15px;
-    cursor: pointer;
-}
 
 .messagechat {
     
@@ -587,3 +515,173 @@ p {
     border: solid;
 }
 
+
+
+.buttonsend{
+    display: none;
+}
+
+.chatBox2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 35%;
+    left: 75%;
+    height: 500px;
+    width: 300px;
+    visibility: visible;
+}
+
+.chatHead{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: #13ff66;
+    border-radius: 5px;
+    padding: 5px;
+    visibility: inherit;
+}
+
+.chatHead > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    visibility: inherit;
+}
+
+.chatHead > p{
+    color: rgb(255, 255, 255);
+    visibility: inherit;
+    line-break: anywhere;
+}
+
+.chatBody{
+    display: flex;
+    text-align: end;
+    background-color: rgb(179, 197, 247);
+    height: auto;
+    width: auto;
+    overflow: auto;
+    flex-direction: column;
+    visibility: inherit;
+}
+
+.chatFeet{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(50, 47, 116);
+    justify-content: space-around;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    visibility: inherit;
+}
+
+.chatFeet > input {
+    display: flex;
+    color: white;
+    background-color: #282645;
+    border-radius: 3px;
+    border:none; 
+    padding: 5px;
+    visibility: inherit;
+}
+
+.chatFeet > button{
+    display: flex;
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 15px;
+    cursor: pointer;
+    visibility: inherit;
+}
+
+.chatButton2{
+    display: flex;
+    position: fixed;
+    top: 90%;
+    left: 90%;
+    height: 50px;
+    width: 50px;
+    outline: none !important;
+    background-color: #13ff6697;
+    border-radius: 5px;
+}
+
+.chatButton2:hover{
+    outline: none !important;
+    background-color: #13ff66;
+}
+
+.apparitionAnim{
+    animation: textareaApparition 0.5s forwards;
+}
+
+.chatbAnim{
+    animation: chatApparition 0.5s forwards;
+}
+
+.apparitionAnim2{
+    animation: textareaApparition2 0.5s forwards;
+}
+
+.chatbAnim2{
+    animation: chatApparition2 0.5s forwards;
+}
+
+@keyframes chatApparition{
+    0%{
+        visibility: visible;
+    }
+    100%{
+        top: 35%;
+        left: 75%;
+        visibility: visible;
+    }
+}
+
+@keyframes textareaApparition{
+    0%{
+        visibility: hidden;
+        width: 50px;
+    }
+    100%{
+        top: 35%;
+        left: 75%;
+        width: 300px;
+        visibility: visible;
+    }
+}
+
+@keyframes chatApparition2{
+    0%{
+        visibility: visible;
+        top: 35%;
+        left: 75%;
+    }
+    100%{
+        top: 90%;
+        left: 90%;
+        visibility: visible;
+    }
+}
+
+@keyframes textareaApparition2{
+    0%{
+        visibility: visible;
+        width: 300px;
+        top: 35%;
+        left: 75%;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        top: 90%;
+        left: 90%;
+        width: 50px;
+        visibility: hidden;
+    }
+}
