@@ -5,8 +5,9 @@ $pageTitle = "chatbox";
 $cssFileName = "../css/chatbox.css";
 require "../view/header.inc.php";
 
+$idpseu = $_SESSION['idpseu'];
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true)
-    $isconnect = './Jeu.php';
+    $isconnect = './choixjeu.php';
 else
     $isconnect = './connexion.php';
 
@@ -15,7 +16,7 @@ if(isset($_POST['submit'])){
 
     $message = $_POST['message'];
     
-    $idpseu = $_SESSION['idpseu'];
+    
 
     if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
         if (isset($_POST['message'])) {
@@ -23,12 +24,12 @@ if(isset($_POST['submit'])){
             $sth = $dbh->prepare($sql);
             $sth->execute([$idpseu, $message]);
 
+            
         }
-    }
-
-    
-
+    } 
 }
+
+
 ?>
 
 <div id="entree">
@@ -141,6 +142,15 @@ if(isset($_POST['submit'])){
                 <p>Je s'appelle GROOT!</p>
             </div>
             <div class="corps">
+                <?php 
+                    $sql = "SELECT message FROM message WHERE ID_utilisateur = ?";
+                    $sth = $dbh->prepare($sql);
+                    $sth->execute([$idpseu]);
+                    $data = $sth->fetchAll();
+                    foreach($data as $row){
+                        echo '<div class="messagechat">'.$row['message'].'</div>';
+                    }
+                ?>
 
             </div>
             <form method="post" class="pied">

@@ -28,7 +28,7 @@ if(password.match(/(?=.['?!@#$%^&*])/)) strength++;
             progress_bar.style.cssText = 'width : 33%; background-color: red';
             break;
         case 2:
-            progress_bar.style.cssText = 'width : 66%; background-color: orangered';
+            progress_bar.style.cssText = 'width : 66%; background-color: orange';
             break;
         case 3:
             progress_bar.style.cssText = 'width : 100%; background-color: lime';

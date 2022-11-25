@@ -135,6 +135,7 @@ p {
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
     display: inline-block;
+    font-weight: bold;
 }
 
 @keyframes textclip {
@@ -537,9 +538,13 @@ p {
 }
 
 .corps {
+    display: flex;
     background-color: rgb(179, 197, 247);
     height: 75%;
     width: auto;
+    overflow: auto;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .pied {
@@ -557,7 +562,7 @@ p {
     background-color: #282645;
     border-radius: 3px;
     border:none; 
-    padding: 5% 18% 2% 2%;
+    padding: 5% 5% 2% 2%;
 }
 
 .pied button {
@@ -567,4 +572,11 @@ p {
     padding: 14px 28px;
     font-size: 15px;
     cursor: pointer;
+}
+
+.messagechat {
+    overflow-wrap: break-word;
+    background-color: #13ff66;
+    padding: 3px;
+    
 }
