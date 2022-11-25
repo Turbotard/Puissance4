@@ -40,7 +40,7 @@ function affichertab(){
     divresult.innerHTML =txt;
 }
 function getimage(valeur){
-    var imgtxt ="../image/jeux/";
+    var imgtxt ="../image/jeux/owerwatch/";
     switch(valeur){
         case 1: imgtxt +="ana.jpg"
         break;
