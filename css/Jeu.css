@@ -15,7 +15,26 @@ header {
     justify-content: space-around;
     margin-bottom: 10%; 
 }
-
+.button {
+    display: flex;
+    border-radius: 3px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: orange;
+    border-style: none;
+    margin-top: 25px;
+    margin-bottom: 2%;
+    margin-top: 5%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
 #back {
     display: flex;
     position: absolute;
