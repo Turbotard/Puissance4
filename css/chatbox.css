@@ -516,7 +516,6 @@ p {
 }
 
 
-
 .buttonsend{
     display: none;
 }
@@ -529,7 +528,7 @@ p {
     left: 75%;
     height: 500px;
     width: 300px;
-    visibility: visible;
+    visibility: hidden;
 }
 
 .chatHead{
@@ -538,7 +537,7 @@ p {
     align-items: center;
     text-align: center;
     justify-content: space-evenly;
-    background-color: #13ff66;
+    background-color: #9d13ff;
     border-radius: 5px;
     padding: 5px;
     visibility: inherit;
@@ -606,13 +605,13 @@ p {
     height: 50px;
     width: 50px;
     outline: none !important;
-    background-color: #13ff6697;
+    background-color: #ac13ff97;
     border-radius: 5px;
 }
 
 .chatButton2:hover{
     outline: none !important;
-    background-color: #13ff66;
+    background-color: #b813ff;
 }
 
 .apparitionAnim{
@@ -675,7 +674,7 @@ p {
         top: 35%;
         left: 75%;
     }
-    75%{
+    80%{
         visibility: hidden;
     }
     100%{

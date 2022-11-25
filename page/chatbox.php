@@ -155,7 +155,7 @@ if(isset($_POST['submit'])){
         <div class="chatBox2">
 
             <div class="chatHead">
-                <img src="../image/groot.jpeg" >
+                <img id="image" src="../image/groot.jpeg" >
                 <p>Je s'appelle GROOT!</p>
             </div>
             <div class="chatBody">
