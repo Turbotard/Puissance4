@@ -539,12 +539,15 @@ p {
 
 .corps {
     display: flex;
+    text-align: end;
+    justify-content:end;
     background-color: rgb(179, 197, 247);
     height: 75%;
     width: auto;
     overflow: auto;
     flex-direction: column;
-    gap: 10px;
+    gap: 3px;
+    
 }
 
 .pied {
@@ -575,8 +578,12 @@ p {
 }
 
 .messagechat {
-    overflow-wrap: break-word;
-    background-color: #13ff66;
-    padding: 3px;
     
+    overflow-wrap: break-word;
+    background-color: rgb(50, 47, 116);
+    padding: 3px;
+    color: white;
+    border-radius: 5px;
+    border: solid;
 }
+

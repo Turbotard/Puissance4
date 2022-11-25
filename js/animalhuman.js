@@ -102,7 +102,7 @@ function verif(element){
                 if (tab[ligne][colonne]=== tabresult[oldselection[0]][oldselection[1]]){
                     compteur +=1;
                     console.log(compteur);
-                    if (compteur === 8){
+                    if (compteur === 18){
                         fin = true;
                         veriffin();
                     }
