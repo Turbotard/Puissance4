@@ -18,7 +18,7 @@ $jeuselect= '<script type="../js/choixjeu.js">document.whrite(jeuselect)</script
             </div>
         </div>
     </div>
-    <h2 id="theme">Je choisi le thème</h2>
+    <h2 id="theme">Je choisis le thème</h2>
     <div class="telephone">
     <section class="deroule">
         <ul>
@@ -32,7 +32,7 @@ $jeuselect= '<script type="../js/choixjeu.js">document.whrite(jeuselect)</script
         </ul>
     </section>
 </div>
-<h2 id="theme">Je choisi la difficulté</h2>
+<h2 id="theme">Je choisis la difficulté</h2>
     <div class="telephone2">
     <section class="deroule2">
         <ul>
