@@ -14,7 +14,7 @@ require("../view/header.inc.php");
             </div>
         </div>
         <div class="contact">
-            <p class="aya"><span class="text"><strong><?php echo $_SESSION['pseu'] ?></strong></span><img class ="logo" src="../image/roro.jpeg"></p>
+            <p class="aya"><span class="text"><strong><?php echo $_SESSION['pseu'] ?></strong></span><img class ="logo" src="../image/pdp.jpg"></p>
         </div>
     </div>
     <div class="telephone">
